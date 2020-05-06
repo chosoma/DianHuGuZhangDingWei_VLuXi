@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean name="checkBoxIcon" class="com.thingtek.view.component.icon.CheckBoxIcon"/>
+    <bean name="radioButtonIcon" class="com.thingtek.view.component.icon.RadioButtonIcon"/>
+
+    <bean name="iconFactory" class="com.thingtek.view.component.factory.MyIconFactory">
+        <property name="iconpathMap">
+            <map>
+                <entry key="add" value="icons/add.png"/>
+                <entry key="admin" value="icons/admin.png"/>
+                <entry key="apply" value="icons/apply.png"/>
+                <entry key="background" value="icons/background.png"/>
+                <entry key="cancel" value="icons/cancel.png"/>
+                <entry key="change" value="icons/change.png"/>
+                <entry key="chart" value="icons/chart_24.png"/>
+                <entry key="clear" value="icons/clear_24.png"/>
+                <entry key="collect" value="icons/collect_24.png"/>
+                <entry key="database_download" value="icons/database_download_24.png"/>
+                <entry key="database_upload" value="icons/database_upload_24.png"/>
+                <entry key="debug" value="icons/debug_24.png"/>
+                <entry key="delete" value="icons/delete.png"/>
+                <entry key="edit" value="icons/edit.png"/>
+                <entry key="flow" value="icons/flow_24.png"/>
+                <entry key="freeAlarm_16" value="icons/freeAlarm_16.png"/>
+                <entry key="help" value="icons/help_16.png"/>
+                <entry key="home" value="icons/home_24.png"/>
+                <entry key="load" value="icons/load.jpg"/>
+                <entry key="manage" value="icons/manage_24.png"/>
+                <entry key="msg" value="icons/msg_16.png"/>
+                <entry key="msg_muted" value="icons/msg_muted_16.png"/>
+                <entry key="printer" value="icons/printer_24.png"/>
+                <entry key="progress" value="icons/progress.gif"/>
+                <entry key="refresh" value="icons/refresh.png"/>
+                <entry key="search" value="icons/search_24.png"/>
+                <entry key="sensor" value="icons/sensor_24.png"/>
+                <entry key="set" value="icons/set.png"/>
+                <entry key="showDebug" value="icons/showDebug_16.png"/>
+                <entry key="sound" value="icons/sound_16.png"/>
+                <entry key="sound_muted" value="icons/sound_muted_16.png"/>
+                <entry key="sysComm" value="icons/sysComm.png"/>
+                <entry key="sysConn" value="icons/sysConn.png"/>
+                <entry key="sysPass" value="icons/sysPass.png"/>
+                <entry key="system" value="icons/system_24.png"/>
+                <entry key="sysUser" value="icons/sysUser.png"/>
+                <entry key="user" value="icons/user.png"/>
+                <entry key="userManage" value="icons/userManage_16.png"/>
+                <entry key="voiceAlarm" value="icons/voiceAlarm_16.png"/>
+                <entry key="warn" value="icons/warn_24.png"/>
+                <entry key="warning" value="icons/warning.png"/>
+                <entry key="info" value="icons/info.png"/>
+                <entry key="question" value="icons/question.png"/>
+                <entry key="error" value="icons/error.png"/>
+                <entry key="sf6" value="icons/sf6_28.png"/>
+                <entry key="vari" value="icons/vari_28.png"/>
+                <entry key="temp" value="icons/temp_28.png"/>
+                <entry key="hitch" value="icons/warn_28.png"/>
+                <entry key="ladder" value="icons/ladder_28.png"/>
+                <entry key="databackground" value="icons/background.jpg"/>
+                <entry key="develop" value="icons/sysPass_48.png"/>
+                <entry key="主　　页" value="icons/home_24.png"/>
+                <entry key="数据采集" value="icons/collect_24.png"/>
+                <entry key="六氟化硫数据管理" value="icons/manage_24.png"/>
+                <entry key="故障电弧数据管理" value="icons/manage_24.png"/>
+                <entry key="报警查询" value="icons/warn_24.png"/>
+                <entry key="系统设置" value="icons/system_24.png"/>
+                <entry key="调试界面" value="icons/debug_24.png"/>
+                <entry key="六氟化硫表格" value="icons/sf6_28.png"/>
+                <entry key="六氟化硫图形" value="icons/sf6_28.png"/>
+                <entry key="故障电弧定位" value="icons/warn_28.png"/>
+            </map>
+        </property>
+        <property name="iconpathsMap">
+            <map>
+                <entry key="连 接 设 置">
+                    <array>
+                        <value>icons/sysConn.png</value>
+                        <value>icons/sysConn_48.png</value>
+                    </array>
+                </entry>
+                <entry key="周 期 设 置">
+                    <array>
+                        <value>icons/sysComm.png</value>
+                        <value>icons/sysComm_48.png</value>
+                    </array>
+                </entry>
+                <entry key="报 警 设 置">
+                    <array>
+                        <value>icons/sysComm.png</value>
+                        <value>icons/sysComm_48.png</value>
+                    </array>
+                </entry>
+                <entry key="密 码 修 改">
+                    <array>
+                        <value>icons/sysPass.png</value>
+                        <value>icons/sysPass_48.png</value>
+                    </array>
+                </entry>
+                <entry key="用 户 管 理">
+                    <array>
+                        <value>icons/sysUser.png</value>
+                        <value>icons/sysUser_48.png</value>
+                    </array>
+                </entry>
+            </map>
+        </property>
+        <property name="logoIconTexts">
+            <list>
+                <value>icons/logo16.png</value>
+                <value>icons/logo32.png</value>
+                <value>icons/logo48.png</value>
+                <value>icons/logo64.png</value>
+            </list>
+        </property>
+    </bean>
+</beans>

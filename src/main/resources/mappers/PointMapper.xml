@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thingtek.beanServiceDao.point.dao.PointDao">
+
+    <select id="findAll" resultType="com.thingtek.beanServiceDao.point.entity.PointBean">
+        SELECT * FROM point point order by point.point_num asc
+    </select>
+
+    <insert id="save" parameterType="com.thingtek.beanServiceDao.point.entity.PointBean">
+        INSERT INTO POINT
+        (
+        POINT_NUM
+        ,CLT_TYPE
+        ,POINT_NAME
+        )
+        VALUES
+        <foreach collection="array" open="(" close=")" separator="),(" item="point">
+            #{point.point_num}
+            ,#{point.clt_type}
+            ,#{point.point_name}
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM POINT
+        <where>
+            POINT_NUM IN
+            <foreach collection="point_nums" close=")" open="(" separator="," item="point_num">
+                #{point_num}
+            </foreach>
+            AND CLT_TYPE = #{clt_type}
+        </where>
+    </delete>
+
+    <update id="update" parameterType="com.thingtek.beanServiceDao.point.entity.PointBean">
+        UPDATE POINT SET
+        POINT_NAME = #{point_name}
+        , X=#{x}
+        , Y=#{y}
+        , place_value=#{place_value}
+        <where>
+            POINT_NUM = #{point_num}
+            AND
+            CLT_TYPE = #{clt_type}
+        </where>
+    </update>
+
+</mapper>

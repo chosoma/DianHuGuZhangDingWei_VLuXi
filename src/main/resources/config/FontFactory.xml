@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean name="title" class="java.awt.Font">
+        <constructor-arg index="0" ref="micro"/>
+        <constructor-arg index="1" ref="bold"/>
+        <constructor-arg index="2" value="12"/>
+    </bean>
+
+    <bean name="skip" class="java.awt.Font">
+        <constructor-arg index="0" ref="micro"/>
+        <constructor-arg index="1" ref="bold"/>
+        <constructor-arg index="2" value="30"/>
+    </bean>
+
+    <bean name="logo" class="java.awt.Font">
+        <constructor-arg index="0" ref="font20"/>
+    </bean>
+
+    <bean name="jfreeExtraLarge" class="java.awt.Font">
+        <constructor-arg index="0" ref="font18"/>
+    </bean>
+    <bean name="jfreeLarge" class="java.awt.Font">
+        <constructor-arg index="0" ref="font14"/>
+    </bean>
+    <bean name="jfreeRegular" class="java.awt.Font">
+        <constructor-arg index="0" ref="font12"/>
+    </bean>
+    <bean name="jfreeSmall" class="java.awt.Font">
+        <constructor-arg index="0" ref="font9"/>
+    </bean>
+
+    <bean name="ui" class="java.awt.Font">
+        <constructor-arg index="0" ref="font12"/>
+    </bean>
+
+
+    <bean name="font36" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="36"/>
+    </bean>
+    <bean name="font20" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="20"/>
+    </bean>
+    <bean name="font18" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="18"/>
+    </bean>
+    <bean name="font16" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="16"/>
+    </bean>
+    <bean name="font15" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="15"/>
+    </bean>
+    <bean name="font14" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="14"/>
+    </bean>
+    <bean name="font13" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="13"/>
+    </bean>
+    <bean name="font12" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="12"/>
+    </bean>
+    <bean name="font11" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="11"/>
+    </bean>
+    <bean name="font10" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="10"/>
+    </bean>
+    <bean name="font9" class="java.awt.Font">
+        <constructor-arg index="0" ref="song"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="9"/>
+    </bean>
+    <bean name="systemSetupComponentFont" class="java.awt.Font">
+        <constructor-arg index="0" ref="font16"/>
+    </bean>
+    <bean name="systemSetupTitle" class="java.awt.Font">
+        <constructor-arg index="0" ref="font16"/>
+    </bean>
+    <bean name="systemSetupLeft" class="java.awt.Font">
+        <constructor-arg index="0" ref="font16"/>
+    </bean>
+
+    <bean name="loginCopyrightFont" class="java.awt.Font">
+        <constructor-arg index="0" ref="micro"/>
+        <constructor-arg index="1" ref="plain"/>
+        <constructor-arg index="2" value="16"/>
+    </bean>
+    <bean name="loginSoftnameFont" class="java.awt.Font">
+        <constructor-arg index="0" ref="micro"/>
+        <constructor-arg index="1" ref="plain"/>
+        <constructor-arg index="2" value="30"/>
+    </bean>
+    <bean name="loginPageInfoFont" class="java.awt.Font">
+        <constructor-arg index="0" ref="micro"/>
+        <constructor-arg index="1" ref="plain"/>
+        <constructor-arg index="2" value="20"/>
+    </bean>
+
+    <bean name="bold" class="java.lang.Integer">
+        <constructor-arg value="1"/>
+    </bean>
+    <bean name="plain" class="java.lang.Integer">
+        <constructor-arg value="0"/>
+    </bean>
+    <bean name="song" class="java.lang.String">
+        <constructor-arg value="宋体"/>
+    </bean>
+    <bean name="micro" class="java.lang.String">
+        <constructor-arg value="微软雅黑"/>
+    </bean>
+
+
+    <bean name="fontFactory" class="com.thingtek.view.component.factory.MyFontFactory">
+        <property name="fontMap">
+            <map>
+                <entry key="title" value-ref="title"/>
+                <entry key="skip" value-ref="skip"/>
+                <entry key="logoInfo" value-ref="logo"/>
+                <entry key="jfreeExtraLarge" value-ref="jfreeExtraLarge"/>
+                <entry key="jfreeLarge" value-ref="jfreeLarge"/>
+                <entry key="jfreeRegular" value-ref="jfreeRegular"/>
+                <entry key="jfreeSmall" value-ref="jfreeSmall"/>
+                <entry key="ui" value-ref="ui"/>
+                <entry key="search" value-ref="font14"/>
+                <entry key="font16" value-ref="font16"/>
+                <entry key="font36" value-ref="font36"/>
+                <entry key="systemSetupTitle" value-ref="systemSetupTitle"/>
+                <entry key="systemSetupLeft" value-ref="systemSetupLeft"/>
+                <entry key="systemSetupComponentFont" value-ref="systemSetupComponentFont"/>
+                <entry key="loginCopyrightFont" value-ref="loginCopyrightFont"/>
+                <entry key="loginSoftnameFont" value-ref="loginSoftnameFont"/>
+                <entry key="loginPageInfoFont" value-ref="loginPageInfoFont"/>
+            </map>
+        </property>
+    </bean>
+</beans>

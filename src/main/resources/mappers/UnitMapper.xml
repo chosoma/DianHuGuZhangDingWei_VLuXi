@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thingtek.beanServiceDao.unit.dao.UnitDao">
+
+    <sql id="select">
+        SELECT UNIT.UNIT_NUM AS UNIT_NUM
+        ,UNIT.POINT_NUM AS POINT_NUM
+        ,UNIT.PHASE AS PHASE
+        ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME
+        ,POINT.POINT_NAME AS POINT_NAME
+        ,CLT.TYPE_NUM AS CLT_TYPE
+        ,CLT.TYPE_NAME AS CLT_NAME
+    </sql>
+    <sql id="join">
+        LEFT JOIN POINT POINT ON UNIT.POINT_NUM = POINT.POINT_NUM
+        LEFT JOIN CLT_TYPE CLT ON CLT.TYPE_NUM = POINT.CLT_TYPE
+    </sql>
+
+    <select id="findByCltType" resultType="java.util.Map" parameterType="int">
+        <include refid="select"/>
+        <choose>
+            <when test=" _parameter == 4 ">
+                ,UNIT.FZ AS FZ
+                ,UNIT.FDBS AS FDBS
+                ,UNIT.IP AS IP
+                ,UNIT.PORT AS PORT
+                FROM UNIT_DIS UNIT
+            </when>
+        </choose>
+        <include refid="join"/>
+        <where>
+            POINT.CLT_TYPE = #{_parameter}
+        </where>
+        order by UNIT.UNIT_NUM asc
+    </select>
+
+    <update id="update">
+        UPDATE
+        <choose>
+            <when test="clt_type == 4">
+                UNIT_DIS
+            </when>
+        </choose>
+        UNIT
+        SET
+        POINT_NUM = #{unit.POINT_NUM}
+        ,PHASE = #{unit.PHASE}
+        <choose>
+            <when test="clt_type == 4">
+                ,FZ = #{unit.FZ}
+                ,FDBS = #{unit.FDBS}
+                ,IP = #{unit.IP}
+                ,PORT = #{unit.PORT}
+            </when>
+        </choose>
+        <where>
+            UNIT_NUM = #{unit.UNIT_NUM}
+        </where>
+    </update>
+
+    <delete id="deleteUnitByNum">
+        DELETE FROM
+        <choose>
+            <when test=" clt_type == 4 ">UNIT_DIS</when>
+        </choose>
+        <where>
+            UNIT_NUM IN
+            <foreach collection="unit_nums" item="unit_num" open="(" close=")" separator=",">
+                #{unit_num}
+            </foreach>
+        </where>
+    </delete>
+
+    <update id="createDataTable" parameterType="java.lang.String">
+        CREATE TABLE IF NOT EXISTS ${_parameter}  (
+        `UNIT_NUM` int(5) DEFAULT NULL,
+        `DATASTRING` longtext,
+        `XHQD` int(11) DEFAULT '0',
+        `SJ` bigint(20) DEFAULT '0',
+        `GATEWAYFRONTINDEX` int(11) DEFAULT '0',
+        `SERVERINDEX` int(11) DEFAULT '0',
+        `MININDEX` int(11) DEFAULT '0',
+        `INSERTTIME` datetime DEFAULT NULL,
+        `SAVETIME` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    </update>
+
+    <delete id="dropDataTable" parameterType="java.lang.String">
+        DROP TABLE IF EXISTS ${_parameter};
+    </delete>
+
+    <!-- 新增 -->
+    <insert id="saveUnit">
+        INSERT INTO
+        <choose>
+            <when test=" clt_type == 4 ">
+                UNIT_DIS
+            </when>
+        </choose>
+        (
+        UNIT_NUM
+        ,POINT_NUM
+        ,PHASE
+        ,DATA_TABLE_NAME
+        )
+        VALUES
+        <foreach collection="units" open="(" separator="),(" close=")" item="unit">
+            #{unit.unit_num}
+            , #{unit.point_num}
+            , #{unit.phase}
+            , #{unit.data_table_name}
+        </foreach>
+        ON DUPLICATE KEY UPDATE
+        POINT_NUM = #{unit.point_num}
+        , PHASE = #{unit.phase}
+        , DATA_TABLE_NAME = #{unit.data_table_name}
+        <choose>
+            <when test=" clt_type == 4 ">
+            </when>
+        </choose>
+    </insert>
+</mapper>

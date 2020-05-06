@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thingtek.beanServiceDao.warn.dao.WarnDao">
+    <select id="getByPara" resultType="com.thingtek.beanServiceDao.warn.entity.WarnBean"
+            parameterType="com.thingtek.socket.data.entity.DataSearchPara">
+        SELECT * FROM DATA_WARN
+        <where>
+            CLT_TYPE = #{clttype}
+            <if test=" t1!=null or t2!=null ">
+                AND
+                <choose>
+                    <when test=" t1!=null and t2!=null ">
+                        DFOO.INSERTTIME BETWEEN #{t1} AND #{t2}
+                    </when>
+                    <when test=" t1!=null and t2==null ">
+                        DFOO.INSERTTIME &gt; #{t1}
+                    </when>
+                    <when test=" t1==null and t2!=null ">
+                        DFOO.INSERTTIME &lt; #{t2}
+                    </when>
+                </choose>
+            </if>
+        </where>
+        ORDER BY inserttime DESC
+    </select>
+    <select id="getLastByUnit" resultType="com.thingtek.beanServiceDao.warn.entity.WarnBean">
+        SELECT * FROM DATA_WARN
+        ORDER BY inserttime DESC
+        limit 1
+    </select>
+    <select id="getLast" resultType="com.thingtek.beanServiceDao.warn.entity.WarnBean"
+            parameterType="com.thingtek.socket.data.entity.DataSearchPara">
+        SELECT * FROM DATA_WARN
+        ORDER BY inserttime DESC
+        limit 10
+    </select>
+    <delete id="delete">
+        DELETE FROM DATA_WARN
+        <where>
+            ID = #{id} AND
+            INSERTTIME IN
+            <foreach collection="dates" item="date" open="(" separator="," close=")">
+                #{date}
+            </foreach>
+        </where>
+    </delete>
+    <insert id="save" parameterType="com.thingtek.beanServiceDao.warn.entity.WarnBean">
+        INSERT INTO DATA_WARN
+        (
+        WARN_INFO,
+        PHASE,
+        INSERTTIME
+        )
+        VALUES
+        <foreach collection="array" item="warn" separator="),(" open="(" close=")">
+            #{warn.warn_info},
+            #{warn.phase},
+            #{warn.inserttime}
+        </foreach>
+    </insert>
+</mapper>

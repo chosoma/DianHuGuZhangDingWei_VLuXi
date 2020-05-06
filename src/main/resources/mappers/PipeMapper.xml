@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.thingtek.beanServiceDao.pipe.dao.PipeDao">
+
+    <select id="findAll" resultType="com.thingtek.beanServiceDao.pipe.entity.PipeBean">
+        SELECT * FROM pipe pipe order by pipe.pipe_id asc
+    </select>
+
+    <insert id="save" parameterType="com.thingtek.beanServiceDao.pipe.entity.PipeBean">
+        INSERT INTO pipe
+        (
+        pipe_id
+        ,pipe_name
+        ,pipe_page
+        )
+        VALUES
+        <foreach collection="array" open="(" close=")" separator="),(" item="pipe">
+            #{pipe.pipe_id}
+            ,#{pipe.pipe_name}
+            ,#{pipe.pipe_page}
+        </foreach>
+    </insert>
+
+    <delete id="delete">
+        DELETE FROM pipe
+        <where>
+            pipe_id IN
+            <foreach collection="pipe_ids" close=")" open="(" separator="," item="pipe_id">
+                #{pipe_id}
+            </foreach>
+        </where>
+    </delete>
+
+    <update id="update" parameterType="com.thingtek.beanServiceDao.pipe.entity.PipeBean">
+        UPDATE pipe SET
+        pipe_name = #{pipe_name}
+        , pipe_page=#{pipe_page}
+        <where>
+            pipe_id = #{pipe_id}
+        </where>
+    </update>
+
+</mapper>

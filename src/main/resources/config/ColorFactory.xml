@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <bean name="shellback" class="java.awt.Color">
+        <constructor-arg value="0xD0DFDF"/>
+    </bean>
+    <bean name="collectback" class="java.awt.Color">
+        <constructor-arg value="0xE0EFEF"/>
+    </bean>
+    <bean name="centertitle" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="dataCollectContent" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="leftpane1" class="java.awt.Color">
+        <constructor-arg value="0xE1EBFA"/>
+    </bean>
+    <bean name="leftpane2" class="java.awt.Color">
+        <constructor-arg value="0x9FB5D2"/>
+    </bean>
+    <!-- 按钮颜色 -->
+    <!--选中颜色 select-->
+    <bean name="button_select1" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="button_select2" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="button_select3" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="button_select4" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <!--按下颜色 press-->
+    <bean name="button_press1" class="java.awt.Color">
+        <constructor-arg value="0xE6E6E6"/>
+    </bean>
+    <bean name="button_press2" class="java.awt.Color">
+        <constructor-arg value="0xD2D2D2"/>
+    </bean>
+    <bean name="button_press3" class="java.awt.Color">
+        <constructor-arg value="0xD2D2D2"/>
+    </bean>
+    <bean name="button_press4" class="java.awt.Color">
+        <constructor-arg value="0xE6E6E6"/>
+    </bean>
+    <!--悬浮颜色 hover-->
+    <bean name="button_hover1" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="button_hover2" class="java.awt.Color">
+        <constructor-arg value="0xF0F0F0"/>
+    </bean>
+    <bean name="button_hover3" class="java.awt.Color">
+        <constructor-arg value="0xDCDCDC"/>
+    </bean>
+    <bean name="button_hover4" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+
+    <bean name="tableSelectTop" class="java.awt.Color">
+        <constructor-arg value="0xFFE13C"/>
+    </bean>
+    <bean name="tableSelectBottom" class="java.awt.Color">
+        <constructor-arg value="0xFFC81E"/>
+    </bean>
+    <bean name="tableOdd_B" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="tableOdd_F" class="java.awt.Color">
+        <constructor-arg value="0x040404"/>
+    </bean>
+    <bean name="tableEven_B" class="java.awt.Color">
+        <constructor-arg value="0xF0F8FD"/>
+    </bean>
+    <bean name="tableEven_F" class="java.awt.Color">
+        <constructor-arg value="0x040404"/>
+    </bean>
+    <!--边框颜色-->
+    <bean name="button_border" class="java.awt.Color">
+        <constructor-arg value="0xC8C8C8"/>
+    </bean>
+    <bean name="button_padding" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="component_Border" class="java.awt.Color">
+        <constructor-arg value="0x7F9DB9"/>
+    </bean>
+    <!--组件可用/不可用颜色-->
+    <bean name="disenable" class="java.awt.Color">
+        <constructor-arg value="0x999999"/>
+    </bean>
+    <bean name="enable" class="java.awt.Color">
+        <constructor-arg value="0x0"/>
+    </bean>
+    <!--阴影颜色-->
+    <bean name="shadow" class="java.awt.Color">
+        <constructor-arg value="0x787878"/>
+    </bean>
+    <bean name="shadowScrollBar" class="java.awt.Color">
+        <constructor-arg value="0xF5F4EF"/>
+    </bean>
+    <bean name="disabledComboBoxBackground" class="java.awt.Color">
+        <constructor-arg value="0xF5F4EA"/>
+    </bean>
+    <bean name="disabledForeground" class="java.awt.Color">
+        <constructor-arg value="0x999999"/>
+    </bean>
+    <bean name="selectionComboxBackground" class="java.awt.Color">
+        <constructor-arg value="0xD6DEEB"/>
+    </bean>
+    <bean name="focusButton" class="java.awt.Color">
+        <constructor-arg value="0xFFBB00"/>
+    </bean>
+    <bean name="gridColor" class="java.awt.Color">
+        <constructor-arg value="0xD3D9E6"/>
+    </bean>
+    <bean name="loginloadfore" class="java.awt.Color">
+        <constructor-arg value="0x006F6B"/>
+    </bean>
+    <bean name="loginlogfore" class="java.awt.Color">
+        <constructor-arg value="0x006F6B"/>
+    </bean>
+    <!--字体颜色-->
+    <bean name="titleButtonForeground" class="java.awt.Color">
+        <constructor-arg value="0"/>
+    </bean>
+    <!--数据采集标签颜色-->
+    <bean name="dataLabel" class="java.awt.Color">
+        <constructor-arg value="0xB6D8F5"/>
+    </bean>
+    <bean name="dataTitle" class="java.awt.Color">
+        <constructor-arg value="0x8ABFED"/>
+    </bean>
+    <bean name="userTemp" class="java.awt.Color">
+        <constructor-arg value="0xFFDC50"/>
+    </bean>
+    <bean name="userTempBorder" class="java.awt.Color">
+        <constructor-arg value="0xAAD2FF"/>
+    </bean>
+    <bean name="loginSoftnameFore" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="loginCopyrightFore" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="loginPageInfoFore" class="java.awt.Color">
+        <constructor-arg value="0x006F6B"/>
+    </bean>
+    <bean name="white" class="java.awt.Color">
+        <constructor-arg value="0xFFFFFF"/>
+    </bean>
+    <bean name="black" class="java.awt.Color">
+        <constructor-arg value="0"/>
+    </bean>
+    <bean name="colorFactory" class="com.thingtek.view.component.factory.MyColorFactory">
+        <property name="colorMap">
+            <map>
+                <!-- 面板颜色 -->
+                <!-- 容器面板颜色 -->
+                <entry key="dataCollectContent" value-ref="dataCollectContent"/>
+                <!-- 按钮颜色 -->
+                <entry key="button_border" value-ref="button_border"/>
+                <entry key="button_padding" value-ref="button_padding"/>
+                <entry key="component_Border" value-ref="component_Border"/>
+                <!--组件可用和不可用-->
+                <entry key="disenable" value-ref="disenable"/>
+                <entry key="enable" value-ref="enable"/>
+
+                <entry key="loginloadfore" value-ref="loginloadfore"/>
+                <entry key="loginlogfore" value-ref="loginlogfore"/>
+
+                <entry key="titleButtonForeground" value-ref="titleButtonForeground"/>
+                <entry key="dataLabel" value-ref="dataLabel"/>
+                <entry key="dataTitle" value-ref="dataTitle"/>
+                <entry key="userTemp" value-ref="userTemp"/>
+                <entry key="userTempBorder" value-ref="userTempBorder"/>
+                <entry key="loginCopyrightFore" value-ref="loginCopyrightFore"/>
+                <entry key="loginSoftnameFore" value-ref="loginSoftnameFore"/>
+                <entry key="loginPageInfoFore" value-ref="loginPageInfoFore"/>
+                <entry key="tableSelectTop" value-ref="tableSelectTop"/>
+                <entry key="tableSelectBottom" value-ref="tableSelectBottom"/>
+                <entry key="tableOdd_B" value-ref="tableOdd_B"/>
+                <entry key="tableOdd_F" value-ref="tableOdd_F"/>
+                <entry key="tableEven_B" value-ref="tableEven_B"/>
+                <entry key="tableEven_F" value-ref="tableEven_F"/>
+                <entry key="centertitle" value-ref="centertitle"/>
+                <!-- shell背景色 -->
+                <entry key="shellback" value-ref="shellback"/>
+                <entry key="collectback" value-ref="collectback"/>
+            </map>
+        </property>
+        <property name="colorsMap">
+            <map>
+                <!-- 面板颜色 -->
+                <!-- 左侧面板颜色 -->
+                <entry key="leftpane">
+                    <array>
+                        <ref bean="leftpane1"/>
+                        <ref bean="leftpane2"/>
+                    </array>
+                </entry>
+                <!-- 按钮颜色 -->
+                <entry key="button_select">
+                    <array>
+                        <ref bean="button_select1"/>
+                        <ref bean="button_select2"/>
+                        <ref bean="button_select3"/>
+                        <ref bean="button_select4"/>
+                    </array>
+                </entry>
+                <entry key="button_press">
+                    <array>
+                        <ref bean="button_press1"/>
+                        <ref bean="button_press2"/>
+                        <ref bean="button_press3"/>
+                        <ref bean="button_press4"/>
+                    </array>
+                </entry>
+                <entry key="button_hover">
+                    <array>
+                        <ref bean="button_hover1"/>
+                        <ref bean="button_hover2"/>
+                        <ref bean="button_hover3"/>
+                        <ref bean="button_hover4"/>
+                    </array>
+                </entry>
+                <entry key="leftpanel">
+                    <array>
+                        <ref bean="leftpane1"/>
+                        <ref bean="leftpane2"/>
+                    </array>
+                </entry>
+
+                <entry key="tablebackground">
+                    <array>
+                        <ref bean="tableOdd_B"/>
+                        <ref bean="tableEven_B"/>
+                    </array>
+                </entry>
+                <entry key="tableforeground">
+                    <array>
+                        <ref bean="tableOdd_F"/>
+                        <ref bean="tableEven_F"/>
+                    </array>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

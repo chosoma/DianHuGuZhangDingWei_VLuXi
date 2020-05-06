@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <bean name="tablemodelconfig" class="com.thingtek.view.component.tablemodel.TableConfig">
+        <property name="dataTableModels">
+            <map>
+                <entry key="故障电弧定位" value-ref="disDataTableModel"/>
+            </map>
+        </property>
+        <property name="unitTableModels">
+            <map>
+                <entry key="故障电弧定位" value-ref="disUnitTableModel"/>
+            </map>
+        </property>
+        <property name="datereg" value="YYYY-MM-dd HH:mm:ss"/>
+    </bean>
+
+    <bean name="tableranderer" class="com.thingtek.view.component.tablecellrander.TCR"/>
+
+
+</beans>

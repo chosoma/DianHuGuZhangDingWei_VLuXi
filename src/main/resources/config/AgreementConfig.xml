@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <bean class="com.thingtek.socket.agreement.SocketAgreement">
+        <property name="head">
+            <array>
+                <value>0x7e</value>
+            </array>
+        </property>
+        <property name="headoff" value="0"/>
+        <property name="tail">
+            <array>
+                <value>0x7d</value>
+            </array>
+        </property>
+        <property name="tailoff" value="-1"/>
+
+        <property name="totallength" value="14"/>
+
+
+        <property name="cmdtype">
+            <array>
+                <value>0</value>
+            </array>
+        </property>
+        <property name="cmdtypeoff" value="0"/>
+
+        <property name="g2S">
+            <map>
+                <entry key="0x00" value="com.thingtek.socket.entity.G2SUploadData"/>
+                <entry key="0x02" value="com.thingtek.socket.entity.G2SSetFZ"/>
+                <entry key="0x03" value="com.thingtek.socket.entity.G2SConnect"/>
+                <entry key="0x04" value="com.thingtek.socket.entity.G2SSetFDBS"/>
+                <entry key="0x05" value="com.thingtek.socket.entity.G2SHeart"/>
+                <entry key="0xEE" value="com.thingtek.socket.entity.G2SSearchMC"/>
+                <entry key="0xFF" value="com.thingtek.socket.entity.G2SSetMC"/>
+            </map>
+        </property>
+        <property name="s2gmap">
+            <map>
+                <entry key="uploaddata" value="com.thingtek.socket.entity.S2GUploadData"/>
+                <entry key="setfz" value="com.thingtek.socket.entity.S2GSetFZ"/>
+                <entry key="connect" value="com.thingtek.socket.entity.S2GConnect"/>
+                <entry key="setmc" value="com.thingtek.socket.entity.S2GSetMC"/>
+                <entry key="searchmc" value="com.thingtek.socket.entity.S2GSearchMC"/>
+                <entry key="setfdbs" value="com.thingtek.socket.entity.S2GSetFDBS"/>
+                <entry key="heart" value="com.thingtek.socket.entity.S2GHeart"/>
+            </map>
+        </property>
+        <property name="dataBuffer" ref="dataBuffer"/>
+    </bean>
+
+
+</beans>

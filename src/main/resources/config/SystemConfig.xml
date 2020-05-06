@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <bean name="logoInfo" class="com.thingtek.view.logo.LogoInfo">
+        <property name="companyName" value="无锡讯泰科技有限公司"/>
+        <property name="copyrightName" value="© CopyRight "/>
+        <property name="softName" value="故障电弧定位系统"/>
+        <property name="basePanelMap">
+            <map>
+                <!--                <entry key="主　　页" value-ref="home"/>-->
+                <entry key="数据采集" value-ref="dataCollect"/>
+                <entry key="故障电弧数据管理" value-ref="warning"/>
+                <!--                <entry key="报警查询" value-ref="warnPanel"/>-->
+                <entry key="调试界面" value-ref="debugs"/>
+            </map>
+        </property>
+        <property name="setPanelMap">
+            <map>
+                <entry key="系统设置">
+                    <map>
+                        <entry key="管体管理" value-ref="pipeSetPanel"/>
+                        <entry key="测点管理" value-ref="pointSetPanel"/>
+                        <entry key="单元管理" value-ref="unitSetPanel"/>
+                        <entry key="硬件设置" value-ref="adminSetPanel"/>
+                    </map>
+                </entry>
+            </map>
+        </property>
+        <property name="collectPanelMap">
+            <map>
+                <entry key="故障电弧定位" value-ref="disCollectPanel"/>
+            </map>
+        </property>
+        <property name="dataPanels">
+            <list>
+                <ref local="dataCollect"/>
+                <ref local="warning"/>
+                <!--                <ref local="warnPanel"/>-->
+            </list>
+        </property>
+    </bean>
+    <bean name="home" class="com.thingtek.view.shell.homePage.HomePanel">
+        <property name="logoinfo" value="© CopyRight 江苏安靠智能输电工程科技股份有限公司"/>
+        <property name="show" value="true"/>
+    </bean>
+    <bean name="debugs" class="com.thingtek.view.shell.debugs.Debugs">
+        <property name="show" value="true"/>
+        <!--                <property name="show" value="false"/>-->
+    </bean>
+    <bean name="dataCollect" class="com.thingtek.view.shell.dataCollect.DataCollectPanel">
+        <property name="show" value="true"/>
+        <property name="select" value="true"/>
+        <property name="warntitlemap">
+            <map>
+                <entry key="4" value="故障电弧定位"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean name="warning" class="com.thingtek.view.shell.warningManage.DisWarningPanel">
+        <property name="show" value="true"/>
+        <property name="admin" value="true"/>
+        <property name="maxlineshow" value="5"/>
+        <property name="onepagecount" value="10"/>
+    </bean>
+    <!--<bean name="warnPanel" class="com.thingtek.view.shell.warningManage.WarnPanel">
+        <property name="show" value="true"/>
+        <property name="admin" value="true"/>
+    </bean>-->
+    <bean name="pipeSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.PipeSetPanel">
+        <property name="show" value="true"/>
+    </bean>
+    <bean name="pointSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.PointSetPanel">
+        <property name="show" value="true"/>
+        <!--                <property name="show" value="false"/>-->
+    </bean>
+    <bean name="unitSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitSetPanel">
+        <property name="show" value="true"/>
+        <!--        <property name="show" value="false"/>-->
+    </bean>
+    <bean name="adminSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitAdminSetPanel">
+        <property name="show" value="true"/>
+    </bean>
+
+    <bean name="disCollectPanel" class="com.thingtek.view.shell.dataCollect.DisCollectPanel">
+        <property name="defaultselect" value="true"/>
+        <property name="show" value="true"/>
+        <property name="admin" value="true"/>
+        <property name="warn" value="true"/>
+    </bean>
+
+</beans>
