@@ -8,7 +8,7 @@ import java.util.Vector;
 public class PipeBean {
     private int pipe_id;
     private String pipe_name;
-    private int pipe_page;
+    private int pipe_page = 1;
 
     public Vector<Object> getDataTotalCol() {
         Vector<Object> vector = new Vector<>();

@@ -4,6 +4,7 @@ package com.thingtek.beanServiceDao.unit.service;
 import com.thingtek.beanServiceDao.base.service.BaseService;
 import com.thingtek.beanServiceDao.clt.entity.CltBean;
 import com.thingtek.beanServiceDao.clt.service.CltService;
+import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.point.entity.PointBean;
 import com.thingtek.beanServiceDao.point.service.PointService;
 import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
@@ -23,7 +24,8 @@ public class UnitService extends BaseService {
 
     @Resource
     private PointService pointService;
-
+    @Resource
+    private PipeService pipeService;
     @Resource
     private CltService cltService;
 
@@ -232,6 +234,7 @@ public class UnitService extends BaseService {
                         unit.resolve(one);
                         unit.setClt(clt);
                         unit.setPoint(pointService.getPointByNum(clt.getType_num(), unit.getPoint_num()));
+                        unit.setPipe(pipeService.getPipeById(unit.getPipe_id()));
                         oneunits.add(unit);
                     }
                 } catch (Exception e) {

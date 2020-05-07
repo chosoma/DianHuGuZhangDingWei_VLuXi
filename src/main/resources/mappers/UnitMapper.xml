@@ -107,7 +107,7 @@
         )
         VALUES
         <foreach collection="units" open="(" separator="),(" close=")" item="unit">
-            #{unit.unit_num}
+              #{unit.unit_num}
             , #{unit.point_num}
             , #{unit.phase}
             , #{unit.data_table_name}

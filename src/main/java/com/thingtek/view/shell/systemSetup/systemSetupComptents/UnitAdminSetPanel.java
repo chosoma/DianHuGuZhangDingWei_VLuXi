@@ -224,7 +224,7 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                 List<BaseUnitBean> units = new ArrayList<>();
                 for (int i = 0; i < onlytable.getRowCount(); i++) {
                     BaseUnitBean unit = unitService.getUnitByNumber(clttype, (Short) onlytable.getValueAt(i, 0));
-                    unit.resolveInputTable(onlytable, i);
+                    unit.resolveAdminTable(onlytable, i);
                     unit.resolve2map();
                     units.add(unit);
                 }
@@ -256,7 +256,7 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                     refreshUnit();
                     return;
                 }
-                unit.resolveInputTable(onlytable, row);
+                unit.resolveAdminTable(onlytable, row);
                 CollectSocket socket = server.getSocket(unit.getIp(), unit.getPort());
                 if (socket == null) {
                     falseMessage("未选择单元或选择单元未连接!");
@@ -297,7 +297,7 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                     refreshUnit();
                     return;
                 }
-                unit.resolveInputTable(onlytable, row);
+                unit.resolveAdminTable(onlytable, row);
                 CollectSocket socket = server.getSocket(unit.getIp(), unit.getPort());
                 if (socket == null) {
                     falseMessage("未选择单元或选择单元未连接!");
@@ -395,7 +395,7 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
     }
 
     @Override
-    public void loading() {
+    public void loadingData() {
 
     }
 
@@ -403,7 +403,7 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
         List<BaseUnitBean> units = unitService.getAll(clttype);
         List<Vector<Object>> vectors = new ArrayList<>();
         for (BaseUnitBean unit : units) {
-            Vector<Object> vector = unit.getSetTableCol();
+            Vector<Object> vector = unit.getAdminSetTableCol();
             vectors.add(vector);
         }
         tableModel.addDatas(vectors);
@@ -460,6 +460,16 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
             errorMessage("单元编号 " + unit_num + " IP地址输入有误");
             return false;
         }
+        String port = (String) onlytable.getValueAt(row, 4);
+        if (!(port == null || isNum(port))) {
+            errorMessage("单元编号 " + unit_num + " IP地址输入有误");
+            return false;
+        }
+        String place_value = (String) onlytable.getValueAt(row, 5);
+        if (!(place_value == null || isNum(place_value))) {
+            errorMessage("单元编号 " + unit_num + " 安装位置输入有误");
+            return false;
+        }
         return true;
     }
 
@@ -498,7 +508,8 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
             settotalfdbs.setVisible(false);
         }
     }
-    private void setEnable(boolean flag){
+
+    private void setEnable(boolean flag) {
         apply.setEnabled(flag);
         setfz.setEnabled(flag);
         setfdbs.setEnabled(flag);

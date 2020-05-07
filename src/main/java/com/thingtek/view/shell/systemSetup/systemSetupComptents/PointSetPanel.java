@@ -142,7 +142,7 @@ public class PointSetPanel extends BaseSystemPanel {
     }
 
     @Override
-    public void loading() {
+    public void loadingData() {
 
     }
 

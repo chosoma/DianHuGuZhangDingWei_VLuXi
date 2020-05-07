@@ -48,7 +48,6 @@ public class PipeSetPanel extends BaseSystemPanel {
         JPanel centertitle = new JPanel(new FlowLayout(FlowLayout.LEFT));
         centertitle.setBackground(factorys.getColorFactory().getColor("centertitle"));
 
-        refreshPipe();
 
         JScrollPane jspPoint = new JScrollPane(table);
         center.add(jspPoint, BorderLayout.CENTER);
@@ -68,7 +67,7 @@ public class PipeSetPanel extends BaseSystemPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 stopEditing();
-                int pipeid = pipeService.getUnHasPointNum();
+                int pipeid = pipeService.getUnHasPipeId();
                 if (pipeid == -1) {
                     errorMessage("添加失败,请稍后重试!");
                     return;
@@ -122,8 +121,8 @@ public class PipeSetPanel extends BaseSystemPanel {
     }
 
     @Override
-    public void loading() {
-
+    public void loadingData() {
+        refreshPipe();
     }
 
     private void setEnable(boolean flag) {

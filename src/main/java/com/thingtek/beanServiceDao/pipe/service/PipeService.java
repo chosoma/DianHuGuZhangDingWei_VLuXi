@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Vector;
 
 @Service
 public class PipeService extends BaseService {
@@ -16,7 +18,7 @@ public class PipeService extends BaseService {
 
     private List<PipeBean> pipes;
 
-    public boolean save(PipeBean... pipeBean) {
+    public boolean savePipe(PipeBean... pipeBean) {
         boolean flag = false;
         try {
             flag = dao.save(pipeBean);
@@ -66,17 +68,31 @@ public class PipeService extends BaseService {
         return null;
     }
 
-    public List<PipeBean> findAll() {
-        List<PipeBean> pipes = new ArrayList<>();
-        try {
-            pipes = dao.findAll();
-        } catch (Exception e) {
-            log(e);
+    public PipeBean getPipeByName(String pipe_name) {
+        cache();
+        for (PipeBean pipe : pipes) {
+            if (Objects.equals(pipe_name, pipe.getPipe_name())) {
+                return pipe;
+            }
         }
+        return null;
+    }
+
+    public Vector<String> getPipeNames() {
+        cache();
+        Vector<String> names = new Vector<>();
+        for (PipeBean pipe : pipes) {
+            names.add(pipe.getPipe_name());
+        }
+        return names;
+    }
+
+    public List<PipeBean> findAll() {
+        cache();
         return pipes;
     }
 
-    public int getUnHasPointNum() {
+    public int getUnHasPipeId() {
         cache();
         List<Integer> nums = new ArrayList<>();
         for (PipeBean pipe : pipes) {
@@ -87,7 +103,7 @@ public class PipeService extends BaseService {
                 PipeBean pipe = new PipeBean();
                 pipe.setPipe_id(i);
                 pipe.setPipe_name(i + "#");
-                save(pipe);
+                savePipe(pipe);
                 return i;
             }
         }

@@ -22,7 +22,8 @@
                     <map>
                         <entry key="管体管理" value-ref="pipeSetPanel"/>
                         <entry key="测点管理" value-ref="pointSetPanel"/>
-                        <entry key="单元管理" value-ref="unitSetPanel"/>
+                        <entry key="单元管理" value-ref="LXUnitSetPanel"/>
+                        <entry key="单元设置" value-ref="unitSetPanel"/>
                         <entry key="硬件设置" value-ref="adminSetPanel"/>
                     </map>
                 </entry>
@@ -77,6 +78,10 @@
         <!--                <property name="show" value="false"/>-->
     </bean>
     <bean name="unitSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitSetPanel">
+        <property name="show" value="true"/>
+        <!--        <property name="show" value="false"/>-->
+    </bean>
+    <bean name="LXUnitSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel">
         <property name="show" value="true"/>
         <!--        <property name="show" value="false"/>-->
     </bean>

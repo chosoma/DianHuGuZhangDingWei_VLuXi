@@ -1,6 +1,7 @@
 package com.thingtek.beanServiceDao.unit.base;
 
 import com.thingtek.beanServiceDao.clt.entity.CltBean;
+import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import com.thingtek.beanServiceDao.point.entity.PointBean;
 import lombok.Data;
 
@@ -18,6 +19,8 @@ public abstract class BaseUnitBean {
     protected Map<String, Object> one;
     protected CltBean clt;
     protected String data_table_name;
+    protected PipeBean pipe;
+    protected int pipe_id;
 
     protected BaseUnitBean() {
         one = new HashMap<>();
@@ -42,7 +45,10 @@ public abstract class BaseUnitBean {
         one.put("PHASE", phase);
     }
 
-    public abstract void resolveInputTable(JTable table, int row);
+    public void resolveLXTable(JTable table, int row) {
+    }
+
+    public abstract void resolveAdminTable(JTable table, int row);
 
     public Vector<Object> getTableCol() {
         Vector<Object> vector = new Vector<>();
@@ -52,9 +58,15 @@ public abstract class BaseUnitBean {
         return vector;
     }
 
-    public abstract Vector<Object> getSetTableCol();
+    public Vector<Object> getLXTableCol() {
+        Vector<Object> vector = new Vector<>();
+        vector.add(unit_num);
+        return vector;
+    }
 
-    public abstract Vector<Object> getSetTotalTableCol();
+    public abstract Vector<Object> getAdminSetTableCol();
+
+    public abstract Vector<Object> getAdminSetTotalTableCol();
 
     public Object get(String key) {
         return one.get(key);

@@ -65,6 +65,7 @@ public abstract class BaseSystemPanel extends JPanel {
         initTitle();
         initCenter();
         initToolbar();
+        loadingData();
         return this;
     }
 
@@ -206,7 +207,7 @@ public abstract class BaseSystemPanel extends JPanel {
         return text.matches(ipreg);
     }
 
-    public abstract void loading();
+    public abstract void loadingData();
     /*public void refresh() {}*/
 
 }

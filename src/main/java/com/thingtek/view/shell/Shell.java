@@ -167,7 +167,7 @@ public class Shell extends JFrame {
                     }
                 });
             }
-//            panel.loading();
+//            panel.loadingData();
         }
     }
 

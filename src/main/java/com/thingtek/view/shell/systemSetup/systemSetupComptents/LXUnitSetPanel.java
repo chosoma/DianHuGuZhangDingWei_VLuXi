@@ -1,15 +1,17 @@
 package com.thingtek.view.shell.systemSetup.systemSetupComptents;
 
 import com.thingtek.beanServiceDao.clt.entity.CltBean;
+import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import com.thingtek.beanServiceDao.point.entity.PointBean;
 import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
-import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.config.clazz.ClazzConfig;
 import com.thingtek.socket.CollectServer;
+import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.view.component.button.EditButton;
 import com.thingtek.view.component.dialog.AddUnitDialog;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.BaseTableModel;
+import com.thingtek.view.component.tablemodel.LXUnitTableModel;
 import com.thingtek.view.component.tablemodel.TableConfig;
 import com.thingtek.view.shell.DataPanel;
 import com.thingtek.view.shell.Shell;
@@ -18,16 +20,16 @@ import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemP
 
 import javax.annotation.Resource;
 import javax.swing.*;
+import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class UnitSetPanel extends BaseSystemPanel {
-    private int clttype = -1;
+public class LXUnitSetPanel extends BaseSystemPanel {
+    private int clttype = 4;
 
     public int getClttype() {
         return clttype;
@@ -41,8 +43,8 @@ public class UnitSetPanel extends BaseSystemPanel {
     private SocketAgreement agreement;
 
     private JTable table;
-
-    private BaseTableModel tableModel;
+    @Resource
+    private LXUnitTableModel tableModel;
     @Resource
     private TableConfig tableConfig;
 
@@ -54,6 +56,7 @@ public class UnitSetPanel extends BaseSystemPanel {
     protected void initCenter() {
         super.initCenter();
         table = new JTable();
+        table.setModel(tableModel);
 
         JPanel center = new JPanel(new BorderLayout());
         addCenter(center);
@@ -75,29 +78,12 @@ public class UnitSetPanel extends BaseSystemPanel {
                     case 4:
                         break;
                 }
-                tableModel = tableConfig.getUnitModel(clt.getType_name());
-                table.setModel(tableModel);
-                for (int i = 0; i < table.getColumnCount(); i++) {
-                    TableColumn tableColumn = table.getColumnModel().getColumn(i);
-                    JComboBox<String> comboBox;
-                    switch (i) {
-                        case 1:
-                            comboBox = new JComboBox<>(pointService.getPointNames(clttype));
-                            tableColumn.setCellEditor(new DefaultCellEditor(comboBox));
-                            break;
-                        case 2:
-                            comboBox = new JComboBox<>(new String[]{"A", "B", "C"});
-                            tableColumn.setCellEditor(new DefaultCellEditor(comboBox));
-                            break;
-                        case 3:
-                            break;
-                    }
-                }
-                refreshUnit();
+
+//                refreshUnit();
             }
         });
         centertitle.add(clttypes);
-        EditButton refresh = new EditButton("刷新",factorys.getIconFactory().getIcon("refresh"));
+        EditButton refresh = new EditButton("刷新", factorys.getIconFactory().getIcon("refresh"));
         refresh.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -108,7 +94,7 @@ public class UnitSetPanel extends BaseSystemPanel {
             }
         });
         centertitle.add(refresh);
-        center.add(centertitle, BorderLayout.NORTH);
+//        center.add(centertitle, BorderLayout.NORTH);
         JScrollPane jspTable = new JScrollPane(table);
         center.add(jspTable, BorderLayout.CENTER);
         initializeTable();
@@ -121,7 +107,14 @@ public class UnitSetPanel extends BaseSystemPanel {
     @Override
     protected void initToolbar() {
         super.initToolbar();
-        add = addTool("添加单元", "add");
+        EditButton refresh = addTool("刷新", "refresh");
+        refresh.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                refreshUnit();
+            }
+        });
+        add = addTool("添加", "add");
         add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -129,7 +122,7 @@ public class UnitSetPanel extends BaseSystemPanel {
                     return;
                 }
                 stopEditing();
-                AddUnitDialog unitDialog = new AddUnitDialog(shell, "添加单元", factorys.getIconFactory().getImage("set"));
+                AddUnitDialog unitDialog = new AddUnitDialog(shell, "添加", factorys.getIconFactory().getImage("set"));
                 unitDialog.setFactorys(factorys);
                 unitDialog.setUnitService(unitService);
                 unitDialog.setPointService(pointService);
@@ -145,7 +138,7 @@ public class UnitSetPanel extends BaseSystemPanel {
             }
         });
 
-        delete = addTool("删除单元", "delete");
+        delete = addTool("删除", "delete");
         delete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -163,12 +156,8 @@ public class UnitSetPanel extends BaseSystemPanel {
                     Short unitnum = (Short) table.getValueAt(rows[i], 0);
                     unitnums[i] = unitnum;
                 }
-                if (unitService.deleteUnitByNum(clttype, unitnums)) {
-                    successMessage("删除成功!");
-                    refreshUnit();
-                } else {
-                    falseMessage("删除失败!");
-                }
+                unitService.deleteUnitByNum(clttype, unitnums);
+                refreshUnit();
             }
         });
         apply = addTool("保存", "apply");
@@ -186,30 +175,58 @@ public class UnitSetPanel extends BaseSystemPanel {
                 List<BaseUnitBean> units = new ArrayList<>();
                 for (int i = 0; i < table.getRowCount(); i++) {
                     BaseUnitBean unit = unitService.getUnitByNumber(clttype, (Short) table.getValueAt(i, 0));
-                    unit.resolveTable(table, i);
-                    String point_name = (String) table.getValueAt(i, 1);
-                    PointBean point = pointService.getPointByName(clttype, point_name);
-                    if (point != null) {
-                        unit.setPoint(point);
-                        unit.setPoint_num(point.getPoint_num());
+                    unit.resolveLXTable(table, i);
+                    String pipe_name = (String) table.getValueAt(i, 1);
+                    PipeBean pipe = pipeService.getPipeByName(pipe_name);
+                    if (pipe != null) {
+                        unit.setPipe(pipe);
+                        unit.setPipe_id(pipe.getPipe_id());
                     }
                     unit.resolve2map();
                     units.add(unit);
                 }
                 if (unitService.updateUnit(clttype, units.toArray(new BaseUnitBean[0]))) {
                     successMessage("保存成功");
-                    refreshUnit();
-                } else {
-                    falseMessage("保存失败");
                 }
+                refreshUnit();
             }
         });
-        setEnable(false);
+//        setEnable(false);
     }
+
+    private JComboBox<String> jcbpipenames;
 
     @Override
     public void loadingData() {
-
+        JComboBox<Integer> jcbpages = new JComboBox<>();
+        jcbpipenames = new JComboBox<>(pipeService.getPipeNames());
+        table.getColumnModel().getColumn(1).setCellEditor(new DefaultCellEditor(jcbpipenames));
+        table.getColumnModel().getColumn(2).setCellEditor(new DefaultCellEditor(jcbpages));
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                PipeBean pipeBean = pipeService.getPipeByName((String) table.getValueAt(table.getSelectedRow(), 1));
+                int pipe_page = pipeBean.getPipe_page();
+                Vector<Integer> vector = new Vector<>();
+                for (int i = 1; i <= pipe_page; i++) {
+                    vector.add(i);
+                }
+                jcbpages.setModel(new DefaultComboBoxModel<>(vector));
+            }
+        });
+        jcbpipenames.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                PipeBean pipeBean = pipeService.getPipeByName((String) e.getItem());
+                int pipe_page = pipeBean.getPipe_page();
+                Vector<Integer> vector = new Vector<>();
+                for (int i = 1; i <= pipe_page; i++) {
+                    vector.add(i);
+                }
+                jcbpages.setModel(new DefaultComboBoxModel<>(vector));
+            }
+        });
+        refreshUnit();
     }
 
     private void setEnable(boolean flag) {
@@ -219,13 +236,15 @@ public class UnitSetPanel extends BaseSystemPanel {
     }
 
     public void refreshUnit() {
+        stopEditing();
         List<BaseUnitBean> units = unitService.getAll(clttype);
         List<Vector<Object>> vectors = new ArrayList<>();
         for (BaseUnitBean unit : units) {
-            Vector<Object> vector = unit.getTableCol();
+            Vector<Object> vector = unit.getLXTableCol();
             vectors.add(vector);
         }
         tableModel.addDatas(vectors);
+
         for (BaseCollectPanel collectPanel : logoInfo.getCollectPanelMap().values()) {
             if (collectPanel.getClttype() == clttype) {
                 collectPanel.refreshPoint();
@@ -234,6 +253,8 @@ public class UnitSetPanel extends BaseSystemPanel {
         for (DataPanel dataPanel : logoInfo.getDataPanels()) {
             dataPanel.refreashData();
         }
+
+        jcbpipenames.setModel(new DefaultComboBoxModel<>(pipeService.getPipeNames()));
 
     }
 

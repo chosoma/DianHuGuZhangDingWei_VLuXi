@@ -15,7 +15,8 @@ public class DisUnitAdminTableModel extends BaseTableModel {
                 Integer.class,
                 Integer.class,
                 String.class,
-                String.class
+                String.class,
+                Integer.class,
         };
     }
 
@@ -31,6 +32,7 @@ public class DisUnitAdminTableModel extends BaseTableModel {
         column.add("放大倍数");
         column.add("IP地址");
         column.add("端口号");
+        column.add("安装位置");
         this.setDataVector(row, column);
     }
 
