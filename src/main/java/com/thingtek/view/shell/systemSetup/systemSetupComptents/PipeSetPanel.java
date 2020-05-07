@@ -1,7 +1,6 @@
 package com.thingtek.view.shell.systemSetup.systemSetupComptents;
 
 import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
-import com.thingtek.beanServiceDao.point.entity.PointBean;
 import com.thingtek.view.component.button.EditButton;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.PipeTableModel;
@@ -40,29 +39,20 @@ public class PipeSetPanel extends BaseSystemPanel {
     @Override
     protected void initCenter() {
         super.initCenter();
-
         JPanel center = new JPanel(new BorderLayout());
         addCenter(center);
-
         table = new JTable(tablemodel);
         JPanel centertitle = new JPanel(new FlowLayout(FlowLayout.LEFT));
         centertitle.setBackground(factorys.getColorFactory().getColor("centertitle"));
-
-
         JScrollPane jspPoint = new JScrollPane(table);
         center.add(jspPoint, BorderLayout.CENTER);
-
     }
-
-    private EditButton add;
-    private EditButton delete;
-    private EditButton apply;
 
     @Override
     protected void initToolbar() {
         super.initToolbar();
 
-        add = addTool("添加", "add");
+        EditButton add = addTool("添加", "add");
         add.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -75,7 +65,7 @@ public class PipeSetPanel extends BaseSystemPanel {
                 refreshPipe();
             }
         });
-        delete = addTool("删除", "delete");
+        EditButton delete = addTool("删除", "delete");
         delete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -94,13 +84,17 @@ public class PipeSetPanel extends BaseSystemPanel {
                 refreshPipe();
             }
         });
-        apply = addTool("保存", "apply");
+        EditButton apply = addTool("保存", "apply");
         apply.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 stopEditing();
                 if (!checkinput()) {
                     refreshPipe();
+                    return;
+                }
+                if (table.isEditing()) {
+                    errorMessage("您有内容输入有误!");
                     return;
                 }
                 for (int i = 0; i < table.getRowCount(); i++) {
@@ -125,12 +119,6 @@ public class PipeSetPanel extends BaseSystemPanel {
         refreshPipe();
     }
 
-    private void setEnable(boolean flag) {
-        add.setEnabled(flag);
-        delete.setEnabled(flag);
-        apply.setEnabled(flag);
-    }
-
     private void refreshPipe() {
         List<PipeBean> pipes = pipeService.findAll();
         List<Vector<Object>> vectors = new ArrayList<>();
@@ -146,9 +134,14 @@ public class PipeSetPanel extends BaseSystemPanel {
     }
 
     private boolean checkinput() {
-        Vector<PointBean> points = new Vector<>();
         for (int i = 0; i < table.getRowCount(); i++) {
-
+            int id = (int) table.getValueAt(i, 0);
+            Object object = table.getValueAt(i, 2);
+            String strnum = String.valueOf(object);
+            if (!isInt(strnum)) {
+                errorMessage("管体 " + id + " 分段请输入整数!");
+                return false;
+            }
         }
         return true;
     }

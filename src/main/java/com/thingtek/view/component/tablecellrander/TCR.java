@@ -4,7 +4,6 @@ import com.thingtek.util.Util;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.component.tablemodel.BaseTableModel;
 import com.thingtek.view.component.tablemodel.TableConfig;
-import com.thingtek.view.component.tablemodel.TableModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -34,6 +33,8 @@ class TCR extends DefaultTableCellRenderer {
         setHorizontalAlignment(SwingConstants.CENTER);
     }
 
+    private Color colortrue = new Color(50, 200, 50), colorfalse = new Color(200, 50, 50);
+
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
@@ -61,6 +62,13 @@ class TCR extends DefaultTableCellRenderer {
             } else if (value instanceof Float || value instanceof Double) {
                 s = new DecimalFormat("#0.00").format(value);
 //                s = new DecimalFormat(tableConfig.getDecimalReg(collect_name)).format(value);
+            } else if (value instanceof Boolean) {
+                boolean bool = (boolean) value;
+                if (bool) {
+                    setBackground(colortrue);
+                } else {
+                    setBackground(colorfalse);
+                }
             } else {
                 s = value.toString();
             }

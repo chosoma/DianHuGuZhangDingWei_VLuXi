@@ -4,4 +4,5 @@
   <serverport>1024</serverport>
   <serverankport>3456</serverankport>
   <mcip>192.168.1.250</mcip>
+  <mcport>1234</mcport>
 </property>

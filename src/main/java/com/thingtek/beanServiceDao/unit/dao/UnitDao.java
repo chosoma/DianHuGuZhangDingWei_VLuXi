@@ -13,7 +13,11 @@ public interface UnitDao {
 
     boolean saveUnit(@Param("clt_type") int clttype, @Param("units") BaseUnitBean... unitBean) throws Exception;
 
+    boolean saveLXUnit(@Param("units")BaseUnitBean... unitBean) throws Exception;
+
     boolean update(@Param("clt_type") int clttype, @Param("unit") Map<String, Object> one) throws Exception;
+
+    boolean updateLXUnit(Map<String, Object> one) throws Exception;
 
     boolean deleteUnitByNum(@Param("clt_type") int clttype, @Param("unit_nums") short... unit_num) throws Exception;
 

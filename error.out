@@ -9340,3 +9340,315 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
 	... 39 more
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO                           UNIT_DIS                       (         UNIT_NUM         ,POINT_NUM         ,PHASE         ,DATA_TABLE_NAME         )         VALUES          (                 ?             , ?             , ?             , ?          )          ON DUPLICATE KEY UPDATE         POINT_NUM = ?         , PHASE = ?         , DATA_TABLE_NAME = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null
+; SQL []; Column 'POINT_NUM' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null  2020-05-07 13:15:21
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: INSERT INTO                           UNIT_DIS                       (         UNIT_NUM         ,POINT_NUM         ,PHASE         ,DATA_TABLE_NAME         )         VALUES          (                 ?             , ?             , ?             , ?          )          ON DUPLICATE KEY UPDATE         POINT_NUM = ?         , PHASE = ?         , DATA_TABLE_NAME = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null
+; SQL []; Column 'POINT_NUM' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT_NUM' cannot be null  2020-05-07 13:29:49
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'units' not found. Available parameters are [array]  2020-05-07 13:45:49
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VAVLUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VAVLUE' in 'field list'  2020-05-07 14:11:24
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE                           UNIT_DIS                       UNIT         SET         POINT_NUM = ?         ,PHASE = ?                           ,FZ = ?                 ,FDBS = ?                 ,IP = ?                 ,PORT = ?                 ,POINT_VALUE = ?           WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'POINT_VALUE' in 'field list'  2020-05-07 14:11:53
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  java.lang.NullPointerException  2020-05-07 15:47:58
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  java.lang.NullPointerException  2020-05-07 15:48:48
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.service.BaseService.log(10)|  java.lang.NullPointerException  2020-05-07 15:51:27

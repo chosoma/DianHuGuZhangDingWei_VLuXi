@@ -26,6 +26,7 @@
                 ,UNIT.FDBS AS FDBS
                 ,UNIT.IP AS IP
                 ,UNIT.PORT AS PORT
+                ,UNIT.PLACE_VALUE AS PLACE_VALUE
                 FROM UNIT_DIS UNIT
             </when>
         </choose>
@@ -53,6 +54,25 @@
                 ,FDBS = #{unit.FDBS}
                 ,IP = #{unit.IP}
                 ,PORT = #{unit.PORT}
+                ,PLACE_VALUE = #{unit.PLACE_VALUE}</when>
+        </choose>
+        <where>
+            UNIT_NUM = #{unit.UNIT_NUM}
+        </where>
+    </update>
+    <update id="updateLXUnit">
+        UPDATE
+        UNIT_DIS UNIT
+        SET
+        PIPE_ID = #{unit.PIPE_ID}
+        ,PIPE_PAGE = #{unit.PIPE_PAGE}
+        <choose>
+            <when test="clt_type == 4">
+                ,FZ = #{unit.FZ}
+                ,FDBS = #{unit.FDBS}
+                ,IP = #{unit.IP}
+                ,PORT = #{unit.PORT}
+                ,PLACE_VALUE = #{unit.PLACE_VALUE}
             </when>
         </choose>
         <where>
@@ -107,7 +127,7 @@
         )
         VALUES
         <foreach collection="units" open="(" separator="),(" close=")" item="unit">
-              #{unit.unit_num}
+            #{unit.unit_num}
             , #{unit.point_num}
             , #{unit.phase}
             , #{unit.data_table_name}
@@ -120,5 +140,27 @@
             <when test=" clt_type == 4 ">
             </when>
         </choose>
+    </insert>
+
+    <insert id="saveLXUnit">
+        INSERT INTO
+        UNIT_DIS
+        (
+        UNIT_NUM
+        ,PIPE_ID
+        ,PIPE_PAGE
+        ,DATA_TABLE_NAME
+        )
+        VALUES
+        <foreach collection="units" open="(" separator="),(" close=")" item="unit">
+            #{unit.unit_num}
+            , #{unit.pipe_id}
+            , #{unit.pipe_page}
+            , #{unit.data_table_name}
+        </foreach>
+        ON DUPLICATE KEY UPDATE
+        PIPE_ID = #{unit.pipe_id}
+        , PIPE_PAGE = #{unit.pipe_page}
+        , DATA_TABLE_NAME = #{unit.data_table_name}
     </insert>
 </mapper>

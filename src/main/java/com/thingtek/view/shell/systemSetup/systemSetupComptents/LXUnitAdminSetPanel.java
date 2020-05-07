@@ -19,14 +19,17 @@ import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemP
 import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-public class UnitAdminSetPanel extends BaseSystemPanel {
-    private int clttype = -1;
+public class LXUnitAdminSetPanel extends BaseSystemPanel {
+    private int clttype = 4;
 
     public int getClttype() {
         return clttype;
@@ -38,13 +41,9 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
     private SocketAgreement agreement;
 
     private JTable onlytable;
-    private JTable totaltable;
     @Resource
     private DisUnitAdminTableModel tableModel;
-    @Resource
-    private DisUnitAdminTotalTableModel totalTableModel;
 
-    private JComboBox<String> clttypes;
     @Resource
     private PortConfig portConfig;
 
@@ -52,35 +51,13 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
     protected void initCenter() {
         super.initCenter();
         onlytable = new JTable();
-        totaltable = new JTable();
 
         JPanel center = new JPanel(new BorderLayout());
         addCenter(center);
         JPanel centertitle = new JPanel(new FlowLayout(FlowLayout.LEFT));
         centertitle.setBackground(factorys.getColorFactory().getColor("centertitle"));
-        centertitle.add(new JLabel("单元类型:"));
-        clttypes = new JComboBox<>(cltService.getCltNames());
-        clttypes.setSelectedItem(null);
-        clttypes.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent e) {
-                CltBean clt = cltService.getCltByName((String) clttypes.getSelectedItem());
-                clttype = clt.getType_num();
-                onlytable.setModel(tableModel);
-                totaltable.setModel(totalTableModel);
-                refreshUnit();
-                setEnable(true);
-            }
-        });
-        centertitle.add(clttypes);
-        EditButton refresh = new EditButton("刷新", factorys.getIconFactory().getIcon("refresh"));
-        refresh.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                refreshUnit();
-            }
-        });
-        centertitle.add(refresh);
+
+        onlytable.setModel(tableModel);
 
         JLabel jlmcip = new JLabel("脉冲IP:");
         centertitle.add(jlmcip);
@@ -88,6 +65,12 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
         jtfMCIP.setPreferredSize(new Dimension(100, 20));
         jtfMCIP.setText(portConfig.getMcip());
         centertitle.add(jtfMCIP);
+        JLabel jlmcport = new JLabel("脉冲端口:");
+        centertitle.add(jlmcport);
+        jtfMCPORT = new JTextField();
+        jtfMCPORT.setPreferredSize(new Dimension(50, 20));
+        jtfMCPORT.setText(String.valueOf(portConfig.getMcport()));
+        centertitle.add(jtfMCPORT);
         JLabel jlmc = new JLabel("脉冲间隔:");
         centertitle.add(jlmc);
         jtfMC = new JTextField();
@@ -105,14 +88,10 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                 }
                 int mc = Integer.parseInt(strmc);
                 try {
-                    String mcip = jtfMCIP.getText();
-                    if (!isIp(mcip)) {
-                        errorMessage("脉冲IP输入有误!");
+                    if (!checkmcip_port()) {
                         return;
                     }
-                    portConfig.setMcip(mcip);
-                    portConfig.refreshConfigXml();
-                    CollectSocket socket = server.getSocket(mcip);
+                    CollectSocket socket = server.getSocket(getmcip(), getmcport());
                     if (socket == null) {
                         falseMessage("脉冲板离线!");
                         return;
@@ -134,14 +113,10 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    String mcip = jtfMCIP.getText();
-                    if (!isIp(mcip)) {
-                        errorMessage("脉冲IP输入有误!");
+                    if (!checkmcip_port()) {
                         return;
                     }
-                    portConfig.setMcip(mcip);
-                    portConfig.refreshConfigXml();
-                    CollectSocket socket = server.getSocket(mcip);
+                    CollectSocket socket = server.getSocket(getmcip(), getmcport());
                     if (socket == null) {
                         falseMessage("脉冲板离线!");
                         return;
@@ -163,19 +138,46 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
         centerPanel = new JPanel(cardLayout);
         centerPanel.add(tablepanel, "only");
 
-        JPanel totaltablepanel = new JPanel(new BorderLayout());
-        JScrollPane jsptotalTable = new JScrollPane(totaltable);
-        totaltablepanel.add(jsptotalTable, BorderLayout.CENTER);
-        centerPanel.add(totaltablepanel, "total");
-
         center.add(centerPanel, BorderLayout.CENTER);
         initializeTable();
+    }
+
+    private boolean checkmcip_port() {
+        String mcip = jtfMCIP.getText();
+        if (!isIp(mcip)) {
+            errorMessage("脉冲IP输入有误!");
+            return false;
+        }
+        String strmcport = jtfMCPORT.getText();
+        if (!isNum(strmcport)) {
+            errorMessage("脉冲端口输入有误!");
+            return false;
+        }
+        int mcport = Integer.parseInt(strmcport);
+        if (mcport < 5000 || mcport > 65535) {
+            errorMessage("脉冲端口输入有误!");
+            return false;
+        }
+        portConfig.setMcip(mcip);
+        portConfig.setMcport(mcport);
+        portConfig.refreshConfigXml();
+        return true;
+    }
+
+    private String getmcip() {
+        return jtfMCIP.getText();
+    }
+
+    private int getmcport() {
+        String strmcport = jtfMCPORT.getText();
+        return Integer.parseInt(strmcport);
     }
 
     private JPanel centerPanel;
     private CardLayout cardLayout = new CardLayout();
     private boolean centerflag = false;
     private JTextField jtfMCIP;
+    private JTextField jtfMCPORT;
     private EditButton totalset;
     private EditButton apply;
     private EditButton setfz;
@@ -191,16 +193,23 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
     @Override
     protected void initToolbar() {
         super.initToolbar();
+        EditButton refresh = addTool("刷新", "refresh");
+        refresh.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                refreshUnit();
+            }
+        });
         totalset = addTool("批量设置", "set");
         totalset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (centerflag) {
-                    cardLayout.show(centerPanel, "only");
+//                    cardLayout.show(centerPanel, "only");
                     totalset.setText("批量设置");
                     centerflag = false;
                 } else {
-                    cardLayout.show(centerPanel, "total");
+//                    cardLayout.show(centerPanel, "total");
                     totalset.setText("单个设置");
                     centerflag = true;
                 }
@@ -347,12 +356,15 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                     if (socket == null) {
                         continue;
                     }
+                    unit.setFz(fz);
                     try {
                         socket.sendMSG(s2g.getResult());
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
                 }
+                unitService.updateUnit(clttype, units.toArray(new BaseUnitBean[0]));
+                refreshUnit();
             }
         });
         jtftotalfdbs = new JTextField();
@@ -383,19 +395,22 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
                     if (socket == null) {
                         continue;
                     }
+                    unit.setFdbs(fdbs);
                     try {
                         socket.sendMSG(s2g.getResult());
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
                 }
+                unitService.updateUnit(clttype, units.toArray(new BaseUnitBean[0]));
+                refreshUnit();
             }
         });
-        setEnable(false);
     }
 
     @Override
     public void loadingData() {
+        refreshUnit();
 
     }
 
@@ -407,7 +422,6 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
             vectors.add(vector);
         }
         tableModel.addDatas(vectors);
-        totalTableModel.addDatas(vectors);
         for (BaseCollectPanel collectPanel : logoInfo.getCollectPanelMap().values()) {
             if (collectPanel.getClttype() == clttype) {
                 collectPanel.refreshPoint();
@@ -489,7 +503,6 @@ public class UnitAdminSetPanel extends BaseSystemPanel {
 
     private void initializeTable() {
         tcr.initializeTable(onlytable);
-        tcr.initializeTable(totaltable);
     }
 
     private void refreshVisible() {

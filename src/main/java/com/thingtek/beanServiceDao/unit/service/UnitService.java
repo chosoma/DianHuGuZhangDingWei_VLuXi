@@ -70,6 +70,24 @@ public class UnitService extends BaseService {
         return flag;
     }
 
+    public boolean saveLXUnit(BaseUnitBean unitBean) {
+        boolean flag = false;
+        try {
+            unitBean.resolve2map();
+            String unit_data_name = "unit_data_" + unitBean.getUnit_num();
+            unitBean.setData_table_name(unit_data_name);
+            dao.createDataTable(unit_data_name);
+            flag = dao.saveLXUnit(unitBean);
+        } catch (Exception e) {
+            log(e);
+        }
+        if (flag) {
+            unitList.clear();
+            cache();
+        }
+        return flag;
+    }
+
     /*public List<DisUnitBean> getAll() {
         cache();
         return units;

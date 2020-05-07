@@ -1,12 +1,7 @@
 package com.thingtek.view.shell.dataCollect.base;
 
-import com.thingtek.beanServiceDao.data.base.BaseDataBean;
 import com.thingtek.beanServiceDao.data.entity.DisDataBean;
-import com.thingtek.beanServiceDao.warn.entity.WarnBean;
-import com.thingtek.beanServiceDao.warn.service.WarnService;
 import com.thingtek.view.shell.BasePanel;
-
-import javax.annotation.Resource;
 
 public abstract class BaseCollectPanel extends BasePanel {
 

@@ -21,10 +21,11 @@
                 <entry key="系统设置">
                     <map>
                         <entry key="管体管理" value-ref="pipeSetPanel"/>
-                        <entry key="测点管理" value-ref="pointSetPanel"/>
+<!--                        <entry key="测点管理" value-ref="pointSetPanel"/>-->
                         <entry key="单元管理" value-ref="LXUnitSetPanel"/>
-                        <entry key="单元设置" value-ref="unitSetPanel"/>
-                        <entry key="硬件设置" value-ref="adminSetPanel"/>
+<!--                        <entry key="单元设置" value-ref="unitSetPanel"/>-->
+                        <entry key="硬件管理" value-ref="LXadminSetPanel"/>
+<!--                        <entry key="硬件设置" value-ref="adminSetPanel"/>-->
                     </map>
                 </entry>
             </map>
@@ -43,7 +44,7 @@
         </property>
     </bean>
     <bean name="home" class="com.thingtek.view.shell.homePage.HomePanel">
-        <property name="logoinfo" value="© CopyRight 江苏安靠智能输电工程科技股份有限公司"/>
+        <property name="logoinfo" value="© CopyRight 无锡讯泰科技有限公司"/>
         <property name="show" value="true"/>
     </bean>
     <bean name="debugs" class="com.thingtek.view.shell.debugs.Debugs">
@@ -86,6 +87,9 @@
         <!--        <property name="show" value="false"/>-->
     </bean>
     <bean name="adminSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitAdminSetPanel">
+        <property name="show" value="true"/>
+    </bean>
+    <bean name="LXadminSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel">
         <property name="show" value="true"/>
     </bean>
 

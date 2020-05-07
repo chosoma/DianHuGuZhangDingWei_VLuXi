@@ -21,7 +21,7 @@ import java.util.Set;
  * 数据采集
  */
 
-public class DataCollectPanel extends BasePanel implements DataPanel {
+public class LXDataCollectPanel extends BasePanel implements DataPanel {
     @Resource
     private LogoInfo logoInfo;
 
@@ -32,7 +32,7 @@ public class DataCollectPanel extends BasePanel implements DataPanel {
     }
 
     @Override
-    public DataCollectPanel init() {
+    public LXDataCollectPanel init() {
         setLayout(new BorderLayout());
         setOpaque(false);
         initLeft();

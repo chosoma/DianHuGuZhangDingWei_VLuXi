@@ -18,6 +18,7 @@ import java.io.*;
 @Component
 public class PortConfig extends BaseService {
     private String mcip;
+    private int mcport;
     private int port;
     private int portank;
 
@@ -31,6 +32,14 @@ public class PortConfig extends BaseService {
 
     public void setMcip(String mcip) {
         this.mcip = mcip;
+    }
+
+    public int getMcport() {
+        return mcport;
+    }
+
+    public void setMcport(int mcport) {
+        this.mcport = mcport;
     }
 
     public int getPort() {
@@ -54,11 +63,16 @@ public class PortConfig extends BaseService {
                 SAXReader reader = new SAXReader();
                 Document document = reader.read(configfile);
                 Element root = document.getRootElement();
-
-                port = Integer.parseInt(root.element("serverport").getText());
-                portank = Integer.parseInt(root.element("serverportank").getText());
-                mcip = root.element("mcip").getText();
+                Element eleserverport = root.element("serverport");
+                port = Integer.parseInt(eleserverport.getText());
+                Element eleserverportand = root.element("serverankport");
+                portank = Integer.parseInt(eleserverportand.getText());
+                Element elemcip = root.element("mcip");
+                mcip = elemcip.getText();
+                Element elemcport = root.element("mcport");
+                mcport = Integer.parseInt(elemcport.getText());
             } catch (Exception e) {
+                log(e);
                 initDefault();
                 createConfigXML();
             }
@@ -77,6 +91,8 @@ public class PortConfig extends BaseService {
         serverankport.addText(String.valueOf(portank));
         Element mcipelement = root.addElement("mcip");
         mcipelement.addText(mcip);
+        Element mcportelement = root.addElement("mcport");
+        mcportelement.addText(String.valueOf(mcport));
         OutputFormat format = OutputFormat.createPrettyPrint();
         format.setEncoding("UTF-8");
         try {
@@ -102,6 +118,8 @@ public class PortConfig extends BaseService {
             Element root = document.getRootElement();
             Element mcipelement = root.element("mcip");
             mcipelement.setText(mcip);
+            Element mcportelement = root.element("mcport");
+            mcportelement.setText(String.valueOf(mcport));
             OutputFormat format = OutputFormat.createPrettyPrint();
             format.setEncoding("UTF-8");
             XMLWriter writer = new XMLWriter(new FileOutputStream(filename), format);
@@ -120,6 +138,7 @@ public class PortConfig extends BaseService {
         port = 1024;
         portank = 3456;
         mcip = "192.168.1.250";
+        mcport = 8888;
     }
 
 

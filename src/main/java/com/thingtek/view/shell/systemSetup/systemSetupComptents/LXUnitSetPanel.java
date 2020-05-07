@@ -8,6 +8,7 @@ import com.thingtek.config.clazz.ClazzConfig;
 import com.thingtek.socket.CollectServer;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.view.component.button.EditButton;
+import com.thingtek.view.component.dialog.AddLXUnitDialog;
 import com.thingtek.view.component.dialog.AddUnitDialog;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.BaseTableModel;
@@ -122,10 +123,10 @@ public class LXUnitSetPanel extends BaseSystemPanel {
                     return;
                 }
                 stopEditing();
-                AddUnitDialog unitDialog = new AddUnitDialog(shell, "添加", factorys.getIconFactory().getImage("set"));
+                AddLXUnitDialog unitDialog = new AddLXUnitDialog(shell, "添加", factorys.getIconFactory().getImage("set"));
                 unitDialog.setFactorys(factorys);
                 unitDialog.setUnitService(unitService);
-                unitDialog.setPointService(pointService);
+                unitDialog.setPipeService(pipeService);
                 unitDialog.setClazzConfig(clazzConfig);
                 unitDialog.setClttype(clttype);
                 unitDialog.initDialog().visible();

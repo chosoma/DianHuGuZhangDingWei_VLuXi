@@ -94,9 +94,7 @@ public class DisDataService extends BaseService {
         } catch (Exception e) {
             log(e);
         }
-        checkdata(datareturn.getData());
-
-
+//        checkdata(datareturn.getData());
         return datareturn;
     }
 

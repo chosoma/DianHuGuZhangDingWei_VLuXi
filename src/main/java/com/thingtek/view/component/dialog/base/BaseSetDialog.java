@@ -1,5 +1,6 @@
 package com.thingtek.view.component.dialog.base;
 
+import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.point.service.PointService;
 import com.thingtek.beanServiceDao.unit.service.UnitService;
 import com.thingtek.config.clazz.ClazzConfig;
@@ -15,6 +16,8 @@ public abstract class BaseSetDialog extends BaseDialog {
 
     protected PointService pointService;
 
+    protected PipeService pipeService;
+
     protected ClazzConfig clazzConfig;
 
     public BaseSetDialog(JFrame jFrame, String titleText, Image icon) {
@@ -27,6 +30,10 @@ public abstract class BaseSetDialog extends BaseDialog {
 
     public void setPointService(PointService pointService) {
         this.pointService = pointService;
+    }
+
+    public void setPipeService(PipeService pipeService) {
+        this.pipeService = pipeService;
     }
 
     public void setClazzConfig(ClazzConfig clazzConfig) {

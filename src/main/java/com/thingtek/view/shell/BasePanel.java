@@ -2,6 +2,8 @@ package com.thingtek.view.shell;
 
 import com.thingtek.beanServiceDao.clt.service.CltService;
 import com.thingtek.beanServiceDao.data.service.DisDataService;
+import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
+import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.point.service.PointService;
 import com.thingtek.beanServiceDao.unit.service.UnitService;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
@@ -24,6 +26,7 @@ public abstract class BasePanel extends JPanel {
     public void setWarn(boolean warn) {
         this.warn = warn;
     }
+
     public boolean isShow() {
         return show;
     }
@@ -51,6 +54,8 @@ public abstract class BasePanel extends JPanel {
     protected UnitService unitService;
     @Resource
     protected PointService pointService;
+    @Resource
+    protected PipeService pipeService;
     @Resource
     protected CltService cltService;
     @Resource
