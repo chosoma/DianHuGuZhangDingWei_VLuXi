@@ -1,20 +1,14 @@
 package com.thingtek.view.component.dialog.base;
 
 import com.thingtek.view.component.button.ChangeButton;
-import com.thingtek.view.shell.BasePanel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.Objects;
 
 public abstract class BaseMenuDialog extends BaseDialog {
 
-
-    protected java.util.List<Map<String, BasePanel>> panelList;
 
     public BaseMenuDialog(JFrame jFrame, String titleText, Image icon) {
         super(jFrame, titleText, icon);
@@ -30,7 +24,7 @@ public abstract class BaseMenuDialog extends BaseDialog {
 
     protected JPanel left, center; //left 左侧选择 center 右侧显示
 
-    protected CardLayout cardLayout;
+    private CardLayout cardLayout;
 
     @Override
     public void initCenter() {
@@ -51,16 +45,13 @@ public abstract class BaseMenuDialog extends BaseDialog {
 
     public void addItem(Component component, String text) {
         JButton button = new ChangeButton(text);
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                for (JButton button : collectTitleButtons) {
-                    if (button != e.getSource()) {
-                        button.setSelected(false);
-                    } else {
-                        button.setSelected(true);
-                        cardLayout.show(center, button.getText());
-                    }
+        button.addActionListener(e -> {
+            for (JButton button1 : collectTitleButtons) {
+                if (button1 != e.getSource()) {
+                    button1.setSelected(false);
+                } else {
+                    button1.setSelected(true);
+                    cardLayout.show(center, button1.getText());
                 }
             }
         });

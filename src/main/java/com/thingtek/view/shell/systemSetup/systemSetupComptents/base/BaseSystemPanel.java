@@ -1,9 +1,7 @@
 package com.thingtek.view.shell.systemSetup.systemSetupComptents.base;
 
-import com.thingtek.beanServiceDao.clt.service.CltService;
 import com.thingtek.beanServiceDao.pipe.service.PipeService;
-import com.thingtek.beanServiceDao.point.service.PointService;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.view.component.button.EditButton;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.logo.LogoInfo;
@@ -28,13 +26,7 @@ public abstract class BaseSystemPanel extends JPanel {
     protected Factorys factorys;
 
     @Resource
-    protected UnitService unitService;
-
-    @Resource
-    protected PointService pointService;
-
-    @Resource
-    protected CltService cltService;
+    protected LXUnitService unitService;
 
     @Resource
     protected LogoInfo logoInfo;

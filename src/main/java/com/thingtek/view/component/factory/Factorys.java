@@ -20,4 +20,5 @@ class Factorys {
     private MyIconFactory iconFactory;
     @Resource
     private MyInsetsFactory insetsFactory;
+
 }

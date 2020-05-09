@@ -9,18 +9,6 @@ public class EditButton extends JButton {
 
 	private Insets insets = new Insets(1, 1, 1, 1);
 
-	public EditButton() {
-		super();
-	}
-
-	public EditButton(String text) {
-		super(text, null);
-	}
-
-	public EditButton(Icon icon) {
-		super(null, icon);
-	}
-
 	public EditButton(String text, Icon icon) {
 		super(text, icon);
 	}

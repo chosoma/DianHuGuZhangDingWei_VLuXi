@@ -32,39 +32,21 @@ public class Debugs extends BasePanel {
 
         pop = new JPopupMenu();
         copy = new JMenuItem("复制");
-        copy.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jta.copy();
-            }
-        });
+        copy.addActionListener(e -> jta.copy());
         pop.add(copy);
 
         cut = new JMenuItem("剪切");
-        cut.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                cutText();
-            }
-        });
+        cut.addActionListener(e -> cutText());
         pop.add(cut);
 
         delete = new JMenuItem("删除");
-        delete.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                deleteText();
-            }
-        });
+        delete.addActionListener(e -> deleteText());
         pop.add(delete);
 
         clear = new JMenuItem("清空");
-        clear.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                jta.setText("");
-                jta.repaint();
-            }
+        clear.addActionListener(e -> {
+            jta.setText("");
+            jta.repaint();
         });
         pop.add(clear);
 

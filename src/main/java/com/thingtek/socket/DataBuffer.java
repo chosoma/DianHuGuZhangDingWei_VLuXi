@@ -2,15 +2,13 @@ package com.thingtek.socket;
 
 import com.thingtek.beanServiceDao.data.entity.DisDataBean;
 import com.thingtek.beanServiceDao.data.service.DisDataService;
-import com.thingtek.beanServiceDao.point.entity.PointBean;
-import com.thingtek.beanServiceDao.point.service.PointService;
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
+import com.thingtek.beanServiceDao.pipe.service.PipeService;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
-import com.thingtek.view.logo.LogoInfo;
-import com.thingtek.view.shell.dataCollect.DataCollectPanel;
-import com.thingtek.view.shell.dataCollect.base.BaseCollectPanel;
+import com.thingtek.view.shell.dataCollect.LXDataCollectPanel;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -21,9 +19,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 @Component
 public class DataBuffer {
-    private int clttype = 4;
     private Map<Short, Map<Integer, RawData[]>> buffer;//单元编号 , 大包编号  , 数据
-    private List<RawData[]> wholebuffer;
+    private final List<RawData[]> wholebuffer;
     // 数据处理线程
     private Thread dataThread;
 
@@ -32,13 +29,13 @@ public class DataBuffer {
     @Resource
     private DisDataService dataService;
     @Resource
-    private UnitService unitService;
+    private LXUnitService unitService;
+    @Resource
+    private PipeService pipeService;
     @Resource
     private WarnService warnService;
-    @Resource
-    private PointService pointService;
 
-    private Map<String, List<DisDataBean>> warnmap;
+    private Map<PipeBean, List<DisDataBean>> warnmap;
 
     public DataBuffer() {
         buffer = new HashMap<>();
@@ -52,7 +49,6 @@ public class DataBuffer {
     /**
      * 将有效长度为length的数据添加到数据缓冲区
      *
-     * @param //数据
      */
     public boolean receDatas(RawData rawData) {
         synchronized (wholebuffer) {
@@ -137,7 +133,7 @@ public class DataBuffer {
                             Thread.sleep(50);// 等待50毫秒
                             // 判断缓冲区数据是否达到最小数据长度,如果没有则线程休眠
                             if (wholebuffer.size() == 0) {
-//                                factory.saveData();// 数据存储
+//                                factory.saveDatas();// 数据存储
                                 con.await();//很关键
                             }
                             continue;
@@ -162,7 +158,7 @@ public class DataBuffer {
                         data.setServerindex(serverIndex);
                         int minindex = data.getData().length - data.getGatewayfrontindex() - serverIndex;
                         data.setMinindex(minindex);
-                        dataService.saveData(data);
+                        dataService.saveDatas(data);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -177,11 +173,11 @@ public class DataBuffer {
     }
 
     private void resolveWarning(DisDataBean data) {
-        String phase = addData(data);
-        if (phase == null) {
+        PipeBean pipe = addData(data);
+        if (pipe == null) {
             return;
         }
-        List<DisDataBean> datas = sort(phase);
+        List<DisDataBean> datas = sort(pipe);
         for (int i = 0; i < datas.size() - 1; i++) {
             DisDataBean data1 = datas.get(i);
             DisDataBean data2 = datas.get(i + 1);
@@ -202,8 +198,8 @@ public class DataBuffer {
             if (mat < 0) {
                 mat *= -1;
             }
-            int place1 = data1.getUnit().getPoint().getPlace_value();
-            int place2 = data2.getUnit().getPoint().getPlace_value();
+            int place1 = data1.getUnit().getPlace_value();
+            int place2 = data2.getUnit().getPlace_value();
             int juli = place1 - place2;
             if (juli < 0) {
                 juli *= -1;
@@ -218,18 +214,17 @@ public class DataBuffer {
                 //最终位置
                 double weizhi = (juli - msec * 5) / 2;
                 String str = "异常位置:" + (sj1 < sj2 ?
-                        data1.getUnit().getPoint().getPoint_name() :
-                        data2.getUnit().getPoint().getPoint_name())
+                        data1.getUnit().getPlace_name() :
+                        data2.getUnit().getPlace_name())
                         + "到"
                         + (sj1 >= sj2 ?
-                        data1.getUnit().getPoint().getPoint_name() :
-                        data2.getUnit().getPoint().getPoint_name()) + "( "
-                        + weizhi + " )米附近,相位:" + phase
+                        data1.getUnit().getPlace_name() :
+                        data2.getUnit().getPlace_name()) + "( "
+                        + weizhi + " )米附近,相位:" + pipe
                         + ",时间差:" + msec;
                 System.out.println(str);
                 WarnBean warnBean = new WarnBean();
-                warnBean.setClt_type(clttype);
-                warnBean.setPhase(phase);
+                warnBean.setPipe(pipe);
                 warnBean.setInserttime(data.getInserttime());
                 warnBean.setWarn_info(str);
                 warnService.save(warnBean);
@@ -245,49 +240,42 @@ public class DataBuffer {
         }
     }
 
-    private String addData(DisDataBean data) {
-        DisUnitBean unit = (DisUnitBean) unitService.getUnitByNumber(clttype, data.getUnit_num());
+    private PipeBean addData(DisDataBean data) {
+        LXUnitBean unit = unitService.getUnitByNumber( data.getUnit_num());
         if (unit == null) {
             return null;
         }
         data.setUnit(unit);
-        PointBean pointBean = pointService.getPointByNum(clttype, unit.getPoint_num());
-        if (pointBean == null) {
+        PipeBean pipeBean = pipeService.getPipeById(unit.getPipe_id());
+        if (pipeBean == null) {
             return null;
         }
-        unit.setPoint(pointBean);
+        unit.setPipe(pipeBean);
         List<DisDataBean> list;
-        if (warnmap.containsKey(unit.getPhase())) {
-            list = warnmap.get(unit.getPhase());
+        if (warnmap.containsKey(pipeBean)) {
+            list = warnmap.get(pipeBean);
         } else {
             list = new ArrayList<>();
         }
         list.add(data);
-        warnmap.put(unit.getPhase(), list);
+        warnmap.put(pipeBean, list);
         addDataWarn(data);
-        return unit.getPhase();
+        return  pipeBean;
     }
 
-    private List<DisDataBean> sort(String phase) {
-        List<DisDataBean> datas = warnmap.get(phase);
-        return datas;
+    private List<DisDataBean> sort(PipeBean pipeBean) {
+        return warnmap.get(pipeBean);
     }
 
     @Resource
-    private LogoInfo logoInfo;
-    @Resource
-    private DataCollectPanel collectPanel;
+    private LXDataCollectPanel collectPanel;
 
     private void addWarn(WarnBean warn) {
         collectPanel.addtablewarn(warn);
     }
 
     private void addDataWarn(DisDataBean warn) {
-        for (BaseCollectPanel collectPanel : logoInfo.getCollectPanelMap().values()) {
-            if (clttype == collectPanel.getClttype() && collectPanel.isWarn()) {
-                collectPanel.addWarn(warn);
-            }
-        }
+
     }
 
     public void close() {

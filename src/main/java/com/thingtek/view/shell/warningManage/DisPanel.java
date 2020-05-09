@@ -2,8 +2,8 @@ package com.thingtek.view.shell.warningManage;
 
 import com.thingtek.beanServiceDao.data.entity.DisDataBean;
 import com.thingtek.beanServiceDao.data.service.DisDataService;
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.data.entity.DataSearchPara;
 import com.thingtek.view.component.panel.Check2SPinner;
 import com.thingtek.view.component.tablecellrander.TCR;
@@ -14,8 +14,6 @@ import com.thingtek.view.shell.DataPanel;
 import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.*;
@@ -24,7 +22,7 @@ import java.util.List;
 /**
  * 图标 时间选择 曲线框
  */
-public class DisWarningPanel extends BasePanel implements DataPanel {
+public class DisPanel extends BasePanel implements DataPanel {
 
     private int maxlineshow = 5;//最大显示曲线数
     private int onepagecount;
@@ -37,9 +35,8 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         this.maxlineshow = maxlineshow;
     }
 
-    private int clttype = 4;
     @Resource
-    private UnitService unitService;
+    private LXUnitService unitService;
     @Resource
     private DisDataService dataService;
     @Resource
@@ -49,7 +46,6 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
 
     private Check2SPinner c1;
     private Check2SPinner c2;
-    private JSplitPane center;
     private JPanel left;
     private JPanel leftcenter;
     private CardLayout leftcard;
@@ -62,9 +58,9 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
     }
 
     @Override
-    public DisWarningPanel init() {
+    public DisPanel init() {
         this.setLayout(new BorderLayout());
-        center = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        JSplitPane center = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
         center.setDividerLocation(400);//设置分隔条位置
 //        center.setLayout(new BorderLayout());
 //        center.add(linePanel, BorderLayout.CENTER);
@@ -76,11 +72,6 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         this.add(center, BorderLayout.CENTER);
         return this;
     }
-
-    private JButton head;
-    private JButton tail;
-    private JButton back;
-    private JButton next;
 
     private JButton search;
     private JButton delete;
@@ -107,66 +98,51 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         leftbottom.add(c1);
         leftbottom.add(c2);
         search = new JButton("查询");
-        search.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                showwait_left();
-                getSearchPara();
-                refreashData();
-            }
+        search.addActionListener(e -> {
+            showwait_left();
+            getSearchPara();
+            refreashData();
         });
         leftbottom.add(search);
         delete = new JButton("删除");
-        delete.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Vector<DisDataBean> datas = getSelectInfos();
-                if (datas.size() <= 0) {
-                    errorMessage("请选择要删除的信息");
-                    return;
-                }
-                int option = JOptionPane.showConfirmDialog(null, "确定删除?", "删除", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
-                if (option == JOptionPane.CANCEL_OPTION) {
-                    return;
-                }
-                showwait_left();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        final Map<DisUnitBean, List<Date>> datamap = getDateMap(datas);
-                        dataService.deleteData(datamap);
-                        refreashData();
-                    }
-                }).start();
-                rightcard.show(right, "null");
-
+        delete.addActionListener(e -> {
+            Vector<DisDataBean> datas = getSelectInfos();
+            if (datas.size() <= 0) {
+                errorMessage("请选择要删除的信息");
+                return;
             }
+            int option = JOptionPane.showConfirmDialog(null, "确定删除?", "删除", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
+            if (option == JOptionPane.CANCEL_OPTION) {
+                return;
+            }
+            showwait_left();
+            new Thread(() -> {
+                final Map<LXUnitBean, List<Date>> datamap = getDateMap(datas);
+                dataService.deleteData(datamap);
+                refreashData();
+            }).start();
+            rightcard.show(right, "null");
+
         });
 
         clear = new JButton("清空");
-        clear.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Vector<DisDataBean> datas = getAllInfos();
-                if (datas.size() <= 0) {
-                    errorMessage("当前表中无数据");
-                    return;
-                }
-                int option = JOptionPane.showConfirmDialog(null, "确定清空?", "清空", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
-                if (option == JOptionPane.CANCEL_OPTION) {
-                    return;
-                }
-                showwait_left();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Map<DisUnitBean, List<Date>> datamap = getDateMap(datas);
-                        dataService.deleteData(datamap);
-                        refreashData();
-                    }
-                }).start();
-                rightcard.show(right, "null");
+        clear.addActionListener(e -> {
+            Vector<DisDataBean> datas = getAllInfos();
+            if (datas.size() <= 0) {
+                errorMessage("当前表中无数据");
+                return;
             }
+            int option = JOptionPane.showConfirmDialog(null, "确定清空?", "清空", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
+            if (option == JOptionPane.CANCEL_OPTION) {
+                return;
+            }
+            showwait_left();
+            new Thread(() -> {
+                Map<LXUnitBean, List<Date>> datamap = getDateMap(datas);
+                dataService.deleteData(datamap);
+                refreashData();
+            }).start();
+            rightcard.show(right, "null");
         });
         if (admin) {
             leftbottom.add(delete);
@@ -198,42 +174,30 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         centertable.add(scrollPane, BorderLayout.CENTER);
         JPanel tablebottom = new JPanel();
         tablebottom.setOpaque(false);
-        head = new JButton("首页");
-        head.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                para.tofirst();
-                showwait_left();
-                refreashData();
-            }
+        JButton head = new JButton("首页");
+        head.addActionListener(e -> {
+            para.tofirst();
+            showwait_left();
+            refreashData();
         });
         tablebottom.add(head);
-        back = new JButton("上一页");
-        back.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                para.toback();
-                showwait_left();
-                refreashData();
-            }
+        JButton back = new JButton("上一页");
+        back.addActionListener(e -> {
+            para.toback();
+            showwait_left();
+            refreashData();
         });
         tablebottom.add(back);
-        next = new JButton("下一页");
-        next.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                para.tonext();
-                showwait_left();
-                refreashData();
-            }
+        JButton next = new JButton("下一页");
+        next.addActionListener(e -> {
+            para.tonext();
+            showwait_left();
+            refreashData();
         });
         tablebottom.add(next);
-        tail = new JButton("尾页");
-        tail.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        JButton tail = new JButton("尾页");
+        tail.addActionListener(e -> {
 
-            }
         });
 //        tablebottom.add(tail);
         centertable.add(tablebottom, BorderLayout.SOUTH);
@@ -252,25 +216,22 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         }
         rightcard.show(right, "wait");
         table.removeMouseListener(tablemouseadaper);
-        thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-               /* DisDataBean data = getSelectInfo();
-                DisDataBean lineData = dataService.getData(data);
-                linePanel.addData(lineData);*/
-                List<DisDataBean> datas = getSelectInfos();
+        thread = new Thread(() -> {
+           /* DisDataBean data = getSelectInfo();
+            DisDataBean lineData = dataService.getData(data);
+            linePanel.addData(lineData);*/
+            List<DisDataBean> datas = getSelectInfos();
 //                long start = System.currentTimeMillis();
-                if (datas.size() <= maxlineshow) {
-                    List<DisDataBean> lineDatas = new ArrayList<>();
-                    for (DisDataBean d : datas) {
-                        lineDatas.add(dataService.getData(d));
-                    }
-                    linePanel.addDatas(lineDatas.toArray(new DisDataBean[0]));
+            if (datas.size() <= maxlineshow) {
+                List<DisDataBean> lineDatas = new ArrayList<>();
+                for (DisDataBean d : datas) {
+                    lineDatas.add(dataService.getData(d));
                 }
-//                System.out.println(System.currentTimeMillis() - start);
-                rightcard.show(right, "line");
-                table.addMouseListener(tablemouseadaper);
+                linePanel.addDatas(lineDatas.toArray(new DisDataBean[0]));
             }
+//                System.out.println(System.currentTimeMillis() - start);
+            rightcard.show(right, "line");
+            table.addMouseListener(tablemouseadaper);
         });
         thread.start();
     }
@@ -310,10 +271,10 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         return datas;
     }
 
-    private Map<DisUnitBean, List<Date>> getDateMap(Vector<DisDataBean> datas) {
-        Map<DisUnitBean, List<Date>> datamap = new HashMap<>();
+    private Map<LXUnitBean, List<Date>> getDateMap(Vector<DisDataBean> datas) {
+        Map<LXUnitBean, List<Date>> datamap = new HashMap<>();
         for (DisDataBean data : datas) {
-            DisUnitBean unit = (DisUnitBean) unitService.getUnitByNumber(clttype, data.getUnit_num());
+            LXUnitBean unit = unitService.getUnitByNumber( data.getUnit_num());
             if (unit != null && datamap.containsKey(unit)) {
                 datamap.get(unit).add(data.getInserttime());
             } else {
@@ -347,7 +308,6 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
     private void getSearchPara() {
         this.para = new DataSearchPara();
         para.setOnepagecount(onepagecount);
-        para.setClttype(clttype);
         Date t1 = c1.getTime();
         Date t2 = c2.getTime();
         Calendar calendar1 = Calendar.getInstance();
@@ -408,26 +368,18 @@ public class DisWarningPanel extends BasePanel implements DataPanel {
         if (para == null) {
             return;
         }
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                List<DisDataBean> dataList = dataService.getDataInfo(para);
-                DisDataBean[] a = dataList.toArray(new DisDataBean[0]);
-                Arrays.sort(a, new Comparator<DisDataBean>() {
-                    @Override
-                    public int compare(DisDataBean o1, DisDataBean o2) {
-                        return (int) (o2.getInserttime().getTime() - o1.getInserttime().getTime());
-                    }
-                });
-                ListIterator<DisDataBean> i = dataList.listIterator();
-                for (DisDataBean e : a) {
-                    i.next();
-                    i.set(e);
-                }
-                addData(dataList);
-                leftcard.show(leftcenter, "table");
-                setEnable(true);
+        new Thread(() -> {
+            List<DisDataBean> dataList = dataService.getDataInfo(para);
+            DisDataBean[] a = dataList.toArray(new DisDataBean[0]);
+            Arrays.sort(a, (o1, o2) -> (int) (o2.getInserttime().getTime() - o1.getInserttime().getTime()));
+            ListIterator<DisDataBean> i = dataList.listIterator();
+            for (DisDataBean e : a) {
+                i.next();
+                i.set(e);
             }
+            addData(dataList);
+            leftcard.show(leftcenter, "table");
+            setEnable(true);
         }).start();
     }
 

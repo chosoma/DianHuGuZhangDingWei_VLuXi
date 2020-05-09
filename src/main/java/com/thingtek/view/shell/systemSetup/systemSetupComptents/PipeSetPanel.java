@@ -4,13 +4,12 @@ import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import com.thingtek.view.component.button.EditButton;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.PipeTableModel;
+import com.thingtek.view.shell.DataPanel;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
@@ -53,64 +52,55 @@ public class PipeSetPanel extends BaseSystemPanel {
         super.initToolbar();
 
         EditButton add = addTool("添加", "add");
-        add.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                stopEditing();
-                int pipeid = pipeService.getUnHasPipeId();
-                if (pipeid == -1) {
-                    errorMessage("添加失败,请稍后重试!");
-                    return;
-                }
-                refreshPipe();
+        add.addActionListener(e -> {
+            stopEditing();
+            int pipeid = pipeService.getUnHasPipeId();
+            if (pipeid == -1) {
+                errorMessage("添加失败,请稍后重试!");
+                return;
             }
+            refreshPipe();
         });
         EditButton delete = addTool("删除", "delete");
-        delete.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                stopEditing();
-                int[] rows = table.getSelectedRows();
-                if (rows.length <= 0) {
-                    errorMessage("请先选择!");
-                    return;
-                }
-                int[] pointnums = new int[rows.length];
-                for (int i = 0; i < rows.length; i++) {
-                    int pointnum = (Integer) table.getValueAt(rows[i], 0);
-                    pointnums[i] = pointnum;
-                }
-                pipeService.delete(pointnums);
-                refreshPipe();
+        delete.addActionListener(e -> {
+            stopEditing();
+            int[] rows = table.getSelectedRows();
+            if (rows.length <= 0) {
+                errorMessage("请先选择!");
+                return;
             }
+            int[] pointnums = new int[rows.length];
+            for (int i = 0; i < rows.length; i++) {
+                int pointnum = (Integer) table.getValueAt(rows[i], 0);
+                pointnums[i] = pointnum;
+            }
+            pipeService.delete(pointnums);
+            refreshPipe();
         });
         EditButton apply = addTool("保存", "apply");
-        apply.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                stopEditing();
-                if (!checkinput()) {
-                    refreshPipe();
-                    return;
-                }
-                if (table.isEditing()) {
-                    errorMessage("您有内容输入有误!");
-                    return;
-                }
-                for (int i = 0; i < table.getRowCount(); i++) {
-                    int pipe_id = (int) table.getValueAt(i, 0);
-                    String pipe_name = (String) table.getValueAt(i, 1);
-                    int pipe_page = (int) table.getValueAt(i, 2);
-                    PipeBean pipe = pipeService.getPipeById(pipe_id);
-                    pipe.setPipe_name(pipe_name);
-                    pipe.setPipe_page(pipe_page);
-                }
-                if (pipeService.update()) {
-                    successMessage("保存成功");
-                    refreshPipe();
-                }
-
+        apply.addActionListener(e -> {
+            stopEditing();
+            if (!checkinput()) {
+                refreshPipe();
+                return;
             }
+            if (table.isEditing()) {
+                errorMessage("您有内容输入有误!");
+                return;
+            }
+            for (int i = 0; i < table.getRowCount(); i++) {
+                int pipe_id = (int) table.getValueAt(i, 0);
+                String pipe_name = (String) table.getValueAt(i, 1);
+                int pipe_page = (int) table.getValueAt(i, 2);
+                PipeBean pipe = pipeService.getPipeById(pipe_id);
+                pipe.setPipe_name(pipe_name);
+                pipe.setPipe_page(pipe_page);
+            }
+            if (pipeService.update()) {
+                successMessage("保存成功");
+                refreshPipe();
+            }
+
         });
     }
 
@@ -126,6 +116,9 @@ public class PipeSetPanel extends BaseSystemPanel {
             vectors.add(pipe.getDataTotalCol());
         }
         tablemodel.addDatas(vectors);
+        for (DataPanel dataPanel : logoInfo.getDataPanels()) {
+            dataPanel.refreashData();
+        }
     }
 
     private void stopEditing() {

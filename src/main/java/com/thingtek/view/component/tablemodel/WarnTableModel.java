@@ -21,7 +21,7 @@ public class WarnTableModel extends BaseTableModel {
     @Override
     protected void initDefault() {
         super.initDefault();
-        Vector<String> column = new Vector<String>();
+        Vector<String> column = new Vector<>();
         column.add("id");
         column.add("异常位置");
         column.add("异常相位");

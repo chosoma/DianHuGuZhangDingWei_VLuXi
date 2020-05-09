@@ -22,12 +22,7 @@ class Index {
     public void init() {
 //        JfreeChartUtil.setChartTheme();
         loading.init();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                server.openConnection();
-            }
-        }).start();
+        new Thread(() -> server.openConnection()).start();
     }
 
 }

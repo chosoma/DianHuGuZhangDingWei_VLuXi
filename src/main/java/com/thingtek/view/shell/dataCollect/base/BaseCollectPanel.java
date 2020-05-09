@@ -21,12 +21,6 @@ public abstract class BaseCollectPanel extends BasePanel {
         return defaultselect;
     }
 
-    protected int clttype;
-
-    public int getClttype() {
-        return clttype;
-    }
-
     @Override
     public BaseCollectPanel init() {
         setBackground(factorys.getColorFactory().getColor("collectback"));

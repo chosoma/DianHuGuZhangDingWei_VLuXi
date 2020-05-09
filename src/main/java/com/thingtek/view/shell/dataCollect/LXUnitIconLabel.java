@@ -1,41 +1,36 @@
 package com.thingtek.view.shell.dataCollect;
 
-import com.thingtek.beanServiceDao.point.entity.PointBean;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.EventListener;
 
-public class ChartIconLabel extends JLabel {
+public class LXUnitIconLabel extends JLabel {
 
-    private PointBean pointBean;
+    private LXUnitBean unitBean;
 
-    private JPanel dataPanel;
-    private Color colorWarn = new Color(255, 80, 0),
-            colorB = new Color(255, 255, 255);
-
-    public ChartIconLabel(String name, ImageIcon icon) {
+    LXUnitIconLabel(String name, ImageIcon icon) {
 //        super(name, icon);
         super(icon);
         this.setText(name);
         this.setForeground(Color.WHITE);
+        Color colorWarn = new Color(255, 80, 0);
         this.setBackground(colorWarn);
         setOpaque(false);
     }
 
-    public void setPointBean(PointBean pointBean) {
-        this.pointBean = pointBean;
+    LXUnitBean getUnitBean() {
+        return unitBean;
     }
 
-    public PointBean getPointBean() {
-        return pointBean;
+    void setUnitBean(LXUnitBean unitBean) {
+        this.unitBean = unitBean;
     }
 
-    public void addListeners(EventListener l) {
+    void addListeners(EventListener l) {
         this.addMouseListener((MouseListener) l);
         this.addMouseMotionListener((MouseMotionListener) l);
     }
@@ -43,7 +38,7 @@ public class ChartIconLabel extends JLabel {
 //    private Thread warnThread;
 
 
-    public void startWarning() {
+    void startWarning() {
         setOpaque(true);
         validate();
         invalidate();
@@ -70,7 +65,7 @@ public class ChartIconLabel extends JLabel {
         warnThread.start();*/
     }
 
-    public void stopWarning() {
+    void stopWarning() {
 //        warnThread.interrupt();
         setOpaque(false);
         validate();
@@ -91,14 +86,6 @@ public class ChartIconLabel extends JLabel {
     @Override
     public int getHorizontalTextPosition() {
         return JButton.CENTER;
-    }
-
-    public void setDataPanel(JPanel dataPanel) {
-        this.dataPanel = dataPanel;
-    }
-
-    public JPanel getDataPanel() {
-        return dataPanel;
     }
 
 }

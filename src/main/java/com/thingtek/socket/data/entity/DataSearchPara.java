@@ -1,6 +1,6 @@
 package com.thingtek.socket.data.entity;
 
-import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import lombok.Data;
 
 import java.util.Date;
@@ -11,7 +11,7 @@ class DataSearchPara {
 
     private Byte unit_num;
 
-    private BaseUnitBean unit;
+    private LXUnitBean unit;
 
     private List<Byte> unitnums;
 
@@ -20,8 +20,6 @@ class DataSearchPara {
     private Date T1;
 
     private Date T2;
-
-    private int clttype;
 
     private int thispage;//当前页
     private int endpage;//尾页

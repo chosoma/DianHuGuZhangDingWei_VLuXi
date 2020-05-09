@@ -1,17 +1,18 @@
 package com.thingtek.view.component.factory;
 
+import com.thingtek.beanServiceDao.base.BaseService;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Hashtable;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
+@EqualsAndHashCode(callSuper = true)
 public @Data
-class MyIconFactory {
+class MyIconFactory extends BaseService {
 
 
     public List<String> logoIconTexts;
@@ -19,7 +20,11 @@ class MyIconFactory {
     public List<Image> getLogoIcons() {
         List<Image> images = new ArrayList<>();
         for (String str : logoIconTexts) {
-            images.add(new ImageIcon(this.getClass().getClassLoader().getResource(str)).getImage());
+            try {
+                images.add(new ImageIcon(Objects.requireNonNull(this.getClass().getClassLoader().getResource(str))).getImage());
+            } catch (Exception e) {
+                log(e);
+            }
         }
         return images;
     }
@@ -35,25 +40,19 @@ class MyIconFactory {
 
 
     public ImageIcon getIcon(String string) {
-//        System.out.println(string+":"+iconpathMap.get(string));
-        return new ImageIcon(this.getClass().getClassLoader().getResource(iconpathMap.get(string)));
-    }
-
-    public ImageIcon[] getIcons(String string) {
-//        System.out.println(string+":"+iconpathMap.get(string));
-        String[] iconTests = iconpathsMap.get(string);
-        ImageIcon[] imageIcons = new ImageIcon[iconTests.length];
-        imageIcons[0] = new ImageIcon(this.getClass().getClassLoader().getResource(iconTests[0]));
-        imageIcons[1] = new ImageIcon(this.getClass().getClassLoader().getResource(iconTests[1]));
-        return imageIcons;
+        try {
+            return new ImageIcon(Objects.requireNonNull(this.getClass().getClassLoader().getResource(iconpathMap.get(string))));
+        } catch (Exception e) {
+            log(e);
+            return null;
+        }
     }
 
     public Image getImage(String string) {
-//        System.out.println(string+":"+iconpathMap.get(string));
-//        System.out.println(this.getClass().getClassLoader().getResource(iconpathMap.get(string)));
         try {
-            return ImageIO.read(this.getClass().getClassLoader().getResource(iconpathMap.get(string)));
+            return ImageIO.read(Objects.requireNonNull(this.getClass().getClassLoader().getResource(iconpathMap.get(string))));
         } catch (Exception e) {
+            log(e);
             return null;
         }
     }

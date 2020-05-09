@@ -1,11 +1,10 @@
 package com.thingtek.beanServiceDao.data.service;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
+import com.thingtek.beanServiceDao.base.BaseService;
 import com.thingtek.beanServiceDao.data.dao.DisDataDao;
 import com.thingtek.beanServiceDao.data.entity.DisDataBean;
-import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.data.entity.DataSearchPara;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +18,9 @@ public class DisDataService extends BaseService {
     private DisDataDao dao;
 
     @Resource
-    private UnitService unitService;
+    private LXUnitService unitService;
 
-    private Map<BaseUnitBean, List<DisDataBean>> databuffer = new Hashtable<>();
+    private Map<LXUnitBean, List<DisDataBean>> databuffer = new Hashtable<>();
 
     public int count(DataSearchPara para) {
         int count = 0;
@@ -38,53 +37,26 @@ public class DisDataService extends BaseService {
     public List<DisDataBean> getDataInfo(DataSearchPara para) {
         List<DisDataBean> baseDataBeanList = new ArrayList<>();
         try {
-            List<BaseUnitBean> units = unitService.getAll(4);
-//            long start = System.currentTimeMillis();
-            for (BaseUnitBean unit : units) {
+            List<LXUnitBean> units = unitService.getAll();
+            for (LXUnitBean unit : units) {
                 para.setUnit(unit);
-                List<Map<String, Object>> data = dao.findDataInfo(para);
-                List<DisDataBean> bufferlist = new ArrayList<>();
-                for (Map<String, Object> one : data) {
-                    try {
-                        if (one == null) {
-                            continue;
-                        }
-                        DisDataBean dataBean = new DisDataBean();
-                        dataBean.resolve(one);
-                        dataBean.setUnit(unitService.getUnitByNumber(4, dataBean.getUnit_num()));
-                        bufferlist.add(dataBean);
-                    } catch (Exception e) {
-                        log(e);
-                    }
+                List<DisDataBean> bufferlist = dao.findDatas(para);
+                for (DisDataBean one : bufferlist) {
+                    one.setUnit(unitService.getUnitByNumber(one.getUnit_num()));
                 }
                 baseDataBeanList.addAll(bufferlist);
                 databuffer.put(unit, bufferlist);
             }
-//            System.out.println("查询时间:" + (System.currentTimeMillis() - start) + "ms");
         } catch (Exception e) {
             log(e);
         }
         return baseDataBeanList;
     }
 
-    /* public DisDataBean getData(DisDataBean datapara) {
-         DisDataBean datareturn = new DisDataBean();
-         try {
-             BaseUnitBean unit = unitService.getUnitByNumber(4, datapara.getUnit_num());
-             datapara.setUnit(unit);
-             String str = dao.findData(datapara);
-             datareturn.setInserttime(datapara.getInserttime());
-             datareturn.setUnit(unit);
-             datareturn.setDatastring(str);
-         } catch (Exception e) {
-             log(e);
-         }
-         return datareturn;
-     }*/
     public DisDataBean getData(DisDataBean datapara) {
         DisDataBean datareturn = new DisDataBean();
         try {
-            BaseUnitBean unit = unitService.getUnitByNumber(4, datapara.getUnit_num());
+            LXUnitBean unit = unitService.getUnitByNumber(datapara.getUnit_num());
             for (DisDataBean dataBean : databuffer.get(unit)) {
                 if (dataBean.getInserttime().getTime() == datapara.getInserttime().getTime()) {
                     datareturn = dataBean;
@@ -98,28 +70,23 @@ public class DisDataService extends BaseService {
         return datareturn;
     }
 
-    public boolean deleteData(Map<DisUnitBean, List<Date>> datas) {
-        List<Boolean> flags = new ArrayList<>();
-        Set<Map.Entry<DisUnitBean, List<Date>>> entries = datas.entrySet();
-        for (Map.Entry<DisUnitBean, List<Date>> entry : entries) {
+    public void deleteData(Map<LXUnitBean, List<Date>> datas) {
+        Set<Map.Entry<LXUnitBean, List<Date>>> entries = datas.entrySet();
+        for (Map.Entry<LXUnitBean, List<Date>> entry : entries) {
             try {
-                flags.add(dao.deleteDatas(entry.getKey(), entry.getValue()));
+                dao.deleteDatas(entry.getKey(), entry.getValue());
             } catch (Exception e) {
-                flags.add(false);
                 log(e);
             }
         }
-        return !flags.contains(false);
     }
 
-    public boolean saveData(DisDataBean... datas) {
+    public boolean saveDatas(DisDataBean... datas) {
         List<Boolean> flags = new ArrayList<>();
         for (DisDataBean data : datas) {
             try {
-                data.setUnit(unitService.getUnitByNumber(4, data.getUnit_num()));
-                flags.add(dao.saveData(data)
-//                        && dao.saveGoo(data)
-                );
+                data.setUnit(unitService.getUnitByNumber(data.getUnit_num()));
+                flags.add(dao.saveDatas(data));
             } catch (Exception e) {
                 log(e);
                 flags.add(false);
@@ -128,6 +95,7 @@ public class DisDataService extends BaseService {
         return !flags.contains(false);
     }
 
+/*
     private int checkdata(int[] ints) {
         int index = -1;
         int avg = 0;//平均值
@@ -164,7 +132,8 @@ public class DisDataService extends BaseService {
         }
         return index;
 
-        /*int dian = 10;
+        */
+/*int dian = 10;
         int[] dians = new int[100];
         for (int i = 0; i < ints.length / dian - dians.length; i++) {
             System.arraycopy(ints, i * dian, dians, 0, dians.length);
@@ -180,6 +149,8 @@ public class DisDataService extends BaseService {
                 System.out.println(":" + (i * dian));
                 break;
             }
-        }*/
+        }*//*
+
     }
+*/
 }

@@ -1,7 +1,8 @@
 package com.thingtek.view.component.listener;
 
-import com.thingtek.beanServiceDao.point.entity.PointBean;
-import com.thingtek.beanServiceDao.point.service.PointService;
+
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,24 +10,24 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
-public class MouseMoveListenAdapter implements MouseListener, MouseMotionListener {
+public class LXMouseMoveListenAdapter implements MouseListener, MouseMotionListener {
     private int x = 0;
     private int y = 0;
 
     private JComponent component;
     private JComponent parent;
-    private PointService pointService;
-    private PointBean pointBean;
+    private LXUnitService unitService;
+    private LXUnitBean unitBean;
 
-    public void setPointService(PointService pointService) {
-        this.pointService = pointService;
+    public void setUnitService(LXUnitService unitService) {
+        this.unitService = unitService;
     }
 
-    public void setPointBean(PointBean pointBean) {
-        this.pointBean = pointBean;
+    public void setUnitBean(LXUnitBean unitBean) {
+        this.unitBean = unitBean;
     }
 
-    public MouseMoveListenAdapter(JComponent component, JComponent parent) {
+    public LXMouseMoveListenAdapter(JComponent component, JComponent parent) {
         this.component = component;
         this.parent = parent;
     }
@@ -57,9 +58,9 @@ public class MouseMoveListenAdapter implements MouseListener, MouseMotionListene
         x = 0;
         y = 0;
         Rectangle rectangle = component.getBounds();
-        pointBean.setX(rectangle.getX() / parent.getWidth());
-        pointBean.setY(rectangle.getY() / parent.getHeight());
-        pointService.updatePointXY(pointBean);
+        unitBean.setX(rectangle.getX() / parent.getWidth());
+        unitBean.setY(rectangle.getY() / parent.getHeight());
+        unitService.updateLXUnit(unitBean);
     }
 
     @Override
@@ -76,7 +77,6 @@ public class MouseMoveListenAdapter implements MouseListener, MouseMotionListene
     public void mouseDragged(MouseEvent e) {
 //        System.out.println("dragged");
         Point point = parent.getMousePosition();
-//        System.out.println(point);
         if (point != null) {
             component.setBounds((int) (point.getX() - x), (int) (point.getY() - y), component.getWidth(), component.getHeight());
         }

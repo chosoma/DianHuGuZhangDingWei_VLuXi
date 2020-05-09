@@ -1,21 +1,24 @@
 package com.thingtek.socket;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.base.BaseService;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.entity.BaseG2S;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.socket.entity.G2SUploadData;
 import com.thingtek.socket.entity.UnUnitNum;
 import com.thingtek.view.shell.debugs.Debugs;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitSetPanel;
+import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+import javax.annotation.Resource;
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.*;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class CollectSocket extends BaseService implements Runnable {
     private Socket socket;
@@ -26,15 +29,11 @@ public class CollectSocket extends BaseService implements Runnable {
     private byte[] readcaches;
     private List<byte[]> sendcaches;
     private Debugs debugShow;
-    private UnitService unitService;
-    private int clttype = 4;
-    private UnitSetPanel unitSetPanel;
+    private LXUnitService unitService;
 
-    public void setUnitSetPanel(UnitSetPanel unitSetPanel) {
-        this.unitSetPanel = unitSetPanel;
-    }
-
-    public void setUnitService(UnitService unitService) {
+    @Resource
+    private LXUnitSetPanel unitSetPanel;
+    public void setUnitService(LXUnitService unitService) {
         this.unitService = unitService;
     }
 
@@ -131,7 +130,7 @@ public class CollectSocket extends BaseService implements Runnable {
         int endoff = agreement.getendoff(readcaches);
 //        System.out.println("startoff:" + startoff);
 //        System.out.println("endoff:" + endoff);
-        byte[] bytes = null;
+        byte[] bytes ;
         if (endoff == -1 || startoff == -1) {
             return;
         }
@@ -166,20 +165,17 @@ public class CollectSocket extends BaseService implements Runnable {
             unitnum = g2s.getUnitnum();
             String ip = socket.getInetAddress().getHostAddress();
             int port = socket.getPort();
-            DisUnitBean unit = (DisUnitBean) unitService.getUnitByNumber(4, unitnum);
+            LXUnitBean unit = unitService.getUnitByNumber( unitnum);
             if (unit == null) {
-                unit = new DisUnitBean();
+                unit = new LXUnitBean();
                 unit.setUnit_num(unitnum);
-                unit.setPoint_num(1);
-                unitService.saveUnit(clttype, unit);
+                unit.setPipe_id(1);
+                unitService.saveLXUnit(unit);
             }
             if (!ip.equals(unit.getIp()) || port != unit.getPort()) {
                 unit.setIp(ip);
                 unit.setPort(port);
-                unitService.updateUnit(clttype, unit);
-                /*if (unitSetPanel.getClttype() == clttype) {
-                    unitSetPanel.refreshUnit();
-                }*/
+                unitService.updateLXUnit(unit);
             }
         }
 
@@ -260,16 +256,6 @@ public class CollectSocket extends BaseService implements Runnable {
                         i++;
                         break;
                     }
-                    /*case (Protocol.IST1T): {
-                        btlist.add(Protocol.IST1);
-                        i++;
-                        break;
-                    }
-                    case (Protocol.IST2T): {
-                        btlist.add(Protocol.IST2);
-                        i++;
-                        break;
-                    }*/
                     default: {
                         btlist.add(Protocol.TURN);
                     }

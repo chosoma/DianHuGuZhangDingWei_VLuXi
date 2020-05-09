@@ -1,9 +1,10 @@
 package com.thingtek.view.shell.dataCollect;
 
 import com.thingtek.beanServiceDao.data.entity.DisDataBean;
-import com.thingtek.beanServiceDao.point.entity.PointBean;
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
-import com.thingtek.view.component.listener.MouseMoveListenAdapter;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
+import com.thingtek.view.component.factory.Factorys;
+import com.thingtek.view.component.listener.LXMouseMoveListenAdapter;
 import com.thingtek.view.shell.dataCollect.base.BaseCollectPanel;
 
 import javax.swing.*;
@@ -13,16 +14,30 @@ import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class LXCollectPanel extends BaseCollectPanel {
 
     public LXCollectPanel() {
-        clttype = 4;
         buttonList = new ArrayList<>();
     }
 
-    private java.util.List<ChartIconLabel> buttonList;
+    public void setUnitService(LXUnitService unitService) {
+        this.unitService = unitService;
+    }
+
+    public java.util.List<LXUnitBean> units;
+
+    public void setUnits(List<LXUnitBean> units) {
+        this.units = units;
+    }
+
+    public void setFactorys(Factorys factorys) {
+        this.factorys = factorys;
+    }
+
+    private java.util.List<LXUnitIconLabel> buttonList;
 
     private JPanel center;
 
@@ -41,7 +56,6 @@ public class LXCollectPanel extends BaseCollectPanel {
             }
         };
         JScrollPane jScrollPane = new JScrollPane(center);
-//        center.setOpaque(false);
         add(jScrollPane, BorderLayout.CENTER);
         refreshPoint();
         center.addComponentListener(new ComponentAdapter() {
@@ -57,41 +71,22 @@ public class LXCollectPanel extends BaseCollectPanel {
     public void refreshPoint() {
         center.removeAll();
         buttonList.clear();
-        java.util.List<PointBean> points = pointService.getPoints(clttype);
         ImageIcon icon = factorys.getIconFactory().getIcon("hitch");
-        for (final PointBean point : points) {
-            final ChartIconLabel button = new ChartIconLabel(point.getPoint_name(), icon);
-            button.setPointBean(point);
+        for (final LXUnitBean unit : units) {
+            final LXUnitIconLabel button = new LXUnitIconLabel(String.valueOf(unit.getUnit_num()), icon);
+            button.setUnitBean(unit);
             buttonList.add(button);
-            final DisABCDataPanel datapanel = new DisABCDataPanel();
-            datapanel.setTitle(point.getPoint_name());
-            button.setDataPanel(datapanel);
-            MouseMoveListenAdapter mmla = new MouseMoveListenAdapter(button, center);
+            LXMouseMoveListenAdapter mmla = new LXMouseMoveListenAdapter(button, center);
             if (admin) {
                 button.addListeners(mmla);
             }
-            mmla.setPointBean(point);
-            mmla.setPointService(pointService);
+            mmla.setUnitBean(unit);
+            mmla.setUnitService(unitService);
             center.add(button);
-            center.add(datapanel);
-
             button.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseEntered(MouseEvent e) {
-//                    System.out.println("enter");
-                    datapanel.setVisible(true);
                     button.stopWarning();
-                }
-
-                @Override
-                public void mouseExited(MouseEvent e) {
-//                    System.out.println("exited");
-                    datapanel.setVisible(false);
-                }
-
-                @Override
-                public void mouseClicked(MouseEvent e) {
-                    datapanel.removeWarn();
                 }
             });
         }
@@ -102,39 +97,37 @@ public class LXCollectPanel extends BaseCollectPanel {
 
     @Override
     public void addWarn(DisDataBean warnBean) {
-        DisUnitBean unit = (DisUnitBean) warnBean.getUnit();
+        LXUnitBean unit = warnBean.getUnit();
         if (unit == null) {
             return;
         }
-        for (ChartIconLabel button : buttonList) {
-            PointBean pointBean = button.getPointBean();
-            if (Objects.equals(pointBean.getPoint_num(), unit.getPoint_num())) {
+        for (LXUnitIconLabel button : buttonList) {
+            LXUnitBean unitBean = button.getUnitBean();
+            if (Objects.equals(unitBean.getUnit_num(), unit.getUnit_num())) {
                 button.startWarning();
-                DisABCDataPanel dataPanel = (DisABCDataPanel) button.getDataPanel();
-                dataPanel.startWarn(unit);
                 return;
             }
         }
     }
 
     @Override
-    public void refreshData() {    }
-
+    public void refreshData() {
+    }
 
 
     private void setButtonBounds() {
-        for (ChartIconLabel button : buttonList) {
-            PointBean point = button.getPointBean();
+        for (LXUnitIconLabel button : buttonList) {
+            LXUnitBean point = button.getUnitBean();
             button.setBounds((int) (point.getX() * center.getWidth()), (int) (point.getY() * center.getHeight()), 50, 50);
         }
     }
 
     private void setShowBounds() {
-        int width = center.getWidth();
+        /*int width = center.getWidth();
         int height = center.getHeight();
         int panelwidth = 125;
         int panelheight = 100;
-        for (ChartIconLabel button : buttonList) {
+        for (LXUnitIconLabel button : buttonList) {
             int panelx = button.getX() + button.getWidth();
             int panely = button.getY() + button.getHeight();
             if (panelx + panelwidth > width && panely + panelheight > height) {
@@ -146,6 +139,6 @@ public class LXCollectPanel extends BaseCollectPanel {
                 panely = height - panelheight;
             }
             button.getDataPanel().setBounds(panelx, panely, panelwidth, panelheight);
-        }
+        }*/
     }
 }

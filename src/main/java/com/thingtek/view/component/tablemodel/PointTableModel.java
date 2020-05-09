@@ -20,7 +20,7 @@ public class PointTableModel extends BaseTableModel {
     @Override
     protected void initDefault() {
         super.initDefault();
-        Vector<String> column = new Vector<String>();
+        Vector<String> column = new Vector<>();
         column.add("测点类型");
         column.add("测点编号");
         column.add("测点名称");

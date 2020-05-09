@@ -1,6 +1,6 @@
 package com.thingtek.socket.agreement;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
+import com.thingtek.beanServiceDao.base.BaseService;
 import com.thingtek.socket.entity.BaseG2S;
 import com.thingtek.socket.entity.BaseS2G;
 import com.thingtek.socket.DataBuffer;
@@ -81,25 +81,6 @@ class SocketAgreement extends BaseService {
         return NoHeadNoTail;
     }
 
-    /*
-        获取数据头下标
-     */
-    public int getHeadIndex(byte[] bytes) {
-        int off = -1;
-        for (int i = 0, j = 0; i < bytes.length; i++) {
-            if (bytes[i] == head[j]) {
-                off = i;
-                j++;
-            } else {
-                j = 0;
-            }
-            if (j >= head.length) {
-                break;
-            }
-        }
-        return off - head.length + 1;
-    }
-
     public synchronized BaseG2S getG2S(byte[] bytes) {
         int cmds = 0;
         for (int i = 0; i < this.cmdtype.length; i++) {
@@ -154,13 +135,6 @@ class SocketAgreement extends BaseService {
     }
 
 
-    protected byte[] calcCRC16_X(byte[] b) {
-        int crc16 = cal_serv_crc(b, b.length - 2);
-        b[b.length - 1] = (byte) (crc16 & 0xFF);
-        b[b.length - 2] = (byte) (crc16 >> 8 & 0xFF);
-        return b;
-    }
-
     public boolean checkCRC16_X(byte[] bytes) {
         int crc16 = cal_serv_crc(bytes, bytes.length - 2);
 //        System.out.println("校验：" + Integer.toHexString(crc16));
@@ -168,13 +142,5 @@ class SocketAgreement extends BaseService {
                 && (bytes[bytes.length - 2] == (byte) (crc16 >> 8 & 0xFF));
     }
 
-
-    public int getCmd(byte[] bytes) {
-        int cmd = 0;
-        for (int i = 0; i < this.cmdtype.length; i++) {
-            cmd |= (bytes[cmdtypeoff + cmdtype[i]] & 0xff) << (i * 8);
-        }
-        return cmd;
-    }
 
 }

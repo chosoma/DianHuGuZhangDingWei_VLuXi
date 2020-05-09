@@ -63,14 +63,11 @@
                 <entry key="develop" value="icons/sysPass_48.png"/>
                 <entry key="主　　页" value="icons/home_24.png"/>
                 <entry key="数据采集" value="icons/collect_24.png"/>
-                <entry key="六氟化硫数据管理" value="icons/manage_24.png"/>
-                <entry key="故障电弧数据管理" value="icons/manage_24.png"/>
+                <entry key="电弧管理" value="icons/manage_24.png"/>
+                <entry key="故障管理" value="icons/manage_24.png"/>
                 <entry key="报警查询" value="icons/warn_24.png"/>
                 <entry key="系统设置" value="icons/system_24.png"/>
                 <entry key="调试界面" value="icons/debug_24.png"/>
-                <entry key="六氟化硫表格" value="icons/sf6_28.png"/>
-                <entry key="六氟化硫图形" value="icons/sf6_28.png"/>
-                <entry key="故障电弧定位" value="icons/warn_28.png"/>
             </map>
         </property>
         <property name="iconpathsMap">

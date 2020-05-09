@@ -1,11 +1,8 @@
 package com.thingtek.view.component.button;
 
-import com.thingtek.util.Util;
 import com.thingtek.view.component.button.base.BaseButton;
-import com.thingtek.view.component.factory.MyFontFactory;
 
 import javax.swing.*;
-import java.awt.*;
 
 /**
  * 主要功能按钮

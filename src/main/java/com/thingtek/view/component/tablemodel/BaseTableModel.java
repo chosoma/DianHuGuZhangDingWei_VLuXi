@@ -9,7 +9,7 @@ public abstract class BaseTableModel extends DefaultTableModel {
     Vector<Vector<Object>> row;
 
     protected Class[] typeArray;
-    protected int[] columnWidthes;
+    int[] columnWidthes;
 
     public int[] getColumnWidthes() {
         return columnWidthes;
@@ -34,25 +34,6 @@ public abstract class BaseTableModel extends DefaultTableModel {
 
     public void addData(Vector<Object> datas) {
         row.add(datas);
-        this.fireTableDataChanged();
-    }
-
-    /**
-     * 删除数据
-     */
-    public void removeRows(int[] selRows) {
-        // 反向循环实现删除
-        for (int i = selRows.length - 1; i >= 0; i--) {
-            // 上句会出现删除最后一行出错
-            removeRow(selRows[i]);
-        }
-    }
-
-    /**
-     * 清空数据
-     */
-    public void clearData() {
-        row.clear();
         this.fireTableDataChanged();
     }
 

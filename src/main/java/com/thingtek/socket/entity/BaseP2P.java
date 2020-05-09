@@ -1,7 +1,7 @@
 package com.thingtek.socket.entity;
 
 import com.thingtek.beanServiceDao.data.service.DisDataService;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.agreement.SocketAgreement;
 
 import java.math.BigDecimal;
@@ -20,11 +20,11 @@ public abstract class BaseP2P {
         return unitnum;
     }
 
-    protected UnitService unitService;
+    protected LXUnitService unitService;
 
     protected DisDataService dataService;
 
-    public void setUnitService(UnitService unitService) {
+    public void setUnitService(LXUnitService unitService) {
         this.unitService = unitService;
     }
 

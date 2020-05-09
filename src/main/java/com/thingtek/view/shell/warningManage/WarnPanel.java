@@ -1,8 +1,5 @@
 package com.thingtek.view.shell.warningManage;
 
-import com.thingtek.beanServiceDao.clt.entity.CltBean;
-import com.thingtek.beanServiceDao.point.entity.PointBean;
-import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.socket.data.entity.DataSearchPara;
 import com.thingtek.view.component.panel.Check2SPinner;
@@ -24,7 +21,6 @@ import java.util.List;
  */
 public class WarnPanel extends BasePanel implements DataPanel {
 
-    private int clttype = 4;
     private boolean admin;
 
     public void setAdmin(boolean admin) {
@@ -44,8 +40,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
 
         bottom.add(new JLabel("类型:"));
 
-        clttypes = new JComboBox<>(cltService.getCltNames());
-        bottom.add(clttypes);
         this.add(bottom, BorderLayout.NORTH);
 
         Calendar calendar = Calendar.getInstance();
@@ -55,51 +49,42 @@ public class WarnPanel extends BasePanel implements DataPanel {
         bottom.add(c1);
         bottom.add(c2);
         search = new JButton("查询");
-        search.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                getSearchPara();
-                refreashData();
-            }
+        search.addActionListener(e -> {
+            getSearchPara();
+            refreashData();
         });
         bottom.add(search);
 
         delete = new JButton("删除");
-        delete.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Vector<WarnBean> datas = getSelectInfos();
-                if (datas.size() <= 0) {
-                    errorMessage("请选择要删除的信息");
-                    return;
-                }
-                Map<WarnBean, List<Date>> datamap = getDateMap(datas);
-                if (warnService.deleteWarn(datamap)) {
-                    successMessage("删除成功");
-                    search.doClick();
-                } else {
-                    falseMessage("删除失败");
-                }
-
+        delete.addActionListener(e -> {
+            Vector<WarnBean> datas = getSelectInfos();
+            if (datas.size() <= 0) {
+                errorMessage("请选择要删除的信息");
+                return;
             }
+            Map<WarnBean, List<Date>> datamap = getDateMap(datas);
+            if (warnService.deleteWarn(datamap)) {
+                successMessage("删除成功");
+                search.doClick();
+            } else {
+                falseMessage("删除失败");
+            }
+
         });
 
         clear = new JButton("清空");
-        clear.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Vector<WarnBean> datas = getAllInfos();
-                if (datas.size() <= 0) {
-                    errorMessage("当前表中无信息");
-                    return;
-                }
-                Map<WarnBean, List<Date>> datamap = getDateMap(datas);
-                if (warnService.deleteWarn(datamap)) {
-                    successMessage("清空成功");
-                    search.doClick();
-                } else {
-                    falseMessage("清空失败");
-                }
+        clear.addActionListener(e -> {
+            Vector<WarnBean> datas = getAllInfos();
+            if (datas.size() <= 0) {
+                errorMessage("当前表中无信息");
+                return;
+            }
+            Map<WarnBean, List<Date>> datamap = getDateMap(datas);
+            if (warnService.deleteWarn(datamap)) {
+                successMessage("清空成功");
+                search.doClick();
+            } else {
+                falseMessage("清空失败");
             }
         });
         if (admin) {
@@ -131,7 +116,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
         this.add(center, BorderLayout.CENTER);
     }
 
-    private JComboBox<String> clttypes;
 
 
     private Map<WarnBean, List<Date>> getDateMap(Vector<WarnBean> datas) {
@@ -190,10 +174,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
         this.para = new DataSearchPara();
         Date t1 = c1.getTime();
         Date t2 = c2.getTime();
-        String cltname = (String) clttypes.getSelectedItem();
-        CltBean cltBean = cltService.getCltByName(cltname);
-        clttype = cltBean.getType_num();
-        this.para.setClttype(cltBean.getType_num());
         if (t1 != null) {
             Calendar c1 = Calendar.getInstance();
             c1.setTime(t1);
@@ -252,13 +232,10 @@ public class WarnPanel extends BasePanel implements DataPanel {
             return;
         }
         card.show(center, "wait");
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                List<WarnBean> warns = warnService.getWarnByPara(para);
-                addData(warns);
-                card.show(center, "table");
-            }
+        new Thread(() -> {
+            List<WarnBean> warns = warnService.getWarnByPara(para);
+            addData(warns);
+            card.show(center, "table");
         }).start();
     }
 }

@@ -1,7 +1,5 @@
 package com.thingtek.view.shell.homePage;
 
-//import com.thingtek.view.shell.warningManage.LinePanel;
-
 import javax.swing.*;
 import java.awt.*;
 

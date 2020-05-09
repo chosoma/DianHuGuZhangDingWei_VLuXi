@@ -1,10 +1,10 @@
 package com.thingtek.socket;
 
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.config.PortConfig;
 import com.thingtek.view.shell.debugs.Debugs;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.UnitSetPanel;
+import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -25,9 +25,9 @@ public class CollectServer {
     @Resource
     private PortConfig portConfig;
     @Resource
-    private UnitService unitService;
+    private LXUnitService unitService;
     @Resource
-    private UnitSetPanel unitSetPanel;
+    private LXUnitSetPanel unitSetPanel;
 
     private CollectServer() {
 
@@ -52,32 +52,29 @@ public class CollectServer {
             return;
         }
         listST.clear();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    while (true) {
-                        Socket s = ss.accept();
-                        CollectSocket socket = new CollectSocket(s);
-                        System.out.println(s.getInetAddress().getHostAddress()+":"+s.getPort());
-                        socket.setAgreement(agreement);
-                        socket.setDebugShow(debugs);
-                        socket.setServer(CollectServer.this);
-                        socket.setUnitService(unitService);
-                        socket.setUnitSetPanel(unitSetPanel);
-                        Thread thread = new Thread(socket);
-                        thread.start();
-                    }
-                } catch (IOException e) {
-                    // e.printStackTrace();
-                } finally {
-                    // 关闭serverSocket
-                    if (ss != null && !ss.isClosed()) {
-                        try {
-                            ss.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+        new Thread(() -> {
+            try {
+                while (true) {
+                    Socket s = ss.accept();
+                    CollectSocket socket = new CollectSocket(s);
+                    System.out.println(s.getInetAddress().getHostAddress()+":"+s.getPort());
+                    socket.setAgreement(agreement);
+                    socket.setDebugShow(debugs);
+                    socket.setServer(CollectServer.this);
+                    socket.setUnitService(unitService);
+                    socket.setUnitSetPanel(unitSetPanel);
+                    Thread thread = new Thread(socket);
+                    thread.start();
+                }
+            } catch (IOException e) {
+                // e.printStackTrace();
+            } finally {
+                // 关闭serverSocket
+                if (ss != null && !ss.isClosed()) {
+                    try {
+                        ss.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
                 }
             }
@@ -120,15 +117,6 @@ public class CollectServer {
     synchronized void addSocket(CollectSocket st) {
         listST.add(st);
         checkUseful();
-    }
-
-    public CollectSocket getSocket(String ip) {
-        for (CollectSocket socket : listST) {
-            if (socket.getSocket().getInetAddress().getHostAddress().equals(ip)) {
-                return socket;
-            }
-        }
-        return null;
     }
 
     public CollectSocket getSocket(String ip, int port) {

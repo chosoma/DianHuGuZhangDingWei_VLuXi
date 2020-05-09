@@ -1,9 +1,7 @@
 package com.thingtek.beanServiceDao.data.entity;
 
-import com.thingtek.beanServiceDao.data.base.BaseDataBean;
-import com.thingtek.socket.agreement.SocketAgreement;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import javax.swing.*;
 import java.util.Date;
@@ -13,11 +11,12 @@ import java.util.Vector;
 /**
  *
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
-public class DisDataBean extends BaseDataBean implements Comparable<DisDataBean> {
-
-    private SocketAgreement agreementConfig;
+public class DisDataBean implements Comparable<DisDataBean> {
+    protected LXUnitBean unit;
+    protected Short unit_num;
+    protected Date inserttime;
+    protected Map<String, Object> one;
     private int[] data;
     private int datacount;
     private int xhqd;
@@ -46,31 +45,12 @@ public class DisDataBean extends BaseDataBean implements Comparable<DisDataBean>
         this.datastring = change();
     }*/
 
-    private String change() {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i : data) {
-            stringBuilder.append(Character.toChars(i));
-        }
-        return stringBuilder.toString();
-    }
-
-    public void resolve(Map<String, Object> one) {
-        this.one = one;
-        unit_num = (short) (int) (Integer) one.get("UNIT_NUM");
-        inserttime = (Date) one.get("INSERTTIME");
-        datastring = (String) one.get("DATASTRING");
-        data = new int[datastring.length()];
-        for (int i = 0; i < data.length; i++) {
-            data[i] = datastring.charAt(i);
-        }
-    }
-
     public void resolve(byte[] datas) {
         this.data = resolveData2Line(datas);
     }
 
     public void resolveTotalInfoTable(JTable table, int selectrow) {
-        super.resolveTotalInfoTable(table, selectrow);
+        this.unit_num = (Short) table.getValueAt(selectrow, 0);
         this.inserttime = (Date) table.getValueAt(selectrow, 3);
     }
 
@@ -87,7 +67,7 @@ public class DisDataBean extends BaseDataBean implements Comparable<DisDataBean>
         return bd.setScale(scale, BigDecimal.ROUND_HALF_UP).floatValue();
     }*/
 
-    public int[] resolveData2Line(byte[] datas) {
+    private int[] resolveData2Line(byte[] datas) {
         int[] dataint = new int[datas.length / 2];
         for (int i = 0; i < dataint.length; i++) {
             dataint[i] = bytes2int(i * 2, 2, datas);
@@ -95,13 +75,21 @@ public class DisDataBean extends BaseDataBean implements Comparable<DisDataBean>
         return dataint;
     }
 
-    @Override
     public Vector<Object> getDataTotalCol() {
-        Vector<Object> vector = super.getDataTotalCol();
-//        vector.add(xhqd);
-//        vector.add(sj);
+        Vector<Object> vector = new Vector<>();
+        vector.add(unit_num);
+        vector.add(unit.getPipe().getPipe_name());
+        vector.add(unit.getPipe_page());
         vector.add(inserttime);
         return vector;
+    }
+
+    private int bytes2int(int off, int length, byte[] bytes) {
+        int i = 0;
+        for (int j = 0; j < length; j++) {
+            i |= (bytes[off + j] & 0xff) << (j * 8);
+        }
+        return i;
     }
 
     @Override

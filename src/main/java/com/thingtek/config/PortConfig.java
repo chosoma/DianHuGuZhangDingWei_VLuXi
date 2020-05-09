@@ -1,6 +1,6 @@
 package com.thingtek.config;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
+import com.thingtek.beanServiceDao.base.BaseService;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;

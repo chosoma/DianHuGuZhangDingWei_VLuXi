@@ -13,8 +13,6 @@ public class DisDataTableModel extends BaseTableModel {
                 Short.class,
                 String.class,
                 String.class,
-//                Integer.class,
-//                Long.class,
                 Date.class
         };
         columnWidthes = new int[]{
@@ -25,13 +23,11 @@ public class DisDataTableModel extends BaseTableModel {
     @Override
     protected void initDefault() {
         super.initDefault();
-        Vector<String> column = new Vector<String>();
+        Vector<String> column = new Vector<>();
         column.add("单元编号");
-        column.add("位置名称");
-        column.add("相位");
-//        column.add("信号强度");
+        column.add("所属管体");
+        column.add("管体段");
         column.add("时间");
-//        column.add("触发时间");
         this.setDataVector(row, column);
     }
 }

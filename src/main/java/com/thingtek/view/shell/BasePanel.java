@@ -1,11 +1,7 @@
 package com.thingtek.view.shell;
 
-import com.thingtek.beanServiceDao.clt.service.CltService;
-import com.thingtek.beanServiceDao.data.service.DisDataService;
-import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import com.thingtek.beanServiceDao.pipe.service.PipeService;
-import com.thingtek.beanServiceDao.point.service.PointService;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.view.component.factory.Factorys;
@@ -51,17 +47,11 @@ public abstract class BasePanel extends JPanel {
     @Resource
     protected Factorys factorys;
     @Resource
-    protected UnitService unitService;
-    @Resource
-    protected PointService pointService;
+    protected LXUnitService unitService;
     @Resource
     protected PipeService pipeService;
     @Resource
-    protected CltService cltService;
-    @Resource
     protected WarnService warnService;
-    @Resource
-    protected TableConfig tableConfig;
 
     public abstract BasePanel init();
 

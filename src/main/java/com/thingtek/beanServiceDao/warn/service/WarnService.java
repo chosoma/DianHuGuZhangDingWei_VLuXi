@@ -1,10 +1,7 @@
 package com.thingtek.beanServiceDao.warn.service;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
-import com.thingtek.beanServiceDao.point.entity.PointBean;
-import com.thingtek.beanServiceDao.point.service.PointService;
-import com.thingtek.beanServiceDao.unit.base.BaseUnitBean;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
+import com.thingtek.beanServiceDao.base.BaseService;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.dao.WarnDao;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.socket.data.entity.DataSearchPara;
@@ -23,11 +20,7 @@ public class WarnService extends BaseService {
     WarnDao dao;
 
     private @Resource
-    UnitService unitService;
-
-    private @Resource
-    PointService pointService;
-
+    LXUnitService unitService;
 
     public List<WarnBean> getWarnByPara(DataSearchPara para) {
         List<WarnBean> warns;

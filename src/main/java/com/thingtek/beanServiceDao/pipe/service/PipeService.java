@@ -1,6 +1,6 @@
 package com.thingtek.beanServiceDao.pipe.service;
 
-import com.thingtek.beanServiceDao.base.service.BaseService;
+import com.thingtek.beanServiceDao.base.BaseService;
 import com.thingtek.beanServiceDao.pipe.dao.PipeDao;
 import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import org.springframework.stereotype.Service;
@@ -18,17 +18,15 @@ public class PipeService extends BaseService {
 
     private List<PipeBean> pipes;
 
-    public boolean savePipe(PipeBean... pipeBean) {
-        boolean flag = false;
+    public void savePipe(PipeBean... pipeBean) {
         try {
-            flag = dao.save(pipeBean);
+            if (dao.save(pipeBean)) {
+                pipes.clear();
+            }
         } catch (Exception e) {
             log(e);
         }
-        if (flag) {
-            pipes.clear();
-        }
-        return flag;
+
     }
 
     public boolean delete(int... pipe_ids) {
@@ -91,6 +89,14 @@ public class PipeService extends BaseService {
         cache();
         return pipes;
     }
+
+    /*public int getPipePages() {
+        int pages = 0;
+        for (PipeBean pipe : pipes) {
+            pages += pipe.getPipe_page();
+        }
+        return pages;
+    }*/
 
     public int getUnHasPipeId() {
         cache();

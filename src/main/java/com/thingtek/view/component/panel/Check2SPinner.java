@@ -6,9 +6,6 @@ import com.thingtek.view.component.factory.MyBorderFactory;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -27,13 +24,6 @@ public class Check2SPinner extends JPanel {
     // private String dataFormat = MyUtil.DATA_FORMAT_PATTERN;
     // private SimpleDateFormat timeFormat = MyUtil.DataFormat_8;
 
-    // 传递设定时间的构造函数
-    public Check2SPinner(Boolean choose, String date) {
-        this.choose = choose;
-        Date setDate = Timestamp.valueOf(date);
-        init(setDate);
-    }
-
     // 传递当前系统时间的构造函数
     public Check2SPinner(Boolean choose, Date date) {
         this.choose = choose;
@@ -47,15 +37,11 @@ public class Check2SPinner extends JPanel {
         checkBox.setBorder(null);
         checkBox.setOpaque(false);
         checkBox.setSelected(choose);
-        checkBox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (checkBox.isSelected())
-                    spinner.setEnabled(true);
-                else
-                    spinner.setEnabled(false);
-            }
-
+        checkBox.addActionListener(e -> {
+            if (checkBox.isSelected())
+                spinner.setEnabled(true);
+            else
+                spinner.setEnabled(false);
         });
 
         spinner = createSpinner(value);
@@ -88,10 +74,6 @@ public class Check2SPinner extends JPanel {
             return (Date) spinner.getValue();
         }
         return null;
-    }
-
-    public void setChoose(Boolean b) {
-        checkBox.setSelected(b);
     }
 
 

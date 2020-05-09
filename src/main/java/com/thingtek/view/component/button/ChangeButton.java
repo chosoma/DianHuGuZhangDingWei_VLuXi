@@ -10,20 +10,8 @@ public class ChangeButton extends JButton {
 
     private Insets insets = new Insets(1, 1, 1, 1);
 
-    public ChangeButton() {
-        super();
-    }
-
     public ChangeButton(String text) {
         super(text, null);
-    }
-
-    public ChangeButton(Icon icon) {
-        super(null, icon);
-    }
-
-    public ChangeButton(String text, Icon icon) {
-        super(text, icon);
     }
 
     public Insets getInsets() {

@@ -1,6 +1,6 @@
 package com.thingtek.view.component.panel;
 
-import com.thingtek.beanServiceDao.unit.entity.DisUnitBean;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -92,17 +92,6 @@ class BaseWarnPanel extends BaseUnitSetPanel {
     @Override
     public void initValue() {
         super.initValue();
-    }
-
-    @Override
-    public DisUnitBean getValues() {
-        Map<String, Object> one = unitBean.getOne();
-        Set<Map.Entry<String, Integer>> entries = componentIndexs.entrySet();
-        for (Map.Entry<String, Integer> entry : entries) {
-            one.put(entry.getKey(), Float.valueOf(labels[entry.getValue()].getText()));
-        }
-        unitBean.resolve(one);
-        return unitBean;
     }
 
     private float scale(int type, float f1, float f2, int scale) {

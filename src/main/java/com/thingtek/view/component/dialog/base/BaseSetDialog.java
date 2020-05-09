@@ -1,9 +1,7 @@
 package com.thingtek.view.component.dialog.base;
 
 import com.thingtek.beanServiceDao.pipe.service.PipeService;
-import com.thingtek.beanServiceDao.point.service.PointService;
-import com.thingtek.beanServiceDao.unit.service.UnitService;
-import com.thingtek.config.clazz.ClazzConfig;
+import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,32 +10,20 @@ import java.awt.event.ActionListener;
 
 public abstract class BaseSetDialog extends BaseDialog {
 
-    protected UnitService unitService;
-
-    protected PointService pointService;
+    protected LXUnitService unitService;
 
     protected PipeService pipeService;
-
-    protected ClazzConfig clazzConfig;
 
     public BaseSetDialog(JFrame jFrame, String titleText, Image icon) {
         super(jFrame, titleText, icon);
     }
 
-    public void setUnitService(UnitService unitService) {
+    public void setUnitService(LXUnitService unitService) {
         this.unitService = unitService;
-    }
-
-    public void setPointService(PointService pointService) {
-        this.pointService = pointService;
     }
 
     public void setPipeService(PipeService pipeService) {
         this.pipeService = pipeService;
-    }
-
-    public void setClazzConfig(ClazzConfig clazzConfig) {
-        this.clazzConfig = clazzConfig;
     }
 
     public BaseDialog initDialog() {
@@ -70,8 +56,6 @@ public abstract class BaseSetDialog extends BaseDialog {
         JPanel bottomPane = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 2));
         bottomPane.setBackground(new Color(240, 240, 240));
         container.add(bottomPane, BorderLayout.SOUTH);
-//        container.setBackground(Color.red);
-//        centerPanel.setBackground(Color.CYAN);
 
         buttonSave = new JButton(factorys.getIconFactory().getIcon("apply"));
         buttonSave.setPreferredSize(new Dimension(100, 28));
@@ -80,12 +64,7 @@ public abstract class BaseSetDialog extends BaseDialog {
         JButton buttonCancel = new JButton("取消", factorys.getIconFactory().getIcon("cancel"));
         buttonCancel.setToolTipText("取消");
         buttonCancel.setPreferredSize(new Dimension(100, 28));
-        buttonCancel.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                dispose();
-            }
-        });
+        buttonCancel.addActionListener(e -> dispose());
         bottomPane.add(buttonCancel);
     }
 
@@ -100,24 +79,4 @@ public abstract class BaseSetDialog extends BaseDialog {
         setSize(240, 76 + ycount * 30);
     }
 
-    protected boolean isNull(String string) {
-        return string == null || string.trim().equals("");
-    }
-
-
-    protected void errorMessage(String text) {
-        JOptionPane.showMessageDialog(this, text, "错误", JOptionPane.ERROR_MESSAGE);
-    }
-
-    protected void falseMessage(String text) {
-        JOptionPane.showMessageDialog(this, text, "失败", JOptionPane.ERROR_MESSAGE);
-    }
-
-    protected void successMessage(String text) {
-        JOptionPane.showMessageDialog(this, text, "成功", JOptionPane.INFORMATION_MESSAGE);
-    }
-
-    protected boolean isNum(String str) {
-        return str.matches("^([1-9]\\d*|0)(\\.\\d{1,2})?$");
-    }
 }

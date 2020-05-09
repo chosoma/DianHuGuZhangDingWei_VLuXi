@@ -21,7 +21,7 @@ public class PipeTableModel extends BaseTableModel {
     @Override
     protected void initDefault() {
         super.initDefault();
-        Vector<String> column = new Vector<String>();
+        Vector<String> column = new Vector<>();
         column.add("管体编号");
         column.add("管体名称");
         column.add("管体分段");

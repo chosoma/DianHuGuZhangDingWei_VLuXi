@@ -1,18 +1,16 @@
 package com.thingtek.view.logo;
 
-import java.util.List;
-import java.util.Map;
-
 import com.thingtek.view.shell.BasePanel;
 import com.thingtek.view.shell.DataPanel;
-import com.thingtek.view.shell.dataCollect.base.BaseCollectPanel;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
+
+import java.util.List;
+import java.util.Map;
 
 public class LogoInfo {
     private String SoftName, CompanyName, CopyrightName;
     private Map<String, BasePanel> basePanelMap;
     private Map<String, Map<String, BaseSystemPanel>> setPanelMap;
-    private Map<String, BaseCollectPanel> collectPanelMap;
     private List<DataPanel> dataPanels;
 
     public List<DataPanel> getDataPanels() {
@@ -61,14 +59,6 @@ public class LogoInfo {
 
     public void setSetPanelMap(Map<String, Map<String, BaseSystemPanel>> setPanelMap) {
         this.setPanelMap = setPanelMap;
-    }
-
-    public Map<String, BaseCollectPanel> getCollectPanelMap() {
-        return collectPanelMap;
-    }
-
-    public void setCollectPanelMap(Map<String, BaseCollectPanel> collectPanelMap) {
-        this.collectPanelMap = collectPanelMap;
     }
 
 

@@ -2,7 +2,6 @@ package com.thingtek.view.component.tablemodel;
 
 import org.springframework.stereotype.Component;
 
-import javax.swing.*;
 import java.util.Date;
 import java.util.Vector;
 
@@ -22,7 +21,7 @@ public class CollectWarnTableModel extends BaseTableModel {
     @Override
     protected void initDefault() {
         super.initDefault();
-        Vector<String> column = new Vector<String>();
+        Vector<String> column = new Vector<>();
         column.add("异常位置");
         column.add("异常相位");
 //        column.add("报警原因");

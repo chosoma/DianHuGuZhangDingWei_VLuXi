@@ -25,15 +25,9 @@ public class Loading extends JFrame {
     private LogoInfo logoInfo;
 
     private JPanel jpBackground, jpLoad;
-    private JLabel jlbPageInfo;
     private JProgressBar jpbProgress;
     private JLabel jlbProgress;
-    // 登录、取消按钮
-    private JButton jbtApply;
-    // 用户输入区域
-    private JTextField jtfUserName;
-    // 密码框
-    private JPasswordField jpfPSW;
+
 
     // 构造方法
     public Loading() {
@@ -58,7 +52,7 @@ public class Loading extends JFrame {
         jlbSoftname.setForeground(factorys.getColorFactory().getColor("loginSoftnameFore"));
         addBackGround(jlbSoftname, 10, 10, 380, 40);
 
-        jlbPageInfo = new JLabel("正在加载...");
+        JLabel jlbPageInfo = new JLabel("正在加载...");
         jlbPageInfo.setFont(factorys.getFontFactory().getFont("loginPageInfoFont"));
         jlbPageInfo.setForeground(factorys.getColorFactory().getColor("loginPageInfoFore"));
         addBackGround(jlbPageInfo, 40, 75, 120, 22);
@@ -110,7 +104,7 @@ public class Loading extends JFrame {
         jlbProgress.setText(loading);
     }
 
-    java.util.List<Image> icons;
+    private java.util.List<Image> icons;
 
     private void load() {
 

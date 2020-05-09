@@ -13,7 +13,7 @@ import com.thingtek.view.component.button.ShellTitleButton;
 import com.thingtek.view.component.dialog.SystemDialog;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.logo.LogoInfo;
-import com.thingtek.view.shell.dataCollect.DataCollectPanel;
+import com.thingtek.view.shell.dataCollect.LXDataCollectPanel;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
 
 @org.springframework.stereotype.Component
@@ -28,11 +28,10 @@ public class Shell extends JFrame {
     private JPanel normalpanel;
     private JPanel toolBar;
     private JPanel centerPanel;
-    private JPanel bottomPanel;
     private CardLayout centerCard;// 卡片布局
 
-    public Dimension shellDimension = new Dimension(1000, 600);
-    public Dimension systemDimension = new Dimension(800, 400);
+    private Dimension shellDimension = new Dimension(1000, 600);
+    private Dimension systemDimension = new Dimension(800, 400);
 
     public Shell init() {
 //        collectlist = new ArrayList<>();
@@ -70,10 +69,8 @@ public class Shell extends JFrame {
         this.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 int option = JOptionPane.showConfirmDialog(Shell.this, "确认关闭?", "关闭程序", JOptionPane.OK_CANCEL_OPTION);
-                switch (option) {
-                    case JOptionPane.OK_OPTION:
-                        exitSys();
-                        break;
+                if (option == JOptionPane.OK_OPTION) {
+                    exitSys();
                 }
             }
         });
@@ -87,12 +84,6 @@ public class Shell extends JFrame {
         menuBar = new JMenuBar();
         menuBar.setBorderPainted(false);
         this.setJMenuBar(menuBar);
-    }
-
-    public void addMenu(JMenuItem item) {
-        JMenu menu = new JMenu(item.getName());
-        menu.add(item);
-        menuBar.add(menu);
     }
 
     private void initTop() {
@@ -121,7 +112,7 @@ public class Shell extends JFrame {
     }
 
     private void initBottom() {
-        bottomPanel = new JPanel(new BorderLayout(5, 5));
+        JPanel bottomPanel = new JPanel(new BorderLayout(5, 5));
         bottomPanel.setOpaque(false);
 
         JLabel companyName = new JLabel("  " + logoInfo.getCopyrightName() + logoInfo.getCompanyName() + "  ", JLabel.CENTER);
@@ -160,12 +151,7 @@ public class Shell extends JFrame {
             if (panel.isShow()) {
                 menu.add(item);
                 systemDialog.addItem(panel, title);
-                item.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        systemDialog.showItem(title);
-                    }
-                });
+                item.addActionListener(e -> systemDialog.showItem(title));
             }
 //            panel.loadingData();
         }
@@ -175,14 +161,11 @@ public class Shell extends JFrame {
         JMenu menu = new JMenu("帮助");
         menuBar.add(menu);
         JMenuItem item = new JMenuItem("帮助");
-        item.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    Runtime.getRuntime().exec("cmd /c start " + "help.chm");
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
+        item.addActionListener(e -> {
+            try {
+                Runtime.getRuntime().exec("cmd /c start " + "help.chm");
+            } catch (IOException e1) {
+                e1.printStackTrace();
             }
         });
         menu.add(item);
@@ -193,16 +176,13 @@ public class Shell extends JFrame {
         JButton title = new ShellTitleButton(text, factorys.getIconFactory().getIcon(text));
         title.setFont(factorys.getFontFactory().getFont("title"));
         title.setForeground(factorys.getColorFactory().getColor("titleButtonForeground"));
-        title.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                for (JButton b : titleButtons) {
-                    if (e.getSource() != b) {
-                        b.setSelected(false);
-                    } else {
-                        b.setSelected(true);
-                        centerCard.show(centerPanel, text);
-                    }
+        title.addActionListener(e -> {
+            for (JButton b : titleButtons) {
+                if (e.getSource() != b) {
+                    b.setSelected(false);
+                } else {
+                    b.setSelected(true);
+                    centerCard.show(centerPanel, text);
                 }
             }
         });
@@ -221,7 +201,7 @@ public class Shell extends JFrame {
     }
 
     @Resource
-    private DataCollectPanel dataCollectPanel;
+    private LXDataCollectPanel dataCollectPanel;
 
     public void showWarn(int clttype) {
         for (JButton button : titleButtons) {
