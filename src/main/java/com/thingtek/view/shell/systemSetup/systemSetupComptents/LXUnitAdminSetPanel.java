@@ -14,11 +14,11 @@ import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemP
 
 import javax.annotation.Resource;
 import javax.swing.*;
+import javax.swing.Timer;
 import java.awt.*;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
-import java.util.Vector;
 
 public class LXUnitAdminSetPanel extends BaseSystemPanel {
 
@@ -218,7 +218,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
                 return;
             }
             LXUnitBean unit = unitService.getUnitByNumber((Short) onlytable.getValueAt(row, 0));
-            if (!check1input(row)) {
+            if (!checkInput(row)) {
                 refreshUnit();
                 return;
             }
@@ -254,7 +254,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
                 return;
             }
             LXUnitBean unit = unitService.getUnitByNumber((Short) onlytable.getValueAt(row, 0));
-            if (!check1input(row)) {
+            if (!checkInput(row)) {
                 refreshUnit();
                 return;
             }
@@ -354,7 +354,16 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     @Override
     public void loadingData() {
         refreshUnit();
-
+        new java.util.Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (int i = 0; i < onlytable.getRowCount(); i++) {
+                    short unit_num = (short) onlytable.getValueAt(i, 0);
+                    LXUnitBean unitBean = unitService.getUnitByNumber(unit_num);
+                    onlytable.setValueAt(unitBean.isConnect(), i, 7);
+                }
+            }
+        }, 10000, 5000);
     }
 
     public void refreshUnit() {
@@ -391,7 +400,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
         return fzint < 13 || fzint > 127;
     }
 
-    private boolean check1input(int row) {
+    private boolean checkInput(int row) {
         short unit_num = (short) onlytable.getValueAt(row, 0);
         Object objfz = onlytable.getValueAt(row, 1);
         String fz = objfz == null ? null : String.valueOf(objfz);
@@ -407,7 +416,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
         }
         Object objip = onlytable.getValueAt(row, 3);
         String ip = objip == null ? null : String.valueOf(objip);
-        if (!(ip == null || isIp(ip))) {
+        if (!(ip == null || ip.trim().equals("") || isIp(ip))) {
             errorMessage("单元编号 " + unit_num + " IP地址输入有误");
             return false;
         }
@@ -423,12 +432,18 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
             errorMessage("单元编号 " + unit_num + " 安装位置输入有误");
             return false;
         }
+        Object objpoint = onlytable.getValueAt(row, 6);
+        String point = objpoint == null ? null : String.valueOf(objpoint);
+        if (!(point == null || isNum(point))) {
+            errorMessage("单元编号 " + unit_num + " 安装位置输入有误");
+            return false;
+        }
         return true;
     }
 
     private boolean checkinput() {
         for (int i = 0; i < onlytable.getRowCount(); i++) {
-            boolean flag = check1input(i);
+            boolean flag = checkInput(i);
             if (!flag) {
                 return false;
             }

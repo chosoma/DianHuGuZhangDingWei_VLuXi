@@ -13,7 +13,7 @@ public interface WarnDao {
 
     List<WarnBean> getLast() throws Exception;
 
-    boolean delete(@Param("warn") WarnBean warn, @Param("dates") List<Date> dates) throws Exception;
+    boolean delete(WarnBean warn) throws Exception;
 
     boolean save(WarnBean... warns) throws Exception;
 

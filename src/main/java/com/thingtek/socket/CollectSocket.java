@@ -9,30 +9,40 @@ import com.thingtek.socket.entity.G2SUploadData;
 import com.thingtek.socket.entity.UnUnitNum;
 import com.thingtek.view.shell.debugs.Debugs;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 
-import javax.annotation.Resource;
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.*;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class CollectSocket extends BaseService implements Runnable {
     private Socket socket;
     private OutputStream out;// socket输出流
     private InputStream in;
     private SocketAgreement agreement;
+    private String ip;
+    private int port;
+
     private short unitnum;
+
+    private LXUnitBean unit;
     private byte[] readcaches;
-    private List<byte[]> sendcaches;
     private Debugs debugShow;
     private LXUnitService unitService;
-
-    @Resource
     private LXUnitSetPanel unitSetPanel;
+
+    public Socket getSocket() {
+        return socket;
+    }
+
+    public void setAgreement(SocketAgreement agreement) {
+        this.agreement = agreement;
+    }
+
+    public void setUnitSetPanel(LXUnitSetPanel unitSetPanel) {
+        this.unitSetPanel = unitSetPanel;
+    }
+
     public void setUnitService(LXUnitService unitService) {
         this.unitService = unitService;
     }
@@ -51,24 +61,32 @@ public class CollectSocket extends BaseService implements Runnable {
 
     CollectSocket(Socket socket) {
         this.socket = socket;
-        sendcaches = new ArrayList<>();
         dataFactory = new DataBuffer();
+        ip = socket.getInetAddress().getHostAddress();
+        port = socket.getPort();
     }
 
     boolean readflag = false;
+//    long  count = 0;
 
     @Override
     public void run() {
         String offlineMSG = "";
         try {
             offlineMSG = "连接成功";
-            debugShow.showMsg(offlineMSG + socket.getInetAddress() + ":" + socket.getPort());
-            System.out.println(offlineMSG);
+            debugShow.showMsg(offlineMSG + ip + ":" + port);
+
             in = socket.getInputStream();
             out = socket.getOutputStream();
+
+            unit = unitService.getUnitByIp(socket.getInetAddress().getHostAddress());
+            if (unit != null) {
+                unit.setConnect(true);
+            }
             byte[] b = new byte[1024 * 1024];
             int num;
             while ((num = in.read(b)) != -1) {
+//                System.out.println(count+=num);
                 Date time = Calendar.getInstance().getTime();
                 debugShow.rec(b, num, time, " " + socket.getPort());
 
@@ -111,9 +129,10 @@ public class CollectSocket extends BaseService implements Runnable {
             } catch (IOException e) {
                 log(e);
             }
+            unit.setConnect(false);
             server.removeSocket(this);
             dataFactory.close();
-            debugShow.showMsg(offlineMSG);
+            debugShow.showMsg(offlineMSG + ip + ":" + port);
         }
     }
 
@@ -130,7 +149,7 @@ public class CollectSocket extends BaseService implements Runnable {
         int endoff = agreement.getendoff(readcaches);
 //        System.out.println("startoff:" + startoff);
 //        System.out.println("endoff:" + endoff);
-        byte[] bytes ;
+        byte[] bytes;
         if (endoff == -1 || startoff == -1) {
             return;
         }
@@ -165,20 +184,21 @@ public class CollectSocket extends BaseService implements Runnable {
             unitnum = g2s.getUnitnum();
             String ip = socket.getInetAddress().getHostAddress();
             int port = socket.getPort();
-            LXUnitBean unit = unitService.getUnitByNumber( unitnum);
+            unit = unitService.getUnitByNumber(unitnum);
             if (unit == null) {
                 unit = new LXUnitBean();
                 unit.setUnit_num(unitnum);
                 unit.setPipe_id(1);
-                unitService.saveLXUnit(unit);
             }
             if (!ip.equals(unit.getIp()) || port != unit.getPort()) {
                 unit.setIp(ip);
                 unit.setPort(port);
                 unitService.updateLXUnit(unit);
+                unit.setConnect(true);
             }
         }
-
+        unit = unitService.getUnitByNumber(unitnum);
+        unit.setConnect(true);
         byte[] result = g2s.getResult();
 //        System.out.println(Arrays.toString(result));
         if (result != null && g2s.isCansend()) {
@@ -231,6 +251,14 @@ public class CollectSocket extends BaseService implements Runnable {
             }
             throw new IOException(" 发送命令时连接中断");
         }
+    }
+
+    public String getIp() {
+        return ip;
+    }
+
+    public int getPort() {
+        return port;
     }
 
     /**

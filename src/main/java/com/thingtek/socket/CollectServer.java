@@ -57,7 +57,7 @@ public class CollectServer {
                 while (true) {
                     Socket s = ss.accept();
                     CollectSocket socket = new CollectSocket(s);
-                    System.out.println(s.getInetAddress().getHostAddress()+":"+s.getPort());
+                    System.out.println(s.getInetAddress().getHostAddress() + ":" + s.getPort());
                     socket.setAgreement(agreement);
                     socket.setDebugShow(debugs);
                     socket.setServer(CollectServer.this);
@@ -121,7 +121,7 @@ public class CollectServer {
 
     public CollectSocket getSocket(String ip, int port) {
         for (CollectSocket socket : listST) {
-            if (socket.getSocket().getInetAddress().getHostAddress().equals(ip) && socket.getSocket().getPort() == port) {
+            if (socket.getIp().equals(ip) && socket.getPort() == port) {
                 return socket;
             }
         }

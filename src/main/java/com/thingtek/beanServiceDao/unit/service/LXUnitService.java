@@ -7,6 +7,7 @@ import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.dao.LXUnitDao;
 
+import com.thingtek.view.shell.dataCollect.LXUnitIconLabel;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -37,8 +38,8 @@ public class LXUnitService extends BaseService {
         } catch (Exception e) {
             log(e);
         }
-            units.clear();
-            cache();
+        units.clear();
+        cache();
     }
 
     /*public List<LXUnitBean> getAll() {
@@ -86,6 +87,15 @@ public class LXUnitService extends BaseService {
         return null;
     }
 
+    public LXUnitBean getUnitByIp(String ip){
+        cache();
+        for (LXUnitBean unit : units) {
+            if (Objects.equals(ip, unit.getIp())) {
+                return unit;
+            }
+        }
+        return null;
+    }
     public boolean updateLXUnit(LXUnitBean... units) {
         List<Boolean> flags = new ArrayList<>();
         for (LXUnitBean unit : units) {
@@ -112,6 +122,48 @@ public class LXUnitService extends BaseService {
         } catch (Exception e) {
             log(e);
         }
+    }
+
+
+    public LXUnitBean getNearestUnit(PipeBean pipeBean, double weizhi) {
+        cache();
+        List<LXUnitBean> units = getUnitsByPipe(pipeBean);
+        Iterator<LXUnitBean> iterator = units.iterator();
+        LXUnitBean unit = iterator.next();
+
+        while (iterator.hasNext()) {
+            LXUnitBean next = iterator.next();
+            double jian_ge = unit.getPlace_value() - weizhi;
+            if (jian_ge < 0) {
+                jian_ge *= -1;
+            }
+            double next_jian_ge = next.getPlace_value() - weizhi;
+            if (next_jian_ge < 0) {
+                next_jian_ge *= 0;
+            }
+            if (jian_ge > next_jian_ge) {
+                unit = next;
+            }
+        }
+        return unit;
+    }
+
+    public LXUnitBean getToUnit(LXUnitBean unitBean, double weizhi) {
+        List<LXUnitBean> units = getUnitsByPipe(unitBean.getPipe());
+        Iterator<LXUnitBean> iterator = units.iterator();
+        int point = unitBean.getPoint();
+        if (weizhi > unitBean.getPlace_value()) {
+            point++;
+        } else {
+            point--;
+        }
+        while (iterator.hasNext()) {
+            LXUnitBean next = iterator.next();
+            if (next.getPoint() == point) {
+                return next;
+            }
+        }
+        return null;
     }
 
     /*public boolean deleteUnitByNum(byte unit_num) {

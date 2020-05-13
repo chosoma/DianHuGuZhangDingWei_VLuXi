@@ -22,8 +22,8 @@ public class CollectWarnTableModel extends BaseTableModel {
     protected void initDefault() {
         super.initDefault();
         Vector<String> column = new Vector<>();
-        column.add("异常位置");
-        column.add("异常相位");
+        column.add("所属管体");
+        column.add("异常信息");
 //        column.add("报警原因");
         column.add("异常发生时间");
 //        column.add("");

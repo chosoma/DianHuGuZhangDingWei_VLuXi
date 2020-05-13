@@ -65,7 +65,7 @@
                 <entry key="数据采集" value="icons/collect_24.png"/>
                 <entry key="电弧管理" value="icons/manage_24.png"/>
                 <entry key="故障管理" value="icons/manage_24.png"/>
-                <entry key="报警查询" value="icons/warn_24.png"/>
+                <entry key="异常管理" value="icons/warn_24.png"/>
                 <entry key="系统设置" value="icons/system_24.png"/>
                 <entry key="调试界面" value="icons/debug_24.png"/>
             </map>

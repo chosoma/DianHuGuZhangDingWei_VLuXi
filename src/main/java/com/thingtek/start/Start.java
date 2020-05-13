@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.swing.*;
+import java.io.IOException;
 
 public class Start {
     public static void main(String[] args) {

@@ -62,10 +62,9 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
 
     private void initCompnent() {
         jTabbedPane = new JTabbedPane();
-        jTabbedPane.setTabPlacement(JTabbedPane.BOTTOM);
+        jTabbedPane.setTabPlacement(JTabbedPane.LEFT);
         add(jTabbedPane, BorderLayout.CENTER);
         refreshPoint();
-
     }
 
     public void addtablewarn(WarnBean warnBean) {
@@ -77,8 +76,8 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
         java.util.List<PipeBean> pipes = pipeService.findAll();
         for (PipeBean pipe : pipes) {
             for (int i = 1; i <= pipe.getPipe_page(); i++) {
-                String name = pipe.getPipe_name() + "管_" + i+"段";
-                LXCollectPanel clt = new LXCollectPanel();
+                String name = pipe.getPipe_name() + "管_" + i + "段";
+                LXPipePageCollectPanel clt = new LXPipePageCollectPanel();
                 clt.setAdmin(true);
                 clt.setName(name);
                 jTabbedPane.add(clt);

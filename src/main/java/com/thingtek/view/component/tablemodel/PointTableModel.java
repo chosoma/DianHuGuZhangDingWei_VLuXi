@@ -13,7 +13,8 @@ public class PointTableModel extends BaseTableModel {
                 JComboBox.class,
                 Integer.class,
                 String.class,
-                Integer.class
+                Integer.class,
+                Integer.class,
         };
     }
 
@@ -25,6 +26,7 @@ public class PointTableModel extends BaseTableModel {
         column.add("测点编号");
         column.add("测点名称");
         column.add("安装位置(米)");
+        column.add("点位");
         this.setDataVector(row, column);
     }
 

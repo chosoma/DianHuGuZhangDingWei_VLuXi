@@ -16,6 +16,8 @@
         ,UNIT.IP AS IP
         ,UNIT.PORT AS PORT
         ,UNIT.PLACE_VALUE AS PLACE_VALUE
+        ,UNIT.PLACE_NAME AS PLACE_NAME
+        ,UNIT.POINT AS POINT
         FROM UNIT_DIS UNIT
         order by UNIT.UNIT_NUM asc
     </select>
@@ -33,6 +35,8 @@
         ,IP = #{unit.ip}
         ,PORT = #{unit.port}
         ,PLACE_VALUE = #{unit.place_value}
+        ,PLACE_NAME = #{unit.place_name}
+        ,POINT = #{unit.point}
         <where>
             UNIT_NUM = #{unit.unit_num}
         </where>
@@ -54,7 +58,8 @@
         `UNIT_NUM` int(5) DEFAULT NULL,
         `DATASTRING` longtext,
         `XHQD` int(11) DEFAULT '0',
-        `SJ` bigint(20) DEFAULT '0',
+        `GATEWAYFRONTSJ` bigint(20) DEFAULT '0',
+        `SERVERSJ` bigint(20) DEFAULT '0',
         `GATEWAYFRONTINDEX` int(11) DEFAULT '0',
         `SERVERINDEX` int(11) DEFAULT '0',
         `MININDEX` int(11) DEFAULT '0',

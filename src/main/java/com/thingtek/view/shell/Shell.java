@@ -203,13 +203,13 @@ public class Shell extends JFrame {
     @Resource
     private LXDataCollectPanel dataCollectPanel;
 
-    public void showWarn(int clttype) {
+    public void showWarn() {
         for (JButton button : titleButtons) {
             if (button.getText().equals("数据采集")) {
                 button.doClick();
             }
         }
-        dataCollectPanel.showWarn(clttype);
+        dataCollectPanel.showWarn();
     }
 
 }

@@ -1,6 +1,9 @@
 package com.thingtek.beanServiceDao.warn.service;
 
 import com.thingtek.beanServiceDao.base.BaseService;
+import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
+import com.thingtek.beanServiceDao.pipe.service.PipeService;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.dao.WarnDao;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
@@ -9,9 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class WarnService extends BaseService {
@@ -22,10 +23,23 @@ public class WarnService extends BaseService {
     private @Resource
     LXUnitService unitService;
 
+    @Resource
+    private PipeService pipeService;
+
     public List<WarnBean> getWarnByPara(DataSearchPara para) {
         List<WarnBean> warns;
         try {
             warns = dao.getByPara(para);
+            for (WarnBean warn : warns) {
+                PipeBean pipeBean = pipeService.getPipeById(warn.getPipe_id());
+                warn.setPipe(pipeBean);
+                LXUnitBean nearunit = unitService.getUnitByNumber(warn.getNear_unit_num());
+                warn.setNearunit(nearunit);
+                if (warn.getTo_unit_num() != null) {
+                    LXUnitBean tounit = unitService.getUnitByNumber(warn.getTo_unit_num());
+                    warn.setTounit(tounit);
+                }
+            }
         } catch (Exception e) {
             warns = new ArrayList<>();
             log(e);
@@ -34,11 +48,11 @@ public class WarnService extends BaseService {
     }
 
 
-    public boolean deleteWarn(Map<WarnBean, List<Date>> warnDateMapList) {
+    public boolean deleteWarn(WarnBean... warns) {
         List<Boolean> flags = new ArrayList<>();
-        for (Map.Entry<WarnBean, List<Date>> entry : warnDateMapList.entrySet()) {
+        for (WarnBean entry : warns) {
             try {
-                flags.add(dao.delete(entry.getKey(), entry.getValue()));
+                flags.add(dao.delete(entry));
             } catch (Exception e) {
                 log(e);
                 flags.add(false);
@@ -47,12 +61,11 @@ public class WarnService extends BaseService {
         return !flags.contains(false);
     }
 
-    public boolean save(WarnBean... warns) {
+    public void save(WarnBean... warns) {
         try {
-            return dao.save(warns);
+            dao.save(warns);
         } catch (Exception e) {
             log(e);
-            return false;
         }
     }
 }

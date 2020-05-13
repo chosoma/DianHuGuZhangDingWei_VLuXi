@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -35,20 +36,25 @@ public class DataBuffer {
     @Resource
     private WarnService warnService;
 
-    private Map<PipeBean, List<DisDataBean>> warnmap;
+    private ConcurrentHashMap<PipeBean, List<DisDataBean>> warnmap; //根据管体 检查警报
+
+    private ConcurrentHashMap<PipeBean, List<DisDataBean>> cacheData;
+
+    private ConcurrentHashMap<PipeBean, Map<LXUnitBean, DisDataBean>> warningCacheData;
 
     public DataBuffer() {
         buffer = new HashMap<>();
         wholebuffer = new ArrayList<>();
-        warnmap = new HashMap<>();
+        warnmap = new ConcurrentHashMap<>();
+        cacheData = new ConcurrentHashMap<>();
         lock = new ReentrantLock();
         con = lock.newCondition();
+        warningCacheData = new ConcurrentHashMap<>();
         start();
     }
 
     /**
      * 将有效长度为length的数据添加到数据缓冲区
-     *
      */
     public boolean receDatas(RawData rawData) {
         synchronized (wholebuffer) {
@@ -153,12 +159,15 @@ public class DataBuffer {
                         RawData rawData = datas[datas.length - 1];
                         DisDataBean data = rawData.getData();
                         data.setDatastring(stringBuilder.toString());
-                        resolveWarning(data);
                         int serverIndex = getServerIndex(data.getData());
                         data.setServerindex(serverIndex);
                         int minindex = data.getData().length - data.getGatewayfrontindex() - serverIndex;
                         data.setMinindex(minindex);
-                        dataService.saveDatas(data);
+                        int gatewayfrontsj = data.getGatewayfrontsj();
+                        int serversj = gatewayfrontsj - minindex * 10;
+                        data.setServersj(serversj);
+                        resolveData(data);
+//                        resolveWarning(data);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -192,8 +201,8 @@ public class DataBuffer {
             if (Objects.equals(data1.getUnit_num(), data2.getUnit_num())) {
                 continue;
             }
-            long sj1 = data1.getSj();
-            long sj2 = data2.getSj();
+            long sj1 = data1.getGatewayfrontsj();
+            long sj2 = data2.getGatewayfrontsj();
             long mat = sj2 - sj1;
             if (mat < 0) {
                 mat *= -1;
@@ -234,14 +243,180 @@ public class DataBuffer {
                 i -= 2;
             } else {//先触发的另一边
                 datas.remove(data2);
-                i--;
+                --i;
                 return;
             }
         }
     }
 
+
+    private void resolveData(DisDataBean data) {
+        LXUnitBean unit = unitService.getUnitByNumber(data.getUnit_num());
+        PipeBean pipe = pipeService.getPipeById(unit.getPipe_id());
+        //检测正在报警的
+        Map<LXUnitBean, DisDataBean> warningData = warningCacheData.get(pipe);
+        if (warningData.containsKey(unit)) {//单元相同 直接存储
+            dataService.saveDatas(data);
+            return;
+        }
+        for (Map.Entry<LXUnitBean, DisDataBean> entry : warningData.entrySet()) {
+            DisDataBean disDataBean = entry.getValue();
+            LXUnitBean lxUnitBean = entry.getKey();
+            LXUnitBean resolveunit = resolveNearestUnit(pipe, disDataBean, data);
+            if (resolveunit == null) {
+                continue;
+            }
+            if (lxUnitBean.getUnit_num().equals(resolveunit.getUnit_num())) {
+                dataService.saveDatas(data);
+                return;
+            }
+        }
+        //找到 返回 没找到 存储缓存数据
+        addCacheData(data);
+
+    }
+
+    private void addCacheData(DisDataBean data) {//存储缓存数据
+        LXUnitBean unit = unitService.getUnitByNumber(data.getUnit_num());
+        PipeBean pipe = pipeService.getPipeById(unit.getPipe_id());
+        if (cacheData.containsKey(pipe)) {
+            cacheData.get(pipe).add(data);
+        } else {
+            List<DisDataBean> datas = new ArrayList<>();
+            datas.add(data);
+            cacheData.put(pipe, datas);
+        }
+        resolvecachedata();//解析缓存
+    }
+
+    private void resolvecachedata() {
+        Set<Map.Entry<PipeBean, List<DisDataBean>>> entries = cacheData.entrySet();
+        a:
+        for (Map.Entry<PipeBean, List<DisDataBean>> entry : entries) {
+            PipeBean pipe = entry.getKey();
+            List<DisDataBean> datas = entry.getValue();
+            b:
+            for (int i = 0; i < datas.size(); i++) {
+                for (int j = i + 1; j < datas.size(); j++) {
+                    DisDataBean data1 = datas.get(i);
+                    DisDataBean data2 = datas.get(j);
+                    LXUnitBean unit1 = data1.getUnit();
+                    LXUnitBean unit2 = data2.getUnit();
+                    int jian_ge_unit_point = unit1.getPoint() - unit2.getPoint();
+                    if (jian_ge_unit_point <= 0) {
+                        jian_ge_unit_point *= -1;
+                    }
+                    if (unit1.getUnit_num().equals(unit2.getUnit_num()) || jian_ge_unit_point >= 3) {
+                        continue;
+                    }
+                    LXUnitBean unit = resolveNearestUnit(pipe, data1, data2);
+                    if (unit == null) {
+                        continue;
+                    }
+                    double place = resolvePlace(data1, data2);
+                    addWarningCahceData(unit, data1);
+                    WarnBean warnBean = new WarnBean();
+                    warnBean.setPipe(pipe);
+                    warnBean.setNearunit(unit);
+                    warnBean.setNear_unit_num(unit.getUnit_num());
+                    LXUnitBean toUnit = unitService.getToUnit(unit, place);
+                    if (toUnit != null) {
+                        warnBean.setTounit(toUnit);
+                        warnBean.setTo_unit_num(toUnit.getUnit_num());
+                    }
+                    warnBean.setPalce_value(place);
+                    warnBean.setInserttime(data1.getInserttime());
+                    dataService.saveDatas(data1, data2);
+                    warnService.save(warnBean);
+                    addWarn(warnBean);
+                    addDataWarn(warnBean);
+                    datas.remove(data1);
+                    datas.remove(data2);
+                    break b;
+                }
+            }
+            removeAndSaveCache(pipe, datas);
+        }
+    }
+
+    private void removeAndSaveCache(PipeBean pipe, List<DisDataBean> datas) {
+        Map<LXUnitBean, DisDataBean> warningData = warningCacheData.get(pipe);
+        for (Map.Entry<LXUnitBean, DisDataBean> entry : warningData.entrySet()) {
+            LXUnitBean unit = entry.getKey();
+            DisDataBean data = entry.getValue();
+            Iterator<DisDataBean> iterator = datas.iterator();
+            while (iterator.hasNext()) {
+                DisDataBean next = iterator.next();
+                LXUnitBean nearunit = resolveNearestUnit(pipe, next, data);
+                if (nearunit != null && unit.getUnit_num().equals(nearunit.getUnit_num())) {
+                    dataService.saveDatas(next);
+                    iterator.remove();
+                }
+            }
+        }
+
+    }
+
+    private double resolvePlace(DisDataBean data1, DisDataBean data2) {
+        LXUnitBean unit1 = data1.getUnit();
+        LXUnitBean unit2 = data2.getUnit();
+        long sj1 = data1.getServersj();
+        long sj2 = data2.getServersj();
+        long mat = sj2 - sj1;
+        if (mat < 0) {
+            mat *= -1;
+        }
+        int place1 = unit1.getPlace_value();
+        int place2 = unit2.getPlace_value();
+        int juli = place1 - place2;
+        if (juli < 0) {
+            juli *= -1;
+        }
+        double msec = (mat / 1000.0) * 5;
+        //  这个5 是基数 每毫秒5米
+        if (msec <= juli) {//两者之间
+            // 位置 = 距离 - 时间差 * 基数 最终位置 = 先出发位置起 + 位置;
+            //最终位置
+
+            double weizhi = (juli - msec * 5) / 2;
+            return unit1.getPoint() < unit2.getPoint() ?
+                    unit1.getPlace_value() + weizhi :
+                    unit1.getPlace_value() - weizhi;
+        }
+        return -1;
+    }
+
+    private LXUnitBean resolveNearestUnit(PipeBean pipe, DisDataBean data1, DisDataBean data2) {
+        double place = resolvePlace(data1, data2);
+        if (place < 0) {
+            return null;
+        }
+        return unitService.getNearestUnit(pipe, place);
+    }
+
+    private void addWarningCahceData(LXUnitBean unit, DisDataBean data) {
+        PipeBean pipe = pipeService.getPipeById(unit.getPipe_id());
+        Map<LXUnitBean, DisDataBean> disDataBeanMap;
+        if (warningCacheData.containsKey(pipe)) {
+            disDataBeanMap = warningCacheData.get(pipe);
+        } else {
+            disDataBeanMap = new HashMap<>();
+            warningCacheData.put(pipe, disDataBeanMap);
+        }
+        if (disDataBeanMap.containsKey(unit)) {
+            return;
+        }
+        disDataBeanMap.put(unit, data);
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                warningCacheData.get(pipe).remove(unit);
+            }
+        }, 10000);
+    }
+
     private PipeBean addData(DisDataBean data) {
-        LXUnitBean unit = unitService.getUnitByNumber( data.getUnit_num());
+        LXUnitBean unit = unitService.getUnitByNumber(data.getUnit_num());
         if (unit == null) {
             return null;
         }
@@ -259,12 +434,14 @@ public class DataBuffer {
         }
         list.add(data);
         warnmap.put(pipeBean, list);
-        addDataWarn(data);
-        return  pipeBean;
+//        addDataWarn(data);
+        return pipeBean;
     }
 
     private List<DisDataBean> sort(PipeBean pipeBean) {
-        return warnmap.get(pipeBean);
+        List<DisDataBean> datas = warnmap.get(pipeBean);
+        Collections.sort(datas);
+        return datas;
     }
 
     @Resource
@@ -274,18 +451,8 @@ public class DataBuffer {
         collectPanel.addtablewarn(warn);
     }
 
-    private void addDataWarn(DisDataBean warn) {
+    private void addDataWarn(WarnBean warn) {
 
-    }
-
-    public void close() {
-        alive = false;
-        // 如果数据处理线程waiting中
-        if (dataThread.getState() == Thread.State.WAITING) {
-            lock.lock();
-            con.signal();
-            lock.unlock();
-        }
     }
 
     private int getServerIndex(int[] ints) {
@@ -323,6 +490,16 @@ public class DataBuffer {
             }
         }
         return index;
+    }
+
+    public void close() {
+        alive = false;
+        // 如果数据处理线程waiting中
+        if (dataThread.getState() == Thread.State.WAITING) {
+            lock.lock();
+            con.signal();
+            lock.unlock();
+        }
     }
 
 }

@@ -12,7 +12,8 @@
         DFOO.UNIT_NUM
         ,DFOO.DATASTRING
         ,DFOO.XHQD
-        ,DFOO.SJ
+        ,DFOO.GATEWAYFRONTSJ
+        ,DFOO.SERVERSJ
         ,DFOO.GATEWAYFRONTINDEX
         ,DFOO.SERVERINDEX
         ,DFOO.MININDEX
@@ -62,7 +63,8 @@
         (
         UNIT_NUM,
         XHQD,
-        SJ,
+        GATEWAYFRONTSJ,
+        SERVERSJ,
         GATEWAYFRONTINDEX,
         SERVERINDEX,
         MININDEX,
@@ -73,7 +75,8 @@
         (
         #{unit_num},
         #{xhqd},
-        #{sj},
+        #{gatewayfrontsj},
+        #{serversj},
         #{gatewayfrontindex},
         #{serverindex},
         #{minindex},

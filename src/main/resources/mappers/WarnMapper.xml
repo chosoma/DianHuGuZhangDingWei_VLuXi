@@ -7,18 +7,17 @@
             parameterType="com.thingtek.socket.data.entity.DataSearchPara">
         SELECT * FROM DATA_WARN
         <where>
-            CLT_TYPE = #{clttype}
             <if test=" t1!=null or t2!=null ">
                 AND
                 <choose>
                     <when test=" t1!=null and t2!=null ">
-                        DFOO.INSERTTIME BETWEEN #{t1} AND #{t2}
+                        INSERTTIME BETWEEN #{t1} AND #{t2}
                     </when>
                     <when test=" t1!=null and t2==null ">
-                        DFOO.INSERTTIME &gt; #{t1}
+                        INSERTTIME &gt; #{t1}
                     </when>
                     <when test=" t1==null and t2!=null ">
-                        DFOO.INSERTTIME &lt; #{t2}
+                        INSERTTIME &lt; #{t2}
                     </when>
                 </choose>
             </if>
@@ -39,24 +38,26 @@
     <delete id="delete">
         DELETE FROM DATA_WARN
         <where>
-            ID = #{id} AND
-            INSERTTIME IN
-            <foreach collection="dates" item="date" open="(" separator="," close=")">
-                #{date}
-            </foreach>
+            ID = #{id}
         </where>
     </delete>
     <insert id="save" parameterType="com.thingtek.beanServiceDao.warn.entity.WarnBean">
         INSERT INTO DATA_WARN
         (
+        PIPE_ID,
+        NEAR_UNIT_NUM,
+        TO_UNIT_NUM,
+        PLACE_VALUE,
         WARN_INFO,
-        PHASE,
         INSERTTIME
         )
         VALUES
         <foreach collection="array" item="warn" separator="),(" open="(" close=")">
+            #{warn.pipe_id},
+            #{warn.near_unit_num},
+            #{warn.to_unit_num},
+            #{warn.place_value},
             #{warn.warn_info},
-            #{warn.phase},
             #{warn.inserttime}
         </foreach>
     </insert>

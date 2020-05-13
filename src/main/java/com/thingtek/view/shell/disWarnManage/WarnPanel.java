@@ -1,4 +1,4 @@
-package com.thingtek.view.shell.warningManage;
+package com.thingtek.view.shell.disWarnManage;
 
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.socket.data.entity.DataSearchPara;
@@ -11,10 +11,8 @@ import com.thingtek.view.shell.DataPanel;
 import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
 /**
  * 增加查询分页
@@ -38,8 +36,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
     private void initBottom() {
         JPanel bottom = new JPanel();
 
-        bottom.add(new JLabel("类型:"));
-
         this.add(bottom, BorderLayout.NORTH);
 
         Calendar calendar = Calendar.getInstance();
@@ -62,8 +58,7 @@ public class WarnPanel extends BasePanel implements DataPanel {
                 errorMessage("请选择要删除的信息");
                 return;
             }
-            Map<WarnBean, List<Date>> datamap = getDateMap(datas);
-            if (warnService.deleteWarn(datamap)) {
+            if (warnService.deleteWarn(datas.toArray(new WarnBean[0]))) {
                 successMessage("删除成功");
                 search.doClick();
             } else {
@@ -79,8 +74,7 @@ public class WarnPanel extends BasePanel implements DataPanel {
                 errorMessage("当前表中无信息");
                 return;
             }
-            Map<WarnBean, List<Date>> datamap = getDateMap(datas);
-            if (warnService.deleteWarn(datamap)) {
+            if (warnService.deleteWarn(datas.toArray(new WarnBean[0]))) {
                 successMessage("清空成功");
                 search.doClick();
             } else {
@@ -117,7 +111,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
     }
 
 
-
     private Map<WarnBean, List<Date>> getDateMap(Vector<WarnBean> datas) {
         Map<WarnBean, List<Date>> datamap = new HashMap<>();
         for (WarnBean data : datas) {
@@ -140,8 +133,8 @@ public class WarnPanel extends BasePanel implements DataPanel {
         warnTableModel.addDatas(vectors);
     }
 
-    private @Resource
-    WarnTableModel warnTableModel;
+    @Resource
+    private WarnTableModel warnTableModel;
     private JTable table;
 
     private JPanel center;

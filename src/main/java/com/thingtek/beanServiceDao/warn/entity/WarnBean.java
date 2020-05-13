@@ -1,6 +1,7 @@
 package com.thingtek.beanServiceDao.warn.entity;
 
 import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
+import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import lombok.Data;
 
 import javax.swing.*;
@@ -11,10 +12,23 @@ import java.util.Vector;
 public class WarnBean {
 
     private int id;
+    private LXUnitBean nearunit;
+    private Short near_unit_num;
+    private LXUnitBean tounit;
+    private Short to_unit_num;
+    private double weizhi;
     private String warn_info;
     private String pipe_name;
     private PipeBean pipe;
+    private int pipe_id;
     private Date inserttime;
+    private double palce_value;
+
+    public void setPipe(PipeBean pipe) {
+        this.pipe = pipe;
+        this.pipe_id = pipe.getPipe_id();
+        this.pipe_name = pipe.getPipe_name();
+    }
 
     public void resolveTotalInfoTable(JTable table, int row) {
         id = (int) table.getValueAt(row, 0);
@@ -27,7 +41,7 @@ public class WarnBean {
         Vector<Object> vector = new Vector<>();
         vector.add(id);
         vector.add(pipe_name);
-        vector.add(warn_info);
+        vector.add(getWarnInfo());
         vector.add(inserttime);
         return vector;
     }
@@ -35,9 +49,19 @@ public class WarnBean {
     public Vector<Object> getCollectTableCol() {
         Vector<Object> vector = new Vector<>();
         vector.add(pipe_name);
-        vector.add(warn_info);
+        vector.add(getWarnInfo());
         vector.add(inserttime);
         return vector;
+    }
+
+    private String getWarnInfo() {
+        String warn_info = "";
+        if (tounit != null) {
+            warn_info = "自\"" + nearunit.getPlace_name() + "\"向\"" + tounit.getPlace_name() + "\" " + palce_value + "米";
+        } else {
+            warn_info = "\"" + nearunit.getPlace_name() + "\"附近 " + palce_value + "米";
+        }
+        return warn_info;
     }
 
 }

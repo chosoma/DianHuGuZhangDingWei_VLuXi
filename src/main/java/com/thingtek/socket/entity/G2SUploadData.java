@@ -24,13 +24,13 @@ public class G2SUploadData extends BaseG2S {
             datas = new byte[datalength - 14];
             int xhqd = bytes2int(bytes.length - 14, 4, bytes);
             data.setXhqd(xhqd);
-            System.out.println("信号强度:"+xhqd);
-            long sj = bytes2int(bytes.length - 10, 4, bytes) & 0xFFFFFFFFL;
-            data.setSj(sj);
-            System.out.println("时间:"+sj);
+//            System.out.println("信号强度:" + xhqd);
+            int sj = bytes2int(bytes.length - 10, 4, bytes);
+            data.setGatewayfrontsj(sj);
+//            System.out.println("时间:" + sj);
             int index = bytes2int(bytes.length - 6, 4, bytes);
             data.setGatewayfrontindex(index);
-            System.out.println("触发点:"+index);
+//            System.out.println("触发点:" + index);
         } else {
             datas = new byte[datalength];
         }

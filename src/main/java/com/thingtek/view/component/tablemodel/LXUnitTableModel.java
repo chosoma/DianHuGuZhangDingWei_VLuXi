@@ -13,6 +13,7 @@ public class LXUnitTableModel extends BaseTableModel {
                 Short.class,
                 JComboBox.class,
                 JComboBox.class,
+                String.class,
         };
     }
 
@@ -22,7 +23,8 @@ public class LXUnitTableModel extends BaseTableModel {
         Vector<String> column = new Vector<>();
         column.add("单元编号");
         column.add("所属管体");
-        column.add("管体段位置");
+        column.add("所属段");
+        column.add("位置");
         this.setDataVector(row, column);
     }
 

@@ -23,7 +23,8 @@ public class DisDataBean implements Comparable<DisDataBean> {
     private int gatewayfrontindex;
     private int serverindex;
     private int minindex;
-    private long sj;
+    private int gatewayfrontsj;
+    private int serversj;
     private String datastring;
 
     public void setDatastring(String datastring) {
@@ -33,17 +34,6 @@ public class DisDataBean implements Comparable<DisDataBean> {
             data[i] = datastring.charAt(i);
         }
     }
-    //初始版本
-    /*public void setDatastring(String datastring) {
-        this.datastring = datastring;
-        String[] strs = datastring.split(",");
-//            System.out.println(strs.length);
-        data = new int[strs.length];
-        for (int i = 0; i < strs.length; i++) {
-            data[i] = Integer.parseInt(strs[i]);
-        }
-        this.datastring = change();
-    }*/
 
     public void resolve(byte[] datas) {
         this.data = resolveData2Line(datas);
@@ -94,6 +84,7 @@ public class DisDataBean implements Comparable<DisDataBean> {
 
     @Override
     public int compareTo(DisDataBean o) {
-        return this.sj - o.sj > 0 ? 1 : -1;
+        return this.serversj
+                - o.serversj > 0 ? 1 : -1;
     }
 }

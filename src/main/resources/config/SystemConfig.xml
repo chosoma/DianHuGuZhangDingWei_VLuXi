@@ -10,7 +10,8 @@
         <property name="basePanelMap">
             <map>
                 <entry key="数据采集" value-ref="LXdataCollect"/>
-                <entry key="故障管理" value-ref="warning"/>
+                <entry key="电弧管理" value-ref="dataManage"/>
+                <entry key="异常管理" value-ref="warnManage"/>
                 <entry key="调试界面" value-ref="debugs"/>
             </map>
         </property>
@@ -31,7 +32,7 @@
         <property name="dataPanels">
             <list>
                 <ref local="LXdataCollect"/>
-                <ref local="warning"/>
+                <ref local="dataManage"/>
                 <!--                <ref local="warnPanel"/>-->
             </list>
         </property>
@@ -50,16 +51,16 @@
         <property name="select" value="true"/>
     </bean>
 
-    <bean name="warning" class="com.thingtek.view.shell.warningManage.DisPanel">
+    <bean name="dataManage" class="com.thingtek.view.shell.disLineManage.DisPanel">
         <property name="show" value="true"/>
         <property name="admin" value="true"/>
         <property name="maxlineshow" value="5"/>
         <property name="onepagecount" value="10"/>
     </bean>
-    <!--<bean name="warnPanel" class="com.thingtek.view.shell.warningManage.WarnPanel">
+    <bean name="warnManage" class="com.thingtek.view.shell.disWarnManage.WarnPanel">
         <property name="show" value="true"/>
         <property name="admin" value="true"/>
-    </bean>-->
+    </bean>
     <bean name="pipeSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.PipeSetPanel">
         <property name="show" value="true"/>
     </bean>

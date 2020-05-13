@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class LXCollectPanel extends BaseCollectPanel {
+public class LXPipePageCollectPanel extends BaseCollectPanel {
 
-    public LXCollectPanel() {
+    public LXPipePageCollectPanel() {
         buttonList = new ArrayList<>();
     }
 
@@ -44,15 +44,16 @@ public class LXCollectPanel extends BaseCollectPanel {
     private Image image;
 
     @Override
-    public LXCollectPanel init() {
+    public LXPipePageCollectPanel init() {
         super.init();
         setLayout(new BorderLayout());
-        image = factorys.getIconFactory().getImage("background");
+        image = factorys.getIconFactory().getImage(getName());
         center = new JPanel(null) {
             @Override
             protected void paintComponent(Graphics g) {
-                g.drawImage(image, 0, 0, center.getWidth(), center.getHeight(), center);
-                setShowBounds();
+                if(image!=null){
+                    g.drawImage(image, 0, 0, center.getWidth(), center.getHeight(), center);
+                }
             }
         };
         JScrollPane jScrollPane = new JScrollPane(center);
@@ -122,23 +123,4 @@ public class LXCollectPanel extends BaseCollectPanel {
         }
     }
 
-    private void setShowBounds() {
-        /*int width = center.getWidth();
-        int height = center.getHeight();
-        int panelwidth = 125;
-        int panelheight = 100;
-        for (LXUnitIconLabel button : buttonList) {
-            int panelx = button.getX() + button.getWidth();
-            int panely = button.getY() + button.getHeight();
-            if (panelx + panelwidth > width && panely + panelheight > height) {
-                panelx = button.getX() - panelwidth;
-                panely = height - panelheight;
-            } else if (panelx + panelwidth > width) {
-                panelx = width - panelwidth;
-            } else if (panely + panelheight > height) {
-                panely = height - panelheight;
-            }
-            button.getDataPanel().setBounds(panelx, panely, panelwidth, panelheight);
-        }*/
-    }
 }

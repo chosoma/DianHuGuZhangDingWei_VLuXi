@@ -3,9 +3,7 @@ package com.thingtek.view.shell;
 import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
-import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.view.component.factory.Factorys;
-import com.thingtek.view.component.tablemodel.TableConfig;
 
 import javax.annotation.Resource;
 import javax.swing.*;
@@ -41,9 +39,6 @@ public abstract class BasePanel extends JPanel {
         this.show = show;
     }
 
-    protected Integer authority;
-    @Resource
-    protected SocketAgreement agreementConfig;
     @Resource
     protected Factorys factorys;
     @Resource
