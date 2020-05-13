@@ -12,6 +12,24 @@ public class LogoInfo {
     private Map<String, BasePanel> basePanelMap;
     private Map<String, Map<String, BaseSystemPanel>> setPanelMap;
     private List<DataPanel> dataPanels;
+    private List<BaseSystemPanel> systemPanels;
+    private boolean admin;
+
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
+    public void setSystemPanels(List<BaseSystemPanel> systemPanels) {
+        this.systemPanels = systemPanels;
+    }
+
+    public List<BaseSystemPanel> getSystemPanels() {
+        return systemPanels;
+    }
 
     public List<DataPanel> getDataPanels() {
         return dataPanels;

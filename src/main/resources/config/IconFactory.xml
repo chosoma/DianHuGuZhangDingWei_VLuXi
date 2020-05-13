@@ -68,6 +68,9 @@
                 <entry key="异常管理" value="icons/warn_24.png"/>
                 <entry key="系统设置" value="icons/system_24.png"/>
                 <entry key="调试界面" value="icons/debug_24.png"/>
+                <entry key="11" value="icons/11.png"/>
+                <entry key="12" value="icons/12.png"/>
+                <entry key="21" value="icons/21.png"/>
             </map>
         </property>
         <property name="iconpathsMap">

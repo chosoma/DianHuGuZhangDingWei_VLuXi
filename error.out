@@ -17431,3 +17431,602 @@ Caused by: java.net.ConnectException: Connection refused: connect
 [GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.BaseService.log(13)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [warn, dates, param1, param2]  2020-05-13 10:27:36
 [GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.BaseService.log(13)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [warn, dates, param1, param2]  2020-05-13 10:27:36
 [GS]ERROR[AWT-EventQueue-0]com.thingtek.beanServiceDao.base.BaseService.log(13)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'id' not found. Available parameters are [warn, dates, param1, param2]  2020-05-13 10:27:36
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:22
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:03:23
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:11
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:12
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:04:40
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:21
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.IllegalArgumentException: input == null!  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:07:47
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(13)|  java.lang.NullPointerException  2020-05-13 16:08:44
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE         UNIT_DIS UNIT         SET         PIPE_ID = ?         ,PIPE_PAGE = ?         ,x = ?         ,y = ?         ,FZ = ?         ,FDBS = ?         ,IP = ?         ,PORT = ?         ,PLACE_VALUE = ?         ,PLACE_NAME = ?         ,POINT = ?          WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null
+; SQL []; Column 'POINT' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null  2020-05-13 17:52:12
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE         UNIT_DIS UNIT         SET         PIPE_ID = ?         ,PIPE_PAGE = ?         ,x = ?         ,y = ?         ,FZ = ?         ,FDBS = ?         ,IP = ?         ,PORT = ?         ,PLACE_VALUE = ?         ,PLACE_NAME = ?         ,POINT = ?          WHERE UNIT_NUM = ?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null
+; SQL []; Column 'POINT' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'POINT' cannot be null  2020-05-13 17:52:44

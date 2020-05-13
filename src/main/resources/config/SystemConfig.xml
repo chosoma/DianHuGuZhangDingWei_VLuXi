@@ -20,11 +20,8 @@
                 <entry key="系统设置">
                     <map>
                         <entry key="管体管理" value-ref="pipeSetPanel"/>
-                        <!--                        <entry key="测点管理" value-ref="pointSetPanel"/>-->
                         <entry key="单元管理" value-ref="LXUnitSetPanel"/>
-                        <!--                        <entry key="单元设置" value-ref="unitSetPanel"/>-->
-                        <entry key="硬件管理" value-ref="LXadminSetPanel"/>
-                        <!--                        <entry key="硬件设置" value-ref="adminSetPanel"/>-->
+                        <entry key="硬件设置" value-ref="LXadminSetPanel"/>
                     </map>
                 </entry>
             </map>
@@ -33,9 +30,19 @@
             <list>
                 <ref local="LXdataCollect"/>
                 <ref local="dataManage"/>
-                <!--                <ref local="warnPanel"/>-->
+                <ref local="warnManage"/>
             </list>
         </property>
+        <property name="systemPanels">
+            <list>
+                <ref local="pipeSetPanel"/>
+                <ref local="LXUnitSetPanel"/>
+                <ref local="LXadminSetPanel"/>
+            </list>
+        </property>
+        <property name="admin" value="true"/>
+        <!--        <property name="admin" value="false"/>-->
+
     </bean>
     <bean name="home" class="com.thingtek.view.shell.homePage.HomePanel">
         <property name="logoinfo" value="© CopyRight 无锡讯泰科技有限公司"/>
@@ -43,7 +50,6 @@
     </bean>
     <bean name="debugs" class="com.thingtek.view.shell.debugs.Debugs">
         <property name="show" value="true"/>
-        <!--                <property name="show" value="false"/>-->
     </bean>
 
     <bean name="LXdataCollect" class="com.thingtek.view.shell.dataCollect.LXDataCollectPanel">
@@ -53,13 +59,11 @@
 
     <bean name="dataManage" class="com.thingtek.view.shell.disLineManage.DisPanel">
         <property name="show" value="true"/>
-        <property name="admin" value="true"/>
         <property name="maxlineshow" value="5"/>
         <property name="onepagecount" value="10"/>
     </bean>
     <bean name="warnManage" class="com.thingtek.view.shell.disWarnManage.WarnPanel">
         <property name="show" value="true"/>
-        <property name="admin" value="true"/>
     </bean>
     <bean name="pipeSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.PipeSetPanel">
         <property name="show" value="true"/>
@@ -70,6 +74,9 @@
     </bean>
     <bean name="LXadminSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel">
         <property name="show" value="true"/>
+    </bean>
+    <bean  name="dataBuffer" class="com.thingtek.socket.DataBuffer">
+        <property name="dev" value="true"/>
     </bean>
 
 </beans>

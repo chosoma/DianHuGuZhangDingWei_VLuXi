@@ -53,9 +53,9 @@
         </where>
     </delete>
 
-    <update id="createDataTable" parameterType="java.lang.String">
-        CREATE TABLE IF NOT EXISTS ${_parameter}  (
-        `UNIT_NUM` int(5) DEFAULT NULL,
+    <update id="createDataTable" parameterType="com.thingtek.beanServiceDao.unit.entity.LXUnitBean">
+        CREATE TABLE IF NOT EXISTS ${data_table_name}  (
+        `UNIT_NUM` int(5) DEFAULT #{unit_num},
         `DATASTRING` longtext,
         `XHQD` int(11) DEFAULT '0',
         `GATEWAYFRONTSJ` bigint(20) DEFAULT '0',
@@ -80,6 +80,9 @@
         UNIT_NUM
         ,PIPE_ID
         ,PIPE_PAGE
+        ,PLACE_NAME
+        ,IP
+        ,PORT
         ,DATA_TABLE_NAME
         )
         VALUES
@@ -87,6 +90,9 @@
             #{unit.unit_num}
             , #{unit.pipe_id}
             , #{unit.pipe_page}
+            , #{unit.place_name}
+            , #{unit.ip}
+            , #{unit.port}
             , #{unit.data_table_name}
         </foreach>
         ON DUPLICATE KEY UPDATE

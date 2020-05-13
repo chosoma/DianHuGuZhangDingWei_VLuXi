@@ -41,7 +41,7 @@ class MyIconFactory extends BaseService {
 
     public ImageIcon getIcon(String string) {
         try {
-            return new ImageIcon(Objects.requireNonNull(this.getClass().getClassLoader().getResource(iconpathMap.get(string))));
+            return new ImageIcon(this.getClass().getClassLoader().getResource(iconpathMap.get(string)));
         } catch (Exception e) {
 //            log(e);
             return null;
@@ -50,7 +50,7 @@ class MyIconFactory extends BaseService {
 
     public Image getImage(String string) {
         try {
-            return ImageIO.read(Objects.requireNonNull(this.getClass().getClassLoader().getResource(iconpathMap.get(string))));
+            return ImageIO.read(this.getClass().getClassLoader().getResource(iconpathMap.get(string)));
         } catch (Exception e) {
 //            log(e);
             return null;

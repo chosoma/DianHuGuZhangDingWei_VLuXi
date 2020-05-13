@@ -8,6 +8,7 @@ import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.socket.entity.G2SUploadData;
 import com.thingtek.socket.entity.UnUnitNum;
 import com.thingtek.view.shell.debugs.Debugs;
+import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
 
 import java.io.*;
@@ -30,6 +31,11 @@ public class CollectSocket extends BaseService implements Runnable {
     private Debugs debugShow;
     private LXUnitService unitService;
     private LXUnitSetPanel unitSetPanel;
+    private LXUnitAdminSetPanel unitAdminSetPanel;
+
+    public void setUnitAdminSetPanel(LXUnitAdminSetPanel unitAdminSetPanel) {
+        this.unitAdminSetPanel = unitAdminSetPanel;
+    }
 
     public Socket getSocket() {
         return socket;
@@ -129,7 +135,9 @@ public class CollectSocket extends BaseService implements Runnable {
             } catch (IOException e) {
                 log(e);
             }
-            unit.setConnect(false);
+            if (unit != null) {
+                unit.setConnect(false);
+            }
             server.removeSocket(this);
             dataFactory.close();
             debugShow.showMsg(offlineMSG + ip + ":" + port);
@@ -182,25 +190,28 @@ public class CollectSocket extends BaseService implements Runnable {
         g2s.resolve();
         if (!(g2s instanceof UnUnitNum)) {
             unitnum = g2s.getUnitnum();
-            String ip = socket.getInetAddress().getHostAddress();
-            int port = socket.getPort();
+            String ip = getIp();
+            int port = getPort();
             unit = unitService.getUnitByNumber(unitnum);
             if (unit == null) {
                 unit = new LXUnitBean();
                 unit.setUnit_num(unitnum);
                 unit.setPipe_id(1);
+                unit.setPipe_page(1);
+                unit.setIp(ip);
+                unit.setPort(port);
+                unitService.saveLXUnit(unit);
+                unitSetPanel.refreshUnit();
             }
             if (!ip.equals(unit.getIp()) || port != unit.getPort()) {
                 unit.setIp(ip);
                 unit.setPort(port);
                 unitService.updateLXUnit(unit);
-                unit.setConnect(true);
             }
         }
         unit = unitService.getUnitByNumber(unitnum);
         unit.setConnect(true);
         byte[] result = g2s.getResult();
-//        System.out.println(Arrays.toString(result));
         if (result != null && g2s.isCansend()) {
             try {
                 sendMSG(result);

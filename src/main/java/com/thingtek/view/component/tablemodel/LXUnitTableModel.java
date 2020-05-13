@@ -24,7 +24,7 @@ public class LXUnitTableModel extends BaseTableModel {
         column.add("单元编号");
         column.add("所属管体");
         column.add("所属段");
-        column.add("位置");
+        column.add("位置名");
         this.setDataVector(row, column);
     }
 

@@ -7,7 +7,6 @@ import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.dao.LXUnitDao;
 
-import com.thingtek.view.shell.dataCollect.LXUnitIconLabel;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -33,7 +32,8 @@ public class LXUnitService extends BaseService {
         try {
             String unit_data_name = "unit_data_" + unitBean.getUnit_num();
             unitBean.setData_table_name(unit_data_name);
-            dao.createDataTable(unit_data_name);
+            unitBean.setPlace_name(unitBean.getUnit_num() + "#");
+            dao.createDataTable(unitBean);
             dao.saveLXUnit(unitBean);
         } catch (Exception e) {
             log(e);
@@ -87,7 +87,7 @@ public class LXUnitService extends BaseService {
         return null;
     }
 
-    public LXUnitBean getUnitByIp(String ip){
+    public LXUnitBean getUnitByIp(String ip) {
         cache();
         for (LXUnitBean unit : units) {
             if (Objects.equals(ip, unit.getIp())) {
@@ -96,6 +96,7 @@ public class LXUnitService extends BaseService {
         }
         return null;
     }
+
     public boolean updateLXUnit(LXUnitBean... units) {
         List<Boolean> flags = new ArrayList<>();
         for (LXUnitBean unit : units) {

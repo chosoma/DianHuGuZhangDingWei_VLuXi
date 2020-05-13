@@ -16,7 +16,7 @@ public interface LXUnitDao {
 
     boolean deleteUnitByNum( @Param("unit_nums") short... unit_num) throws Exception;
 
-    boolean createDataTable(String data_table_name) throws Exception;
+    boolean createDataTable(LXUnitBean unitBean) throws Exception;
 
     void dropDataTable(String data_table_name) throws Exception;
 }

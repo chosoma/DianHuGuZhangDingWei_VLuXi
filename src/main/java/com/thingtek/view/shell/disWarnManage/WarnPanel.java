@@ -19,12 +19,6 @@ import java.util.*;
  */
 public class WarnPanel extends BasePanel implements DataPanel {
 
-    private boolean admin;
-
-    public void setAdmin(boolean admin) {
-        this.admin = admin;
-    }
-
     @Override
     public WarnPanel init() {
         setLayout(new BorderLayout());
@@ -81,7 +75,7 @@ public class WarnPanel extends BasePanel implements DataPanel {
                 falseMessage("清空失败");
             }
         });
-        if (admin) {
+        if (isAdmin()) {
             bottom.add(delete);
             bottom.add(clear);
         }

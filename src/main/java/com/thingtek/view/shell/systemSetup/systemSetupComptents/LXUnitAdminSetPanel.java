@@ -14,7 +14,6 @@ import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemP
 
 import javax.annotation.Resource;
 import javax.swing.*;
-import javax.swing.Timer;
 import java.awt.*;
 import java.io.IOException;
 import java.util.*;
@@ -27,7 +26,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     @Resource
     private SocketAgreement agreement;
 
-    private JTable onlytable;
+    private JTable table;
     @Resource
     private DisUnitAdminTableModel tableModel;
 
@@ -37,14 +36,14 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     @Override
     protected void initCenter() {
         super.initCenter();
-        onlytable = new JTable();
+        table = new JTable();
 
         JPanel center = new JPanel(new BorderLayout());
         addCenter(center);
         JPanel centertitle = new JPanel(new FlowLayout(FlowLayout.LEFT));
         centertitle.setBackground(factorys.getColorFactory().getColor("centertitle"));
 
-        onlytable.setModel(tableModel);
+        table.setModel(tableModel);
 
         JLabel jlmcip = new JLabel("脉冲IP:");
         centertitle.add(jlmcip);
@@ -113,7 +112,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
         center.add(centertitle, BorderLayout.NORTH);
 
         JPanel tablepanel = new JPanel(new BorderLayout());
-        JScrollPane jspTable = new JScrollPane(onlytable);
+        JScrollPane jspTable = new JScrollPane(table);
         tablepanel.add(jspTable, BorderLayout.CENTER);
 
         JPanel centerPanel = new JPanel(cardLayout);
@@ -189,14 +188,18 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
         apply = addTool("保存", "apply");
         apply.addActionListener(e -> {
             stopEditing();
+            if (table.isEditing()) {
+                errorMessage("您有内容输入有误!");
+                return;
+            }
             if (!checkinput()) {
                 refreshUnit();
                 return;
             }
             List<LXUnitBean> units = new ArrayList<>();
-            for (int i = 0; i < onlytable.getRowCount(); i++) {
-                LXUnitBean unit = unitService.getUnitByNumber((Short) onlytable.getValueAt(i, 0));
-                unit.resolveAdminTable(onlytable, i);
+            for (int i = 0; i < table.getRowCount(); i++) {
+                LXUnitBean unit = unitService.getUnitByNumber((Short) table.getValueAt(i, 0));
+                unit.resolveAdminTable(table, i);
                 units.add(unit);
             }
             if (unitService.updateLXUnit(units.toArray(new LXUnitBean[0]))) {
@@ -209,20 +212,19 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
 
         setfz = addTool("设置阈值", "set");
         setfz.addActionListener(e -> {
-
             stopEditing();
-            int row = onlytable.getSelectedRow();
-            int[] rows = onlytable.getSelectedRows();
+            int row = table.getSelectedRow();
+            int[] rows = table.getSelectedRows();
             if (rows.length <= 0) {
                 errorMessage("请先选择单元!");
                 return;
             }
-            LXUnitBean unit = unitService.getUnitByNumber((Short) onlytable.getValueAt(row, 0));
+            LXUnitBean unit = unitService.getUnitByNumber((Short) table.getValueAt(row, 0));
             if (!checkInput(row)) {
                 refreshUnit();
                 return;
             }
-            unit.resolveAdminTable(onlytable, row);
+            unit.resolveAdminTable(table, row);
             CollectSocket socket = server.getSocket(unit.getIp(), unit.getPort());
             if (socket == null) {
                 falseMessage("未选择单元或选择单元未连接!");
@@ -245,20 +247,19 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
 
         setfdbs = addTool("设置放大倍数", "set");
         setfdbs.addActionListener(e -> {
-
             stopEditing();
-            int row = onlytable.getSelectedRow();
-            int[] rows = onlytable.getSelectedRows();
+            int row = table.getSelectedRow();
+            int[] rows = table.getSelectedRows();
             if (rows.length <= 0) {
                 errorMessage("请先选择单元!");
                 return;
             }
-            LXUnitBean unit = unitService.getUnitByNumber((Short) onlytable.getValueAt(row, 0));
+            LXUnitBean unit = unitService.getUnitByNumber((Short) table.getValueAt(row, 0));
             if (!checkInput(row)) {
                 refreshUnit();
                 return;
             }
-            unit.resolveAdminTable(onlytable, row);
+            unit.resolveAdminTable(table, row);
             CollectSocket socket = server.getSocket(unit.getIp(), unit.getPort());
             if (socket == null) {
                 falseMessage("未选择单元或选择单元未连接!");
@@ -349,6 +350,20 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
             unitService.updateLXUnit(units.toArray(new LXUnitBean[0]));
             refreshUnit();
         });
+        if (!logoInfo.isAdmin()) {
+            visibleall();
+        }
+    }
+
+    private void visibleall() {
+        apply.setVisible(false);
+        setfz.setVisible(false);
+        setfdbs.setVisible(false);
+        jtftotalfz.setVisible(false);
+        settotalfz.setVisible(false);
+        jtftotalfdbs.setVisible(false);
+        settotalfdbs.setVisible(false);
+        totalset.setVisible(false);
     }
 
     @Override
@@ -357,13 +372,20 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
         new java.util.Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                for (int i = 0; i < onlytable.getRowCount(); i++) {
-                    short unit_num = (short) onlytable.getValueAt(i, 0);
+                for (int i = 0; i < table.getRowCount(); i++) {
+                    short unit_num = (short) table.getValueAt(i, 0);
                     LXUnitBean unitBean = unitService.getUnitByNumber(unit_num);
-                    onlytable.setValueAt(unitBean.isConnect(), i, 7);
+                    if (unitBean != null) {
+                        table.setValueAt(unitBean.isConnect(), i, 7);
+                    }
                 }
             }
         }, 10000, 5000);
+    }
+
+    @Override
+    public void refreshTable() {
+        refreshUnit();
     }
 
     public void refreshUnit() {
@@ -380,8 +402,9 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     }
 
     private void stopEditing() {
-        if (onlytable.isEditing())
-            onlytable.getCellEditor().stopCellEditing();
+        if (table.isEditing()) {
+            table.getCellEditor().stopCellEditing();
+        }
     }
 
     private boolean checkfz(String fz) {
@@ -401,48 +424,48 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     }
 
     private boolean checkInput(int row) {
-        short unit_num = (short) onlytable.getValueAt(row, 0);
-        Object objfz = onlytable.getValueAt(row, 1);
+        short unit_num = (short) table.getValueAt(row, 0);
+        Object objfz = table.getValueAt(row, 1);
         String fz = objfz == null ? null : String.valueOf(objfz);
         if (checkfz(fz)) {
             errorMessage("单元编号 " + unit_num + " 阈值输入有误!(2000-4095)");
             return false;
         }
-        Object objfdbs = onlytable.getValueAt(row, 2);
+        Object objfdbs = table.getValueAt(row, 2);
         String fdbs = objfdbs == null ? null : String.valueOf(objfdbs);
         if (checkfdbs(fdbs)) {
             errorMessage("单元编号 " + unit_num + " 放大倍数输入有误!(13-127)");
             return false;
         }
-        Object objip = onlytable.getValueAt(row, 3);
+        Object objip = table.getValueAt(row, 3);
         String ip = objip == null ? null : String.valueOf(objip);
         if (!(ip == null || ip.trim().equals("") || isIp(ip))) {
             errorMessage("单元编号 " + unit_num + " IP地址输入有误");
             return false;
         }
-        Object objport = onlytable.getValueAt(row, 4);
+        Object objport = table.getValueAt(row, 4);
         String port = objport == null ? null : String.valueOf(objport);
         if (!(port == null || isNum(port))) {
-            errorMessage("单元编号 " + unit_num + " IP地址输入有误");
+            errorMessage("单元编号 " + unit_num + " 端口号输入有误");
             return false;
         }
-        Object objplace_value = onlytable.getValueAt(row, 5);
+        Object objplace_value = table.getValueAt(row, 5);
         String place_value = objplace_value == null ? null : String.valueOf(objplace_value);
         if (!(place_value == null || isNum(place_value))) {
             errorMessage("单元编号 " + unit_num + " 安装位置输入有误");
             return false;
         }
-        Object objpoint = onlytable.getValueAt(row, 6);
+        Object objpoint = table.getValueAt(row, 6);
         String point = objpoint == null ? null : String.valueOf(objpoint);
         if (!(point == null || isNum(point))) {
-            errorMessage("单元编号 " + unit_num + " 安装位置输入有误");
+            errorMessage("单元编号 " + unit_num + " 点位输入有误");
             return false;
         }
         return true;
     }
 
     private boolean checkinput() {
-        for (int i = 0; i < onlytable.getRowCount(); i++) {
+        for (int i = 0; i < table.getRowCount(); i++) {
             boolean flag = checkInput(i);
             if (!flag) {
                 return false;
@@ -455,7 +478,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     private TCR tcr;
 
     private void initializeTable() {
-        tcr.initializeTable(onlytable);
+        tcr.initializeTable(table);
     }
 
     private void refreshVisible() {

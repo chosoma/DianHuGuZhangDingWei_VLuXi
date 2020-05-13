@@ -4,6 +4,7 @@ import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.config.PortConfig;
 import com.thingtek.view.shell.debugs.Debugs;
+import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel;
 import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +29,8 @@ public class CollectServer {
     private LXUnitService unitService;
     @Resource
     private LXUnitSetPanel unitSetPanel;
+    @Resource
+    private LXUnitAdminSetPanel unitAdminSetPanel;
 
     private CollectServer() {
 
@@ -63,6 +66,7 @@ public class CollectServer {
                     socket.setServer(CollectServer.this);
                     socket.setUnitService(unitService);
                     socket.setUnitSetPanel(unitSetPanel);
+                    socket.setUnitAdminSetPanel(unitAdminSetPanel);
                     Thread thread = new Thread(socket);
                     thread.start();
                 }

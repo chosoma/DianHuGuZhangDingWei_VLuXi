@@ -4,14 +4,21 @@ import com.thingtek.beanServiceDao.pipe.service.PipeService;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
 import com.thingtek.view.component.factory.Factorys;
+import com.thingtek.view.logo.LogoInfo;
 
 import javax.annotation.Resource;
 import javax.swing.*;
 
 public abstract class BasePanel extends JPanel {
-
+    @Resource
+    protected LogoInfo logoInfo;
     private boolean show;
     private boolean warn;
+
+
+    public boolean isAdmin() {
+        return logoInfo.isAdmin();
+    }
 
     public boolean isWarn() {
         return warn;

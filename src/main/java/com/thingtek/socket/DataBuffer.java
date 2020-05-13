@@ -18,7 +18,6 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-@Component
 public class DataBuffer {
     private Map<Short, Map<Integer, RawData[]>> buffer;//单元编号 , 大包编号  , 数据
     private final List<RawData[]> wholebuffer;
@@ -27,6 +26,12 @@ public class DataBuffer {
 
     private Lock lock;
     private Condition con;
+    private boolean dev;
+
+    public void setDev(boolean dev) {
+        this.dev = dev;
+    }
+
     @Resource
     private DisDataService dataService;
     @Resource
@@ -166,8 +171,11 @@ public class DataBuffer {
                         int gatewayfrontsj = data.getGatewayfrontsj();
                         int serversj = gatewayfrontsj - minindex * 10;
                         data.setServersj(serversj);
-                        resolveData(data);
-//                        resolveWarning(data);
+                        if (dev){
+                            resolveData(data);
+                        }else {
+                            resolveWarning(data);
+                        }
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

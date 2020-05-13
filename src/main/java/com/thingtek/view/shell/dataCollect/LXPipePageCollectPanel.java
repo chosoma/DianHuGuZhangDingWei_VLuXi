@@ -5,8 +5,7 @@ import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.component.listener.LXMouseMoveListenAdapter;
-import com.thingtek.view.shell.dataCollect.base.BaseCollectPanel;
-
+import com.thingtek.view.shell.BasePanel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -17,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class LXPipePageCollectPanel extends BaseCollectPanel {
+public class LXPipePageCollectPanel extends BasePanel {
 
     public LXPipePageCollectPanel() {
         buttonList = new ArrayList<>();
@@ -43,15 +42,18 @@ public class LXPipePageCollectPanel extends BaseCollectPanel {
 
     private Image image;
 
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
     @Override
     public LXPipePageCollectPanel init() {
-        super.init();
         setLayout(new BorderLayout());
-        image = factorys.getIconFactory().getImage(getName());
+//        image = factorys.getIconFactory().getImage(getName());
         center = new JPanel(null) {
             @Override
             protected void paintComponent(Graphics g) {
-                if(image!=null){
+                if (image != null) {
                     g.drawImage(image, 0, 0, center.getWidth(), center.getHeight(), center);
                 }
             }
@@ -68,7 +70,12 @@ public class LXPipePageCollectPanel extends BaseCollectPanel {
         return this;
     }
 
-    @Override
+    private boolean admin;
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
     public void refreshPoint() {
         center.removeAll();
         buttonList.clear();
@@ -96,7 +103,6 @@ public class LXPipePageCollectPanel extends BaseCollectPanel {
         center.updateUI();
     }
 
-    @Override
     public void addWarn(DisDataBean warnBean) {
         LXUnitBean unit = warnBean.getUnit();
         if (unit == null) {
@@ -111,7 +117,6 @@ public class LXPipePageCollectPanel extends BaseCollectPanel {
         }
     }
 
-    @Override
     public void refreshData() {
     }
 

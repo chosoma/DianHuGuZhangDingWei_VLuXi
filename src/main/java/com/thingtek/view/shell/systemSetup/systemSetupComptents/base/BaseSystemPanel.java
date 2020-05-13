@@ -14,6 +14,10 @@ public abstract class BaseSystemPanel extends JPanel {
 
     protected boolean show;
 
+    public boolean isAdmin() {
+        return logoInfo.isAdmin();
+    }
+
     public boolean isShow() {
         return show;
     }
@@ -201,5 +205,7 @@ public abstract class BaseSystemPanel extends JPanel {
 
     public abstract void loadingData();
     /*public void refresh() {}*/
+
+    public abstract void refreshTable();
 
 }

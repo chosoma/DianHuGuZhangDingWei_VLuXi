@@ -108,7 +108,7 @@ public class PipeService extends BaseService {
             if (!nums.contains(i)) {
                 PipeBean pipe = new PipeBean();
                 pipe.setPipe_id(i);
-                pipe.setPipe_name(i + "#");
+                pipe.setPipe_name(i + "@");
                 savePipe(pipe);
                 return i;
             }

@@ -41,12 +41,14 @@ public class LXUnitSetPanel extends BaseSystemPanel {
         initializeTable();
     }
 
+    private EditButton add, delete, apply;
+
     @Override
     protected void initToolbar() {
         super.initToolbar();
         EditButton refresh = addTool("刷新", "refresh");
         refresh.addActionListener(e -> refreshUnit());
-        EditButton add = addTool("添加", "add");
+        add = addTool("添加", "add");
         add.addActionListener(e -> {
             stopEditing();
             AddLXUnitDialog unitDialog = new AddLXUnitDialog(shell, "添加", factorys.getIconFactory().getImage("set"));
@@ -62,7 +64,7 @@ public class LXUnitSetPanel extends BaseSystemPanel {
             });
         });
 
-        EditButton delete = addTool("删除", "delete");
+        delete = addTool("删除", "delete");
         delete.addActionListener(e -> {
             stopEditing();
             int[] rows = table.getSelectedRows();
@@ -78,9 +80,13 @@ public class LXUnitSetPanel extends BaseSystemPanel {
             unitService.deleteUnitByNum(unitnums);
             refreshUnit();
         });
-        EditButton apply = addTool("保存", "apply");
+        apply = addTool("保存", "apply");
         apply.addActionListener(e -> {
             stopEditing();
+            if (table.isEditing()) {
+                errorMessage("您有内容输入有误!");
+                return;
+            }
             if (!checkinput()) {
                 refreshUnit();
                 return;
@@ -102,7 +108,15 @@ public class LXUnitSetPanel extends BaseSystemPanel {
             }
             refreshUnit();
         });
-//        setEnable(false);
+        if (!logoInfo.isAdmin()) {
+            visibleall();
+        }
+    }
+
+    private void visibleall() {
+        apply.setVisible(false);
+        add.setVisible(false);
+        delete.setVisible(false);
     }
 
     private JComboBox<String> jcbpipenames;
@@ -124,6 +138,11 @@ public class LXUnitSetPanel extends BaseSystemPanel {
         refreshUnit();
     }
 
+    @Override
+    public void refreshTable() {
+        refreshUnit();
+    }
+
     private void refreshPages() {
         PipeBean pipeBean = pipeService.getPipeByName((String) table.getValueAt(table.getSelectedRow(), 1));
         int pipe_page = pipeBean.getPipe_page();
@@ -142,12 +161,11 @@ public class LXUnitSetPanel extends BaseSystemPanel {
             vectors.add(unit.getLXTableCol());
         }
         tableModel.addDatas(vectors);
+        jcbpipenames.setModel(new DefaultComboBoxModel<>(pipeService.getPipeNames()));
 
         for (DataPanel dataPanel : logoInfo.getDataPanels()) {
             dataPanel.refreashData();
         }
-        jcbpipenames.setModel(new DefaultComboBoxModel<>(pipeService.getPipeNames()));
-
     }
 
     private void stopEditing() {

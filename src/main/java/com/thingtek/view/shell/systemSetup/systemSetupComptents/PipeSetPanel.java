@@ -16,7 +16,6 @@ import java.util.Vector;
 
 public class PipeSetPanel extends BaseSystemPanel {
 
-
     @Resource
     private PipeTableModel tablemodel;
 
@@ -47,11 +46,13 @@ public class PipeSetPanel extends BaseSystemPanel {
         center.add(jspPoint, BorderLayout.CENTER);
     }
 
+    private EditButton add, delete, apply;
+
     @Override
     protected void initToolbar() {
         super.initToolbar();
 
-        EditButton add = addTool("添加", "add");
+        add = addTool("添加", "add");
         add.addActionListener(e -> {
             stopEditing();
             int pipeid = pipeService.getUnHasPipeId();
@@ -61,7 +62,7 @@ public class PipeSetPanel extends BaseSystemPanel {
             }
             refreshPipe();
         });
-        EditButton delete = addTool("删除", "delete");
+        delete = addTool("删除", "delete");
         delete.addActionListener(e -> {
             stopEditing();
             int[] rows = table.getSelectedRows();
@@ -77,17 +78,18 @@ public class PipeSetPanel extends BaseSystemPanel {
             pipeService.delete(pointnums);
             refreshPipe();
         });
-        EditButton apply = addTool("保存", "apply");
+        apply = addTool("保存", "apply");
         apply.addActionListener(e -> {
             stopEditing();
-            if (!checkinput()) {
-                refreshPipe();
-                return;
-            }
             if (table.isEditing()) {
                 errorMessage("您有内容输入有误!");
                 return;
             }
+            if (!checkinput()) {
+                refreshPipe();
+                return;
+            }
+
             for (int i = 0; i < table.getRowCount(); i++) {
                 int pipe_id = (int) table.getValueAt(i, 0);
                 String pipe_name = (String) table.getValueAt(i, 1);
@@ -102,10 +104,25 @@ public class PipeSetPanel extends BaseSystemPanel {
             }
 
         });
+        if (!logoInfo.isAdmin()) {
+            visibleall();
+        }
     }
+
+    private void visibleall() {
+        apply.setVisible(false);
+        add.setVisible(false);
+        delete.setVisible(false);
+    }
+
 
     @Override
     public void loadingData() {
+        refreshPipe();
+    }
+
+    @Override
+    public void refreshTable() {
         refreshPipe();
     }
 

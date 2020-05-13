@@ -51,12 +51,6 @@ public class DisPanel extends BasePanel implements DataPanel {
     private CardLayout leftcard;
     private LinePanel linePanel;
 
-    private boolean admin;
-
-    public void setAdmin(boolean admin) {
-        this.admin = admin;
-    }
-
     @Override
     public DisPanel init() {
         this.setLayout(new BorderLayout());
@@ -144,7 +138,7 @@ public class DisPanel extends BasePanel implements DataPanel {
             }).start();
             rightcard.show(right, "null");
         });
-        if (admin) {
+        if (isAdmin()) {
             leftbottom.add(delete);
             leftbottom.add(clear);
         }

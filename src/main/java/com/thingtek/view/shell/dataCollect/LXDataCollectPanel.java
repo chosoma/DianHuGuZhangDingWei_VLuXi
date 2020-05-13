@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * 数据采集
@@ -78,7 +79,9 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
             for (int i = 1; i <= pipe.getPipe_page(); i++) {
                 String name = pipe.getPipe_name() + "管_" + i + "段";
                 LXPipePageCollectPanel clt = new LXPipePageCollectPanel();
-                clt.setAdmin(true);
+                Image image = factorys.getIconFactory().getImage(pipe.getPipe_id() + "" + i);
+                clt.setImage(image);
+                clt.setAdmin(logoInfo.isAdmin());
                 clt.setName(name);
                 jTabbedPane.add(clt);
                 clt.setFactorys(factorys);
@@ -86,7 +89,7 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
                 java.util.List<LXUnitBean> baseunits = unitService.getUnitsByPipe(pipe);
                 java.util.List<LXUnitBean> units = new ArrayList<>();
                 for (LXUnitBean baseunit : baseunits) {
-                    if (baseunit.getPipe_page() == i) {
+                    if (Objects.equals(baseunit.getPipe_page(), i)) {
                         units.add(baseunit);
                     }
                 }
