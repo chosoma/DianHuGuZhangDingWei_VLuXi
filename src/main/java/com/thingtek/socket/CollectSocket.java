@@ -31,11 +31,6 @@ public class CollectSocket extends BaseService implements Runnable {
     private Debugs debugShow;
     private LXUnitService unitService;
     private LXUnitSetPanel unitSetPanel;
-    private LXUnitAdminSetPanel unitAdminSetPanel;
-
-    public void setUnitAdminSetPanel(LXUnitAdminSetPanel unitAdminSetPanel) {
-        this.unitAdminSetPanel = unitAdminSetPanel;
-    }
 
     public Socket getSocket() {
         return socket;
@@ -79,7 +74,7 @@ public class CollectSocket extends BaseService implements Runnable {
     public void run() {
         String offlineMSG = "";
         try {
-            offlineMSG = "连接成功";
+            offlineMSG = "连接成功:";
             debugShow.showMsg(offlineMSG + ip + ":" + port);
 
             in = socket.getInputStream();
@@ -125,10 +120,10 @@ public class CollectSocket extends BaseService implements Runnable {
             offlineMSG = "已下线,port: ";
         } catch (SocketException e) {
             log(e);
-            offlineMSG = "接受数据超时,port: ";
+            offlineMSG = "连接已被关闭,port: ";
         } catch (IOException e) {
             log(e);
-            offlineMSG = "连接已被关闭,port: ";
+            offlineMSG = "接受数据超时,port: ";
         } finally {
             try {
                 this.close();
@@ -221,7 +216,6 @@ public class CollectSocket extends BaseService implements Runnable {
                     }
                 }
             } catch (IOException e) {
-                System.out.println("链接异常,发送数据失败");
                 readcaches = null;
                 return;
             }

@@ -44,6 +44,7 @@ public class CollectServer {
     /**
      * 启动服务
      */
+
     public void openConnection() {
         int localPort = portConfig.getPort();
         try {
@@ -60,13 +61,12 @@ public class CollectServer {
                 while (true) {
                     Socket s = ss.accept();
                     CollectSocket socket = new CollectSocket(s);
-                    System.out.println(s.getInetAddress().getHostAddress() + ":" + s.getPort());
+//                    System.out.println(s.getInetAddress().getHostAddress() + ":" + s.getPort());
                     socket.setAgreement(agreement);
                     socket.setDebugShow(debugs);
                     socket.setServer(CollectServer.this);
                     socket.setUnitService(unitService);
                     socket.setUnitSetPanel(unitSetPanel);
-                    socket.setUnitAdminSetPanel(unitAdminSetPanel);
                     Thread thread = new Thread(socket);
                     thread.start();
                 }

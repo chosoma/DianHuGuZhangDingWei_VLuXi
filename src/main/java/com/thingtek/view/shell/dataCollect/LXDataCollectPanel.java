@@ -20,20 +20,18 @@ import java.util.Objects;
 
 public class LXDataCollectPanel extends BasePanel implements DataPanel {
 
-
     @Override
     public LXDataCollectPanel init() {
         setLayout(new BorderLayout());
         setOpaque(false);
         initCompnent();
         initBottom();
-        refreashData();
-//        refreashWarn();
+//        refreashData();
         return this;
     }
 
-    private @Resource
-    CollectWarnTableModel tableModel;
+    @Resource
+    private CollectWarnTableModel tableModel;
 
     private JTable warntable;
 
@@ -55,6 +53,7 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
 
     @Resource
     private TCR tcr;
+
     private JTabbedPane jTabbedPane;
 
     private void initializeTable() {
@@ -72,13 +71,20 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
         tableModel.addData(warnBean.getCollectTableCol());
     }
 
+    private java.util.List<LXPipePageCollectPanel> panelList;
+
     public void refreshPoint() {
         jTabbedPane.removeAll();
+        if (panelList == null) {
+            panelList = new ArrayList<>();
+        }
+        panelList.clear();
         java.util.List<PipeBean> pipes = pipeService.findAll();
         for (PipeBean pipe : pipes) {
             for (int i = 1; i <= pipe.getPipe_page(); i++) {
                 String name = pipe.getPipe_name() + "管_" + i + "段";
                 LXPipePageCollectPanel clt = new LXPipePageCollectPanel();
+                panelList.add(clt);
                 Image image = factorys.getIconFactory().getImage(pipe.getPipe_id() + "" + i);
                 clt.setImage(image);
                 clt.setAdmin(logoInfo.isAdmin());
@@ -104,8 +110,9 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
         refreshPoint();
     }
 
-    public void showWarn() {
-
-
+    public void showWarn(WarnBean warnBean) {
+        for (LXPipePageCollectPanel lxPipePageCollectPanel : panelList) {
+            lxPipePageCollectPanel.addWarn(warnBean);
+        }
     }
 }

@@ -209,7 +209,7 @@ public class Shell extends JFrame {
                 button.doClick();
             }
         }
-        dataCollectPanel.showWarn();
+//        dataCollectPanel.showWarn();
     }
 
 }

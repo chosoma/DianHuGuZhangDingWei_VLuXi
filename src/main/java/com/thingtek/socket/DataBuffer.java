@@ -171,9 +171,9 @@ public class DataBuffer {
                         int gatewayfrontsj = data.getGatewayfrontsj();
                         int serversj = gatewayfrontsj - minindex * 10;
                         data.setServersj(serversj);
-                        if (dev){
+                        if (dev) {
                             resolveData(data);
-                        }else {
+                        } else {
                             resolveWarning(data);
                         }
                     } catch (Exception e) {
@@ -299,7 +299,6 @@ public class DataBuffer {
 
     private void resolvecachedata() {
         Set<Map.Entry<PipeBean, List<DisDataBean>>> entries = cacheData.entrySet();
-        a:
         for (Map.Entry<PipeBean, List<DisDataBean>> entry : entries) {
             PipeBean pipe = entry.getKey();
             List<DisDataBean> datas = entry.getValue();
@@ -460,7 +459,7 @@ public class DataBuffer {
     }
 
     private void addDataWarn(WarnBean warn) {
-
+        collectPanel.showWarn(warn);
     }
 
     private int getServerIndex(int[] ints) {
