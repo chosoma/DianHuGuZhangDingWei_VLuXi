@@ -8,8 +8,8 @@ import com.thingtek.socket.data.entity.DataSearchPara;
 import com.thingtek.view.component.panel.Check2SPinner;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.DisDataTableModel;
-import com.thingtek.view.shell.BasePanel;
-import com.thingtek.view.shell.DataPanel;
+import com.thingtek.view.shell.base.BasePanel;
+import com.thingtek.view.shell.base.DataPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;
@@ -74,17 +74,13 @@ public class DisPanel extends BasePanel implements DataPanel {
     private MouseAdapter tablemouseadaper;
 
     private void initleft() {
-
-
         left = new JPanel(new BorderLayout());
         initLeftCenter();
         initleftBottom();
-
     }
 
     private void initleftBottom() {
         JPanel leftbottom = new JPanel();
-
         Calendar calendar = Calendar.getInstance();
         c2 = new Check2SPinner(false, calendar.getTime());
         calendar.add(Calendar.DAY_OF_MONTH, -1);
@@ -221,7 +217,7 @@ public class DisPanel extends BasePanel implements DataPanel {
                 for (DisDataBean d : datas) {
                     lineDatas.add(dataService.getData(d));
                 }
-                linePanel.addDatas(lineDatas.toArray(new DisDataBean[0]));
+                linePanel.addDatas(lineDatas.toArray(new DisDataBean[datas.size()]));
             }
 //                System.out.println(System.currentTimeMillis() - start);
             rightcard.show(right, "line");
@@ -325,29 +321,6 @@ public class DisPanel extends BasePanel implements DataPanel {
         calendar2.set(Calendar.SECOND, 59);
         calendar2.set(Calendar.MILLISECOND, 999);
         para.setT2(calendar2.getTime());
-        /*if (t1 == null || t2 == null) {
-            if (t1 != null) {
-                c1.setTime(t1);
-                c2.setTime(t1);
-                c2.add(Calendar.DAY_OF_MONTH, 1);
-            } else if (t2 != null) {
-                c1.setTime(t2);
-                c2.setTime(t2);
-                c1.add(Calendar.DAY_OF_MONTH, -1);
-            } else {
-                c1.add(Calendar.DAY_OF_MONTH, -1);
-            }
-        } else {
-            if (t1.after(t2)) {
-                errorMessage("起始时间应位于结束时间之前");
-                para = null;
-                return;
-            }
-            c1.setTime(t1);
-            c2.setTime(t2);
-        }*/
-
-
     }
 
     @Resource

@@ -1,0 +1,2113 @@
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 08:53:29
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3d012ddd: startup date [Mon May 18 08:53:29 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:29
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:30
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[Timer-19]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 08:53:58
+  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[GS]INFO[Timer-19]org.springframework.jdbc.support.SQLErrorCodesFactory.<init>(127)|
+  2020-05-18 08:53:58
+  SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[GS]ERROR[Timer-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,333 milliseconds ago.  The last packet sent successfully to the server was 16 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,333 milliseconds ago.  The last packet sent successfully to the server was 16 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,333 milliseconds ago.  The last packet sent successfully to the server was 16 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,333 milliseconds ago.  The last packet sent successfully to the server was 16 milliseconds ago.
+[GS]ERROR[Timer-18]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 24,790 milliseconds ago.  The last packet sent successfully to the server was 32 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 24,790 milliseconds ago.  The last packet sent successfully to the server was 32 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 24,790 milliseconds ago.  The last packet sent successfully to the server was 32 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 24,790 milliseconds ago.  The last packet sent successfully to the server was 32 milliseconds ago.
+[GS]ERROR[Timer-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,379 milliseconds ago.  The last packet sent successfully to the server was 26,379 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,379 milliseconds ago.  The last packet sent successfully to the server was 26,379 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,379 milliseconds ago.  The last packet sent successfully to the server was 26,379 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,379 milliseconds ago.  The last packet sent successfully to the server was 26,379 milliseconds ago.
+[GS]ERROR[Timer-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+[GS]ERROR[Timer-22]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,452 milliseconds ago.  The last packet sent successfully to the server was 26,452 milliseconds ago.
+[GS]ERROR[Timer-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,523 milliseconds ago.  The last packet sent successfully to the server was 26,523 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,523 milliseconds ago.  The last packet sent successfully to the server was 26,523 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,523 milliseconds ago.  The last packet sent successfully to the server was 26,523 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,523 milliseconds ago.  The last packet sent successfully to the server was 26,523 milliseconds ago.
+[GS]ERROR[Timer-24]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,586 milliseconds ago.  The last packet sent successfully to the server was 26,586 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,586 milliseconds ago.  The last packet sent successfully to the server was 26,586 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,586 milliseconds ago.  The last packet sent successfully to the server was 26,586 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,586 milliseconds ago.  The last packet sent successfully to the server was 26,586 milliseconds ago.
+[GS]ERROR[Timer-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,592 milliseconds ago.  The last packet sent successfully to the server was 26,592 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,592 milliseconds ago.  The last packet sent successfully to the server was 26,592 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,592 milliseconds ago.  The last packet sent successfully to the server was 26,592 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,592 milliseconds ago.  The last packet sent successfully to the server was 26,592 milliseconds ago.
+[GS]ERROR[Timer-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,800 milliseconds ago.  The last packet sent successfully to the server was 26,800 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,800 milliseconds ago.  The last packet sent successfully to the server was 26,800 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,800 milliseconds ago.  The last packet sent successfully to the server was 26,800 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,800 milliseconds ago.  The last packet sent successfully to the server was 26,800 milliseconds ago.
+[GS]ERROR[Timer-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,870 milliseconds ago.  The last packet sent successfully to the server was 26,870 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,870 milliseconds ago.  The last packet sent successfully to the server was 26,870 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,870 milliseconds ago.  The last packet sent successfully to the server was 26,870 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,870 milliseconds ago.  The last packet sent successfully to the server was 26,870 milliseconds ago.
+[GS]ERROR[Timer-28]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,981 milliseconds ago.  The last packet sent successfully to the server was 26,982 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,981 milliseconds ago.  The last packet sent successfully to the server was 26,982 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 26,981 milliseconds ago.  The last packet sent successfully to the server was 26,982 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 26,981 milliseconds ago.  The last packet sent successfully to the server was 26,982 milliseconds ago.
+[GS]ERROR[Timer-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:53:58
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 27,118 milliseconds ago.  The last packet sent successfully to the server was 27,118 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 27,118 milliseconds ago.  The last packet sent successfully to the server was 27,118 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 27,118 milliseconds ago.  The last packet sent successfully to the server was 27,118 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 27,118 milliseconds ago.  The last packet sent successfully to the server was 27,118 milliseconds ago.
+[GS]ERROR[Timer-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:00
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,302 milliseconds ago.  The last packet sent successfully to the server was 28,302 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,302 milliseconds ago.  The last packet sent successfully to the server was 28,302 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 28,302 milliseconds ago.  The last packet sent successfully to the server was 28,302 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,302 milliseconds ago.  The last packet sent successfully to the server was 28,302 milliseconds ago.
+[GS]ERROR[Timer-30]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:00
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,292 milliseconds ago.  The last packet sent successfully to the server was 28,292 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,292 milliseconds ago.  The last packet sent successfully to the server was 28,292 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 28,292 milliseconds ago.  The last packet sent successfully to the server was 28,292 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,292 milliseconds ago.  The last packet sent successfully to the server was 28,292 milliseconds ago.
+[GS]ERROR[Timer-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:00
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,209 milliseconds ago.  The last packet sent successfully to the server was 29,209 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,209 milliseconds ago.  The last packet sent successfully to the server was 29,209 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 29,209 milliseconds ago.  The last packet sent successfully to the server was 29,209 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 29,209 milliseconds ago.  The last packet sent successfully to the server was 29,209 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO unit_data_36         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO unit_data_39         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,845 milliseconds ago.  The last packet sent successfully to the server was 43,845 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,871 milliseconds ago.  The last packet sent successfully to the server was 43,871 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.warn.dao.WarnDao.save-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO DATA_WARN         (         PIPE_ID,         NEAR_UNIT_NUM,         TO_UNIT_NUM,         PLACE_VALUE,         INSERTTIME         )         VALUES          (               ?,             ?,             ?,             ?,             ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,871 milliseconds ago.  The last packet sent successfully to the server was 43,871 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 43,871 milliseconds ago.  The last packet sent successfully to the server was 43,871 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 43,871 milliseconds ago.  The last packet sent successfully to the server was 43,871 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,185 milliseconds ago.  The last packet sent successfully to the server was 44,185 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO unit_data_214         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,185 milliseconds ago.  The last packet sent successfully to the server was 44,185 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 44,185 milliseconds ago.  The last packet sent successfully to the server was 44,185 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,185 milliseconds ago.  The last packet sent successfully to the server was 44,185 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO unit_data_38         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:15
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.warn.dao.WarnDao.save-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO DATA_WARN         (         PIPE_ID,         NEAR_UNIT_NUM,         TO_UNIT_NUM,         PLACE_VALUE,         INSERTTIME         )         VALUES          (               ?,             ?,             ?,             ?,             ?          )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 44,196 milliseconds ago.  The last packet sent successfully to the server was 44,196 milliseconds ago.
+[GS]ERROR[Timer-34]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:24
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 52,928 milliseconds ago.  The last packet sent successfully to the server was 52,928 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 52,928 milliseconds ago.  The last packet sent successfully to the server was 52,928 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 52,928 milliseconds ago.  The last packet sent successfully to the server was 52,928 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 52,928 milliseconds ago.  The last packet sent successfully to the server was 52,928 milliseconds ago.
+[GS]ERROR[Timer-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:24
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,115 milliseconds ago.  The last packet sent successfully to the server was 53,115 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,115 milliseconds ago.  The last packet sent successfully to the server was 53,115 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,115 milliseconds ago.  The last packet sent successfully to the server was 53,115 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,115 milliseconds ago.  The last packet sent successfully to the server was 53,115 milliseconds ago.
+[GS]ERROR[Timer-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:24
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,251 milliseconds ago.  The last packet sent successfully to the server was 53,251 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,251 milliseconds ago.  The last packet sent successfully to the server was 53,251 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,251 milliseconds ago.  The last packet sent successfully to the server was 53,251 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,251 milliseconds ago.  The last packet sent successfully to the server was 53,251 milliseconds ago.
+[GS]ERROR[Timer-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:24
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,298 milliseconds ago.  The last packet sent successfully to the server was 53,298 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,298 milliseconds ago.  The last packet sent successfully to the server was 53,298 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,298 milliseconds ago.  The last packet sent successfully to the server was 53,298 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,298 milliseconds ago.  The last packet sent successfully to the server was 53,298 milliseconds ago.
+[GS]ERROR[Timer-40]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+[GS]ERROR[Timer-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,370 milliseconds ago.  The last packet sent successfully to the server was 53,370 milliseconds ago.
+[GS]ERROR[Timer-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,437 milliseconds ago.  The last packet sent successfully to the server was 53,437 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,437 milliseconds ago.  The last packet sent successfully to the server was 53,437 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,437 milliseconds ago.  The last packet sent successfully to the server was 53,437 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,437 milliseconds ago.  The last packet sent successfully to the server was 53,437 milliseconds ago.
+[GS]ERROR[Timer-42]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,631 milliseconds ago.  The last packet sent successfully to the server was 53,631 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,631 milliseconds ago.  The last packet sent successfully to the server was 53,631 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,631 milliseconds ago.  The last packet sent successfully to the server was 53,631 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,631 milliseconds ago.  The last packet sent successfully to the server was 53,631 milliseconds ago.
+[GS]ERROR[Timer-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,641 milliseconds ago.  The last packet sent successfully to the server was 53,641 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,641 milliseconds ago.  The last packet sent successfully to the server was 53,641 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,641 milliseconds ago.  The last packet sent successfully to the server was 53,641 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,641 milliseconds ago.  The last packet sent successfully to the server was 53,641 milliseconds ago.
+[GS]ERROR[Timer-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,899 milliseconds ago.  The last packet sent successfully to the server was 53,899 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,899 milliseconds ago.  The last packet sent successfully to the server was 53,899 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,899 milliseconds ago.  The last packet sent successfully to the server was 53,899 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,899 milliseconds ago.  The last packet sent successfully to the server was 53,899 milliseconds ago.
+[GS]ERROR[Timer-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 08:54:25
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,957 milliseconds ago.  The last packet sent successfully to the server was 53,957 milliseconds ago.
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.saveNoWarningDatas-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO data_unknow         (         UNIT_NUM,         XHQD,         GATEWAYFRONTSJ,         SERVERSJ,         GATEWAYFRONTINDEX,         SERVERINDEX,         MININDEX,         DATASTRING,         INSERTTIME         )         VALUES         (         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?,         ?         );
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,957 milliseconds ago.  The last packet sent successfully to the server was 53,957 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 53,957 milliseconds ago.  The last packet sent successfully to the server was 53,957 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 53,957 milliseconds ago.  The last packet sent successfully to the server was 53,957 milliseconds ago.
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-258]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-255]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-252]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-336]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-339]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-351]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-348]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-333]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-342]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-345]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-354]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-330]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-321]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-318]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-315]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-324]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-327]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-306]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-309]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-303]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-300]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-312]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-276]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-288]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-273]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-270]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-282]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-285]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-267]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-294]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-297]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-264]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-279]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-291]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-261]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-396]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-399]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-387]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-360]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-363]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-357]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-372]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-366]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-378]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:32:07
+  java.net.SocketException: Connection reset
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 09:33:23
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 09:33:23 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 09:33:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 09:33:25
+  {dataSource-1} inited
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-82]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-100]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-103]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-85]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-91]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-94]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-106]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-73]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-88]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 09:49:52
+  java.net.SocketException: Connection reset
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 10:15:55
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 10:15:55 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:15:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 10:15:57
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 10:18:55
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 10:18:55 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:18:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 10:18:56
+  {dataSource-1} inited
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 10:19:26
+  java.net.SocketException: Invalid argument: recv failed
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 10:20:38
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 10:20:38 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:38
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:20:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 10:20:40
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 10:47:21
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 10:47:21 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:47:21
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 10:47:23
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-18 10:48:01
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Mon May 18 10:48:01 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-18 10:48:01
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-18 10:48:03
+  {dataSource-1} inited
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-18]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-64]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-61]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-24]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-51]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-34]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-12]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:14:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40395]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40398]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40401]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40392]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40425]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40434]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40404]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40422]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40410]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40431]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40428]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40407]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40413]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40419]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-40416]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 11:18:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44070]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44091]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44088]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44076]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44049]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44067]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44085]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44082]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44058]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44079]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44061]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44052]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44055]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44064]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-44073]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55561]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55564]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55573]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55576]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55705]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55669]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55588]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55585]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55597]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55600]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55591]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55672]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55594]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55579]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55660]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55570]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55567]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55657]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55648]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55645]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55618]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55636]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55633]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55624]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55627]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55621]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55639]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55612]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55651]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55654]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55663]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55666]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55609]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55675]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55642]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55630]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55687]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55615]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55606]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55603]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55582]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55678]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55681]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55684]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55708]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:08:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55699]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:47
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55690]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:47
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55702]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:47
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55693]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:48
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55876]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55861]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55882]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55864]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55855]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55858]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55879]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:49
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55696]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55870]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55867]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:19:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56211]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56214]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56196]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56193]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56205]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56622]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56637]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56634]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56646]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56649]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56616]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56619]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56643]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56628]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56631]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56199]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56202]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56184]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56640]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56187]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56610]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56607]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56604]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56220]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56217]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56661]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56208]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56223]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56190]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56664]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56673]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56667]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56658]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56613]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56625]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56682]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56676]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56679]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56689]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56692]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56707]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56698]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:34
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56701]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:35
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56704]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:43
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56722]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:45
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56725]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56710]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:46
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-56713]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:46
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56717]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:47
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56685]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 12:38:54
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56670]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56749]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56652]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56746]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56769]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56695]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56857]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56845]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56842]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56854]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56896]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56929]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56908]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56911]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56920]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56923]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56821]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56760]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56763]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56772]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56833]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56881]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56890]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56794]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56797]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56800]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56655]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56866]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56902]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56766]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56872]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56875]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56878]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56926]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56806]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56869]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56809]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56818]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56848]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56914]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56839]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56836]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56851]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56827]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56824]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56815]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56812]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56860]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55873]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56917]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56905]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56884]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56887]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56899]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56935]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56893]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56803]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56791]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56787]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56756]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56740]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56830]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56863]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56938]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:20:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57060]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56990]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57069]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56983]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57003]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57066]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57028]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56980]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57020]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56967]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57038]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56970]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57008]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57045]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-56932]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:22:56
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65818]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65827]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65821]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65815]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65824]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65830]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65833]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65845]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65839]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65836]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65854]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65857]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65851]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65842]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65848]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:27:50
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69985]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69997]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70012]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69991]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70000]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69994]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70003]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70015]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70009]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69982]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70006]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69988]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:00
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70018]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70021]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-70024]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:40:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79993]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-80002]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79981]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79972]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79975]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79987]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79996]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79978]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79990]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79999]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79984]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-80005]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79969]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79963]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-79966]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 13:54:04
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84763]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84775]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84766]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84736]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84733]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84748]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84757]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84769]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84745]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84760]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84751]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84739]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84754]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84772]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84742]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97088]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97124]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97115]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97103]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97100]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97076]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97091]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97067]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97061]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97130]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97118]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97106]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97097]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97094]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97079]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97085]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97082]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97073]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97070]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97133]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97058]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97049]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97121]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97064]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97055]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97052]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-96995]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97004]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97007]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97016]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97019]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-96986]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-96989]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97001]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-96998]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97010]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97013]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97022]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97025]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97034]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97037]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97028]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97031]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97046]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97040]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97043]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:01
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97109]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:14
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-97112]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-18 14:20:14
+  java.net.SocketException: Connection reset

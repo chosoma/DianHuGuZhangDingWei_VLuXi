@@ -4,8 +4,8 @@ import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.config.PortConfig;
 import com.thingtek.view.shell.debugs.Debugs;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
+import com.thingtek.view.shell.systemSetup.LXUnitAdminSetPanel;
+import com.thingtek.view.shell.systemSetup.LXUnitSetPanel;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -21,7 +21,7 @@ import java.util.List;
 public class CollectServer {
 
     private ServerSocket ss;
-    private List<CollectSocket> listST = new ArrayList<>();
+    private List<CollectSocket> listST;
 
     @Resource
     private PortConfig portConfig;
@@ -33,7 +33,7 @@ public class CollectServer {
     private LXUnitAdminSetPanel unitAdminSetPanel;
 
     private CollectServer() {
-
+        listST = new ArrayList<>();
     }
 
     @Resource
@@ -67,6 +67,7 @@ public class CollectServer {
                     socket.setServer(CollectServer.this);
                     socket.setUnitService(unitService);
                     socket.setUnitSetPanel(unitSetPanel);
+                    socket.setUnitSetAdminPanel(unitAdminSetPanel);
                     Thread thread = new Thread(socket);
                     thread.start();
                 }
@@ -83,32 +84,6 @@ public class CollectServer {
                 }
             }
         }).start();
-    }
-
-    //
-//    /**
-//     * 关闭服务
-//     */
-    public void closeConnection() {
-        try {
-            if (ss != null) {
-                ss.close();
-            }
-        } catch (IOException e1) {
-            System.exit(0);
-            e1.printStackTrace();
-        }
-        // 关闭socket
-        for (int i = listST.size() - 1; i >= 0; i--) {
-            CollectSocket st = listST.get(i);
-            try {
-                st.close();
-            } catch (IOException e) {
-
-                e.printStackTrace();
-            }
-        }
-        listST.clear();
     }
 
     // 移除Socket
@@ -135,15 +110,12 @@ public class CollectServer {
     private void checkUseful() {
         for (int i = 0; i < listST.size(); i++) {
             CollectSocket s = listST.get(i);
-            if (s.isClosed() || !s.isConnected()) {
+//            if (s.isClosed() || !s.isConnected()) {
+            if (s.isNoUseful()) {
                 listST.remove(i);
                 i--;
             }
         }
-    }
-
-    public boolean isNullLinked() {
-        return listST.size() == 0;
     }
 
 }

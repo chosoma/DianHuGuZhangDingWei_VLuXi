@@ -84,4 +84,30 @@
         #{inserttime}
         );
     </insert>
+    <insert id="saveNoWarningDatas" parameterType="com.thingtek.beanServiceDao.data.entity.DisDataBean">
+        INSERT INTO data_unknow
+        (
+        UNIT_NUM,
+        XHQD,
+        GATEWAYFRONTSJ,
+        SERVERSJ,
+        GATEWAYFRONTINDEX,
+        SERVERINDEX,
+        MININDEX,
+        DATASTRING,
+        INSERTTIME
+        )
+        VALUES
+        (
+        #{unit_num},
+        #{xhqd},
+        #{gatewayfrontsj},
+        #{serversj},
+        #{gatewayfrontindex},
+        #{serverindex},
+        #{minindex},
+        #{datastring},
+        #{inserttime}
+        );
+    </insert>
 </mapper>

@@ -48,7 +48,6 @@
         NEAR_UNIT_NUM,
         TO_UNIT_NUM,
         PLACE_VALUE,
-        WARN_INFO,
         INSERTTIME
         )
         VALUES
@@ -57,7 +56,6 @@
             #{warn.near_unit_num},
             #{warn.to_unit_num},
             #{warn.place_value},
-            #{warn.warn_info},
             #{warn.inserttime}
         </foreach>
     </insert>

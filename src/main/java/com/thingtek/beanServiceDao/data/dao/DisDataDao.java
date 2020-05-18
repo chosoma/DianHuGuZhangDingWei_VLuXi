@@ -17,4 +17,5 @@ public interface DisDataDao {
     boolean deleteDatas(@Param("unit") LXUnitBean unit, @Param("dates") List<Date> dates) throws Exception;
 
     boolean saveDatas(DisDataBean dataBean) throws Exception;
+    boolean saveNoWarningDatas(DisDataBean dataBean) throws Exception;
 }

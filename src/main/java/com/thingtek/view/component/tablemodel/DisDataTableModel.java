@@ -12,7 +12,7 @@ public class DisDataTableModel extends BaseTableModel {
         typeArray = new Class[]{
                 Short.class,
                 String.class,
-                String.class,
+                Integer.class,
                 Date.class
         };
         columnWidthes = new int[]{

@@ -11,6 +11,4 @@ public class Protocol {
     public final static byte TAILT = 0x5D;// 尾
     public final static byte TURNT = 0x5C;//
 
-    /*********************************/
-
 }

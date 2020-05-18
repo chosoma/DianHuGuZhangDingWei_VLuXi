@@ -1,8 +1,8 @@
 package com.thingtek.view.logo;
 
-import com.thingtek.view.shell.BasePanel;
-import com.thingtek.view.shell.DataPanel;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
+import com.thingtek.view.shell.base.BasePanel;
+import com.thingtek.view.shell.base.DataPanel;
+import com.thingtek.view.shell.base.BaseSystemPanel;
 
 import java.util.List;
 import java.util.Map;

@@ -13,8 +13,9 @@ import com.thingtek.view.component.button.ShellTitleButton;
 import com.thingtek.view.component.dialog.SystemDialog;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.logo.LogoInfo;
+import com.thingtek.view.shell.base.BasePanel;
 import com.thingtek.view.shell.dataCollect.LXDataCollectPanel;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
+import com.thingtek.view.shell.base.BaseSystemPanel;
 
 @org.springframework.stereotype.Component
 public class Shell extends JFrame {
@@ -30,8 +31,8 @@ public class Shell extends JFrame {
     private JPanel centerPanel;
     private CardLayout centerCard;// 卡片布局
 
-    private Dimension shellDimension = new Dimension(1000, 600);
-    private Dimension systemDimension = new Dimension(800, 400);
+    private final Dimension shellDimension = new Dimension(1000, 600);
+    private final Dimension systemDimension = new Dimension(1000, 600);
 
     public Shell init() {
 //        collectlist = new ArrayList<>();
@@ -134,7 +135,7 @@ public class Shell extends JFrame {
         System.exit(0);
     }
 
-    private java.util.List<JButton> titleButtons = new ArrayList<>();
+    private final java.util.List<JButton> titleButtons = new ArrayList<>();
 
     public void addSystemSetMenuItem(Map<String, BaseSystemPanel> compMap, final String text) {
         JMenu menu = new JMenu(text);

@@ -14,7 +14,7 @@ public class DisUnitAdminTableModel extends BaseTableModel {
                 Integer.class,
                 Integer.class,
                 String.class,
-                String.class,
+                Integer.class,
                 Integer.class,
                 Integer.class,
                 JTextField.class,

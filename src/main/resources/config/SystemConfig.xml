@@ -41,7 +41,7 @@
             </list>
         </property>
         <property name="admin" value="true"/>
-        <!--        <property name="admin" value="false"/>-->
+<!--                <property name="admin" value="false"/>-->
 
     </bean>
     <bean name="home" class="com.thingtek.view.shell.homePage.HomePanel">
@@ -65,18 +65,19 @@
     <bean name="warnManage" class="com.thingtek.view.shell.disWarnManage.WarnPanel">
         <property name="show" value="true"/>
     </bean>
-    <bean name="pipeSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.PipeSetPanel">
+    <bean name="pipeSetPanel" class="com.thingtek.view.shell.systemSetup.PipeSetPanel">
         <property name="show" value="true"/>
     </bean>
-    <bean name="LXUnitSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel">
+    <bean name="LXUnitSetPanel" class="com.thingtek.view.shell.systemSetup.LXUnitSetPanel">
         <property name="show" value="true"/>
         <!--        <property name="show" value="false"/>-->
     </bean>
-    <bean name="LXadminSetPanel" class="com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel">
+    <bean name="LXadminSetPanel" class="com.thingtek.view.shell.systemSetup.LXUnitAdminSetPanel">
         <property name="show" value="true"/>
     </bean>
     <bean  name="dataBuffer" class="com.thingtek.socket.DataBuffer">
         <property name="dev" value="true"/>
+<!--        <property name="dev" value="false"/>-->
     </bean>
 
 </beans>

@@ -1,12 +1,11 @@
 package com.thingtek.view.shell.dataCollect;
 
-import com.thingtek.beanServiceDao.data.entity.DisDataBean;
 import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.view.component.factory.Factorys;
 import com.thingtek.view.component.listener.LXMouseMoveListenAdapter;
-import com.thingtek.view.shell.BasePanel;
+import com.thingtek.view.shell.base.BasePanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -110,11 +109,20 @@ public class LXPipePageCollectPanel extends BasePanel {
         if (unit == null) {
             return;
         }
+        iconWarning(unit);
+        LXUnitBean to_unit = warnBean.getTounit();
+        if (to_unit == null) {
+            return;
+        }
+        iconWarning(to_unit);
+    }
+
+    private void iconWarning(LXUnitBean unit) {
         for (LXUnitIconLabel button : buttonList) {
             LXUnitBean unitBean = button.getUnitBean();
             if (Objects.equals(unitBean.getUnit_num(), unit.getUnit_num())) {
                 button.startWarning();
-                return;
+                break;
             }
         }
     }

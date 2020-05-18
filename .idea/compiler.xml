@@ -7,8 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DianHuGuZhangDingWei_20200424" />
-        <module name="DianHuGuZhangDingWei_20200414" />
         <module name="DianHuGuZhangDingWei" />
       </profile>
     </annotationProcessing>

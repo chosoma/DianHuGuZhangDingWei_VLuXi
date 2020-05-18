@@ -1,0 +1,2305 @@
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 18:46:35
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 18:46:35 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:35
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 18:46:37
+  {dataSource-1} inited
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 1659, minIdle 50, poolingCount 99, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 1659, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,644 milliseconds ago.  The last packet sent successfully to the server was 47 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3422)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3322)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3762)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.cache(PipeService.java:122)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.findAll(PipeService.java:89)
+	at com.thingtek.view.shell.dataCollect.LXDataCollectPanel.refreshPoint(LXDataCollectPanel.java:82)
+	at com.thingtek.view.shell.dataCollect.LXDataCollectPanel.initCompnent(LXDataCollectPanel.java:67)
+	at com.thingtek.view.shell.dataCollect.LXDataCollectPanel.init(LXDataCollectPanel.java:27)
+	at com.thingtek.view.shell.dataCollect.LXDataCollectPanel.init(LXDataCollectPanel.java:21)
+	at com.thingtek.view.shell.Shell.addToolItem(Shell.java:176)
+	at com.thingtek.view.login.Loading.load(Loading.java:122)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:100)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:143)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:173)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2911)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3332)
+	... 45 more
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:39
+  Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[GS]INFO[main]org.springframework.jdbc.support.SQLErrorCodesFactory.<init>(127)|
+  2020-05-17 18:46:39
+  SQLErrorCodes loaded: [DB2, Derby, H2, HDB, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,644 milliseconds ago.  The last packet sent successfully to the server was 47 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\PipeMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM pipe pipe order by pipe.pipe_id asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,644 milliseconds ago.  The last packet sent successfully to the server was 47 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 1,644 milliseconds ago.  The last packet sent successfully to the server was 47 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,644 milliseconds ago.  The last packet sent successfully to the server was 47 milliseconds ago.
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 406, minIdle 50, poolingCount 98, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 406, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,081 milliseconds ago.  The last packet sent successfully to the server was 2,081 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.cache(PipeService.java:122)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.findAll(PipeService.java:89)
+	at com.thingtek.view.shell.systemSetup.PipeSetPanel.refreshPipe(PipeSetPanel.java:130)
+	at com.thingtek.view.shell.systemSetup.PipeSetPanel.loadingData(PipeSetPanel.java:121)
+	at com.thingtek.view.shell.base.BaseSystemPanel.init(BaseSystemPanel.java:64)
+	at com.thingtek.view.shell.systemSetup.PipeSetPanel.init(PipeSetPanel.java:27)
+	at com.thingtek.view.shell.systemSetup.PipeSetPanel.init(PipeSetPanel.java:17)
+	at com.thingtek.view.shell.Shell.addSystemSetMenuItem(Shell.java:150)
+	at com.thingtek.view.login.Loading.load(Loading.java:128)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 44 more
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,081 milliseconds ago.  The last packet sent successfully to the server was 2,081 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\PipeMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM pipe pipe order by pipe.pipe_id asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,081 milliseconds ago.  The last packet sent successfully to the server was 2,081 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,081 milliseconds ago.  The last packet sent successfully to the server was 2,081 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,081 milliseconds ago.  The last packet sent successfully to the server was 2,081 milliseconds ago.
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2112, minIdle 50, poolingCount 97, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2112, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,097 milliseconds ago.  The last packet sent successfully to the server was 2,112 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.cache(PipeService.java:122)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.getPipeNames(PipeService.java:80)
+	at com.thingtek.view.shell.systemSetup.LXUnitSetPanel.loadingData(LXUnitSetPanel.java:127)
+	at com.thingtek.view.shell.base.BaseSystemPanel.init(BaseSystemPanel.java:64)
+	at com.thingtek.view.shell.Shell.addSystemSetMenuItem(Shell.java:150)
+	at com.thingtek.view.login.Loading.load(Loading.java:128)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 41 more
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,097 milliseconds ago.  The last packet sent successfully to the server was 2,112 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\PipeMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM pipe pipe order by pipe.pipe_id asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,097 milliseconds ago.  The last packet sent successfully to the server was 2,112 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,097 milliseconds ago.  The last packet sent successfully to the server was 2,112 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,097 milliseconds ago.  The last packet sent successfully to the server was 2,112 milliseconds ago.
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2127, minIdle 50, poolingCount 96, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2127, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getAll(LXUnitService.java:51)
+	at com.thingtek.view.shell.systemSetup.LXUnitSetPanel.refreshUnit(LXUnitSetPanel.java:157)
+	at com.thingtek.view.shell.systemSetup.LXUnitSetPanel.loadingData(LXUnitSetPanel.java:137)
+	at com.thingtek.view.shell.base.BaseSystemPanel.init(BaseSystemPanel.java:64)
+	at com.thingtek.view.shell.Shell.addSystemSetMenuItem(Shell.java:150)
+	at com.thingtek.view.login.Loading.load(Loading.java:128)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 42 more
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2127, minIdle 50, poolingCount 95, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2127, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy13.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.cache(PipeService.java:122)
+	at com.thingtek.beanServiceDao.pipe.service.PipeService.getPipeNames(PipeService.java:80)
+	at com.thingtek.view.shell.systemSetup.LXUnitSetPanel.refreshUnit(LXUnitSetPanel.java:163)
+	at com.thingtek.view.shell.systemSetup.LXUnitSetPanel.loadingData(LXUnitSetPanel.java:137)
+	at com.thingtek.view.shell.base.BaseSystemPanel.init(BaseSystemPanel.java:64)
+	at com.thingtek.view.shell.Shell.addSystemSetMenuItem(Shell.java:150)
+	at com.thingtek.view.login.Loading.load(Loading.java:128)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 42 more
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\PipeMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT * FROM pipe pipe order by pipe.pipe_id asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,127 milliseconds ago.  The last packet sent successfully to the server was 2,127 milliseconds ago.
+[GS]ERROR[main]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:39
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2143, minIdle 50, poolingCount 94, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2143, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:39
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,143 milliseconds ago.  The last packet sent successfully to the server was 2,143 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getAll(LXUnitService.java:51)
+	at com.thingtek.view.shell.systemSetup.LXUnitAdminSetPanel.refreshUnit(LXUnitAdminSetPanel.java:384)
+	at com.thingtek.view.shell.systemSetup.LXUnitAdminSetPanel.loadingData(LXUnitAdminSetPanel.java:363)
+	at com.thingtek.view.shell.base.BaseSystemPanel.init(BaseSystemPanel.java:64)
+	at com.thingtek.view.shell.Shell.addSystemSetMenuItem(Shell.java:150)
+	at com.thingtek.view.login.Loading.load(Loading.java:128)
+	at com.thingtek.view.login.Loading.init(Loading.java:78)
+	at com.thingtek.view.index.Index.init(Index.java:24)
+	at com.thingtek.start.Start.main(Start.java:18)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 42 more
+[GS]ERROR[main]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:39
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,143 milliseconds ago.  The last packet sent successfully to the server was 2,143 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,143 milliseconds ago.  The last packet sent successfully to the server was 2,143 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,143 milliseconds ago.  The last packet sent successfully to the server was 2,143 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,143 milliseconds ago.  The last packet sent successfully to the server was 2,143 milliseconds ago.
+[GS]ERROR[Thread-11]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2817, minIdle 50, poolingCount 93, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2817, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-11]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,801 milliseconds ago.  The last packet sent successfully to the server was 2,801 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,801 milliseconds ago.  The last packet sent successfully to the server was 2,801 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,801 milliseconds ago.  The last packet sent successfully to the server was 2,801 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,801 milliseconds ago.  The last packet sent successfully to the server was 2,801 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,801 milliseconds ago.  The last packet sent successfully to the server was 2,801 milliseconds ago.
+[GS]ERROR[Thread-14]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2887, minIdle 50, poolingCount 92, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2887, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-14]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,887 milliseconds ago.  The last packet sent successfully to the server was 2,887 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,887 milliseconds ago.  The last packet sent successfully to the server was 2,887 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,887 milliseconds ago.  The last packet sent successfully to the server was 2,887 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,887 milliseconds ago.  The last packet sent successfully to the server was 2,887 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,887 milliseconds ago.  The last packet sent successfully to the server was 2,887 milliseconds ago.
+[GS]ERROR[Thread-17]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 2965, minIdle 50, poolingCount 91, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 2965, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-17]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,965 milliseconds ago.  The last packet sent successfully to the server was 2,965 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,965 milliseconds ago.  The last packet sent successfully to the server was 2,965 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,965 milliseconds ago.  The last packet sent successfully to the server was 2,965 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 2,965 milliseconds ago.  The last packet sent successfully to the server was 2,965 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,965 milliseconds ago.  The last packet sent successfully to the server was 2,965 milliseconds ago.
+[GS]ERROR[Thread-20]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3075, minIdle 50, poolingCount 90, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3075, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-20]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,075 milliseconds ago.  The last packet sent successfully to the server was 3,075 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,075 milliseconds ago.  The last packet sent successfully to the server was 3,075 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,075 milliseconds ago.  The last packet sent successfully to the server was 3,075 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,075 milliseconds ago.  The last packet sent successfully to the server was 3,075 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,075 milliseconds ago.  The last packet sent successfully to the server was 3,075 milliseconds ago.
+[GS]ERROR[Thread-23]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3115, minIdle 50, poolingCount 89, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3115, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-23]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,107 milliseconds ago.  The last packet sent successfully to the server was 3,107 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,107 milliseconds ago.  The last packet sent successfully to the server was 3,107 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,107 milliseconds ago.  The last packet sent successfully to the server was 3,107 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,107 milliseconds ago.  The last packet sent successfully to the server was 3,107 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,107 milliseconds ago.  The last packet sent successfully to the server was 3,107 milliseconds ago.
+[GS]ERROR[Thread-26]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3154, minIdle 50, poolingCount 88, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3154, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-26]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,154 milliseconds ago.  The last packet sent successfully to the server was 3,154 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,154 milliseconds ago.  The last packet sent successfully to the server was 3,154 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,154 milliseconds ago.  The last packet sent successfully to the server was 3,154 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,154 milliseconds ago.  The last packet sent successfully to the server was 3,154 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,154 milliseconds ago.  The last packet sent successfully to the server was 3,154 milliseconds ago.
+[GS]ERROR[Thread-29]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3169, minIdle 50, poolingCount 87, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3169, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-29]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,169 milliseconds ago.  The last packet sent successfully to the server was 3,169 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,169 milliseconds ago.  The last packet sent successfully to the server was 3,169 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,169 milliseconds ago.  The last packet sent successfully to the server was 3,169 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,169 milliseconds ago.  The last packet sent successfully to the server was 3,169 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,169 milliseconds ago.  The last packet sent successfully to the server was 3,169 milliseconds ago.
+[GS]ERROR[Thread-32]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:40
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3403, minIdle 50, poolingCount 86, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3403, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-32]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:40
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,403 milliseconds ago.  The last packet sent successfully to the server was 3,403 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:40
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,403 milliseconds ago.  The last packet sent successfully to the server was 3,403 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,403 milliseconds ago.  The last packet sent successfully to the server was 3,403 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,403 milliseconds ago.  The last packet sent successfully to the server was 3,403 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,403 milliseconds ago.  The last packet sent successfully to the server was 3,403 milliseconds ago.
+[GS]ERROR[Thread-35]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:41
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3451, minIdle 50, poolingCount 85, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3451, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-35]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:41
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,451 milliseconds ago.  The last packet sent successfully to the server was 3,451 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:41
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,451 milliseconds ago.  The last packet sent successfully to the server was 3,451 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,451 milliseconds ago.  The last packet sent successfully to the server was 3,451 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,451 milliseconds ago.  The last packet sent successfully to the server was 3,451 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,451 milliseconds ago.  The last packet sent successfully to the server was 3,451 milliseconds ago.
+[GS]ERROR[Thread-38]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:41
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3514, minIdle 50, poolingCount 84, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3514, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-38]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:41
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,514 milliseconds ago.  The last packet sent successfully to the server was 3,514 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 36 more
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:41
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,514 milliseconds ago.  The last packet sent successfully to the server was 3,514 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,514 milliseconds ago.  The last packet sent successfully to the server was 3,514 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,514 milliseconds ago.  The last packet sent successfully to the server was 3,514 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,514 milliseconds ago.  The last packet sent successfully to the server was 3,514 milliseconds ago.
+[GS]ERROR[Thread-41]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:41
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 3839, minIdle 50, poolingCount 83, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 3839, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-41]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:41
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,839 milliseconds ago.  The last packet sent successfully to the server was 3,839 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 35 more
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:41
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,839 milliseconds ago.  The last packet sent successfully to the server was 3,839 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,839 milliseconds ago.  The last packet sent successfully to the server was 3,839 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 3,839 milliseconds ago.  The last packet sent successfully to the server was 3,839 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 3,839 milliseconds ago.  The last packet sent successfully to the server was 3,839 milliseconds ago.
+[GS]ERROR[Thread-44]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:41
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 4008, minIdle 50, poolingCount 82, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 4008, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-44]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:41
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,008 milliseconds ago.  The last packet sent successfully to the server was 4,008 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 35 more
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:41
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,008 milliseconds ago.  The last packet sent successfully to the server was 4,008 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,008 milliseconds ago.  The last packet sent successfully to the server was 4,008 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 4,008 milliseconds ago.  The last packet sent successfully to the server was 4,008 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,008 milliseconds ago.  The last packet sent successfully to the server was 4,008 milliseconds ago.
+[GS]ERROR[Thread-47]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:41
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 4367, minIdle 50, poolingCount 81, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 4367, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-47]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:41
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,352 milliseconds ago.  The last packet sent successfully to the server was 4,352 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 35 more
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:41
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,352 milliseconds ago.  The last packet sent successfully to the server was 4,352 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,352 milliseconds ago.  The last packet sent successfully to the server was 4,352 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 4,352 milliseconds ago.  The last packet sent successfully to the server was 4,352 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 4,352 milliseconds ago.  The last packet sent successfully to the server was 4,352 milliseconds ago.
+[GS]ERROR[Thread-50]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:42
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 5340, minIdle 50, poolingCount 80, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 5340, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-50]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:42
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 5,340 milliseconds ago.  The last packet sent successfully to the server was 5,340 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 35 more
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:42
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 5,340 milliseconds ago.  The last packet sent successfully to the server was 5,340 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 5,340 milliseconds ago.  The last packet sent successfully to the server was 5,340 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 5,340 milliseconds ago.  The last packet sent successfully to the server was 5,340 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 5,340 milliseconds ago.  The last packet sent successfully to the server was 5,340 milliseconds ago.
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|
+  2020-05-17 18:46:43
+  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Thread-53]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|
+  2020-05-17 18:46:43
+  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 6194, minIdle 50, poolingCount 79, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 6194, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter
+[GS]ERROR[Thread-53]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|
+  2020-05-17 18:46:43
+  discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 6,194 milliseconds ago.  The last packet sent successfully to the server was 6,194 milliseconds ago.
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2417)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy12.findAll(Unknown Source)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.cache(LXUnitService.java:207)
+	at com.thingtek.beanServiceDao.unit.service.LXUnitService.getUnitByIp(LXUnitService.java:91)
+	at com.thingtek.socket.CollectSocket.run(CollectSocket.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3591)
+	... 35 more
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 18:46:43
+  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 6,194 milliseconds ago.  The last packet sent successfully to the server was 6,194 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\UnitMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.unit.dao.LXUnitDao.findAll-Inline
+### The error occurred while setting parameters
+### SQL: SELECT UNIT.UNIT_NUM AS UNIT_NUM         ,UNIT.DATA_TABLE_NAME AS DATA_TABLE_NAME         ,UNIT.PIPE_ID AS PIPE_ID         ,UNIT.PIPE_PAGE AS PIPE_PAGE         ,UNIT.x AS x         ,UNIT.y AS y         ,UNIT.FZ AS FZ         ,UNIT.FDBS AS FDBS         ,UNIT.IP AS IP         ,UNIT.PORT AS PORT         ,UNIT.PLACE_VALUE AS PLACE_VALUE         ,UNIT.PLACE_NAME AS PLACE_NAME         ,UNIT.POINT AS POINT         FROM UNIT_DIS UNIT         order by UNIT.UNIT_NUM asc
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 6,194 milliseconds ago.  The last packet sent successfully to the server was 6,194 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 6,194 milliseconds ago.  The last packet sent successfully to the server was 6,194 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 6,194 milliseconds ago.  The last packet sent successfully to the server was 6,194 milliseconds ago.
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 18:46:47
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 18:46:47 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:46:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.init(878)|
+  2020-05-17 18:46:52
+  init datasource error, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:874)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1763)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.thingtek.start.Start.main(Start.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 39 more
+[GS]ERROR[main]com.alibaba.druid.pool.DruidDataSource.init(922)|
+  2020-05-17 18:46:52
+  {dataSource-1} init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:874)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1763)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1700)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.thingtek.start.Start.main(Start.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 39 more
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 18:46:52
+  {dataSource-1} inited
+[GS]WARN[main]org.springframework.context.support.AbstractApplicationContext.refresh(551)|
+  2020-05-17 18:46:52
+  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 18:47:16
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 18:47:16 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:16
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:47:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 18:47:18
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 18:49:39
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 18:49:39 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 18:49:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 18:49:41
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 19:01:22
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 19:01:22 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:01:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 19:01:23
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 19:02:50
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 19:02:50 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:02:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 19:02:51
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-17 19:30:11
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Sun May 17 19:30:11 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-17 19:30:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-17 19:30:13
+  {dataSource-1} inited
+[GS]ERROR[Thread-127]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-142]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-157]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-133]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-130]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-163]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-148]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-139]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-99]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-145]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-136]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-154]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-160]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-151]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-124]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:12:32
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-180]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-183]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-192]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-201]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-198]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-204]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-189]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-186]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-177]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-195]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-174]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-213]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-171]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-210]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-207]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:16:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-252]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-231]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-234]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-246]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-216]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-255]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-222]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-237]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-243]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-240]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-249]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-228]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-219]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-258]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-225]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:18:18
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-279]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-282]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-297]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-270]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-261]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-276]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-300]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-291]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-303]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-267]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-264]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-285]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-309]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-288]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-273]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-294]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:29
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-306]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 21:58:37
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-399]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:22
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-390]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:22
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-387]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:22
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-396]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:22
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-369]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-393]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-375]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-372]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-363]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-366]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-378]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-381]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-360]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-354]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-384]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-17 22:17:23
+  java.net.SocketException: Connection reset

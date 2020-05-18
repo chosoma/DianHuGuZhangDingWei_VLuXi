@@ -83,6 +83,14 @@ public class DisDataBean implements Comparable<DisDataBean> {
     }
 
     @Override
+    public String toString() {
+        return "DisDataBean{" +
+                "unit_num=" + unit_num +
+                ", inserttime=" + inserttime +
+                '}';
+    }
+
+    @Override
     public int compareTo(DisDataBean o) {
         return this.serversj
                 - o.serversj > 0 ? 1 : -1;

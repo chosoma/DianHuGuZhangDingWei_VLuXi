@@ -1,6 +1,6 @@
 package com.thingtek.view.shell.homePage;
 
-import com.thingtek.view.shell.BasePanel;
+import com.thingtek.view.shell.base.BasePanel;
 
 import java.awt.*;
 

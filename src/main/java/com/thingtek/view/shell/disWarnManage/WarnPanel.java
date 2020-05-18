@@ -5,8 +5,8 @@ import com.thingtek.socket.data.entity.DataSearchPara;
 import com.thingtek.view.component.panel.Check2SPinner;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.WarnTableModel;
-import com.thingtek.view.shell.BasePanel;
-import com.thingtek.view.shell.DataPanel;
+import com.thingtek.view.shell.base.BasePanel;
+import com.thingtek.view.shell.base.DataPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;
@@ -27,11 +27,16 @@ public class WarnPanel extends BasePanel implements DataPanel {
         return this;
     }
 
+    private Check2SPinner c1;
+    private Check2SPinner c2;
+    private JButton search;
+    private JButton delete;
+    private JButton clear;
+    private CardLayout card;
+
     private void initBottom() {
         JPanel bottom = new JPanel();
-
         this.add(bottom, BorderLayout.NORTH);
-
         Calendar calendar = Calendar.getInstance();
         c2 = new Check2SPinner(false, calendar.getTime());
         calendar.add(Calendar.DAY_OF_MONTH, -1);
@@ -80,16 +85,7 @@ public class WarnPanel extends BasePanel implements DataPanel {
             bottom.add(clear);
         }
         this.add(bottom, BorderLayout.SOUTH);
-
     }
-
-    private Check2SPinner c1;
-
-    private Check2SPinner c2;
-    private JButton search;
-    private JButton delete;
-    private JButton clear;
-    private CardLayout card;
 
     private void initCenter() {
         card = new CardLayout();
@@ -103,7 +99,6 @@ public class WarnPanel extends BasePanel implements DataPanel {
         center.add(waitpanel, "wait");
         this.add(center, BorderLayout.CENTER);
     }
-
 
     private Map<WarnBean, List<Date>> getDateMap(Vector<WarnBean> datas) {
         Map<WarnBean, List<Date>> datamap = new HashMap<>();
@@ -161,49 +156,27 @@ public class WarnPanel extends BasePanel implements DataPanel {
         this.para = new DataSearchPara();
         Date t1 = c1.getTime();
         Date t2 = c2.getTime();
+        Calendar calendar1 = Calendar.getInstance();
         if (t1 != null) {
-            Calendar c1 = Calendar.getInstance();
-            c1.setTime(t1);
-            c1.set(Calendar.HOUR_OF_DAY, 0);
-            c1.set(Calendar.MINUTE, 0);
-            c1.set(Calendar.SECOND, 0);
-            c1.set(Calendar.MILLISECOND, 0);
-            para.setT1(c1.getTime());
-            System.out.println(t1);
-        }
-        if (t2 != null) {
-            Calendar c2 = Calendar.getInstance();
-            c2.setTime(t2);
-            c2.set(Calendar.HOUR_OF_DAY, 23);
-            c2.set(Calendar.MINUTE, 59);
-            c2.set(Calendar.SECOND, 59);
-            c2.set(Calendar.MILLISECOND, 999);
-            para.setT2(c2.getTime());
-            System.out.println(t2);
-        }
-        /*if (t1 == null || t2 == null) {
-            if (t1 != null) {
-                c1.setTime(t1);
-                c2.setTime(t1);
-                c2.add(Calendar.DAY_OF_MONTH, 1);
-            } else if (t2 != null) {
-                c1.setTime(t2);
-                c2.setTime(t2);
-                c1.add(Calendar.DAY_OF_MONTH, -1);
-            } else {
-                c1.add(Calendar.DAY_OF_MONTH, -1);
-            }
+            calendar1.setTime(t1);
         } else {
-            if (t1.after(t2)) {
-                errorMessage("起始时间应位于结束时间之前");
-                para = null;
-                return;
-            }
-            c1.setTime(t1);
-            c2.setTime(t2);
-        }*/
+            calendar1.add(Calendar.DAY_OF_MONTH, -1);
+        }
+        calendar1.set(Calendar.HOUR_OF_DAY, 0);
+        calendar1.set(Calendar.MINUTE, 0);
+        calendar1.set(Calendar.SECOND, 0);
+        calendar1.set(Calendar.MILLISECOND, 0);
+        para.setT1(calendar1.getTime());
 
-
+        Calendar calendar2 = Calendar.getInstance();
+        if (t2 != null) {
+            calendar2.setTime(t2);
+        }
+        calendar2.set(Calendar.HOUR_OF_DAY, 23);
+        calendar2.set(Calendar.MINUTE, 59);
+        calendar2.set(Calendar.SECOND, 59);
+        calendar2.set(Calendar.MILLISECOND, 999);
+        para.setT2(calendar2.getTime());
     }
 
     @Resource

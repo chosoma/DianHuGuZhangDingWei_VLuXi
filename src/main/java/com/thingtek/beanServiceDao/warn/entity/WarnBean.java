@@ -22,7 +22,7 @@ public class WarnBean {
     private PipeBean pipe;
     private int pipe_id;
     private Date inserttime;
-    private double palce_value;
+    private double place_value;
 
     public void setPipe(PipeBean pipe) {
         this.pipe = pipe;
@@ -55,11 +55,15 @@ public class WarnBean {
     }
 
     private String getWarnInfo() {
-        String warn_info = "";
-        if (tounit != null) {
-            warn_info = "自\"" + nearunit.getPlace_name() + "\"向\"" + tounit.getPlace_name() + "\" " + palce_value + "米";
+        String warn_info;
+        if (tounit != null && nearunit != null) {
+            warn_info = "自\"" + nearunit.getPlace_name() + "\"向\"" + tounit.getPlace_name() + "\" " + place_value + "米";
         } else {
-            warn_info = "\"" + nearunit.getPlace_name() + "\"附近 " + palce_value + "米";
+            if (nearunit != null) {
+                warn_info = "\"" + nearunit.getPlace_name() + "\"附近 " + place_value + "米";
+            } else {
+                warn_info = place_value + "米";
+            }
         }
         return warn_info;
     }

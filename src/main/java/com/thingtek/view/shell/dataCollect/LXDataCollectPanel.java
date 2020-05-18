@@ -5,8 +5,8 @@ import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.CollectWarnTableModel;
-import com.thingtek.view.shell.BasePanel;
-import com.thingtek.view.shell.DataPanel;
+import com.thingtek.view.shell.base.BasePanel;
+import com.thingtek.view.shell.base.DataPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;
@@ -92,7 +92,7 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
                 jTabbedPane.add(clt);
                 clt.setFactorys(factorys);
                 clt.setUnitService(unitService);
-                java.util.List<LXUnitBean> baseunits = unitService.getUnitsByPipe(pipe);
+                java.util.List<LXUnitBean> baseunits = unitService.getUnitsByPipe(pipe.getPipe_id());
                 java.util.List<LXUnitBean> units = new ArrayList<>();
                 for (LXUnitBean baseunit : baseunits) {
                     if (Objects.equals(baseunit.getPipe_page(), i)) {

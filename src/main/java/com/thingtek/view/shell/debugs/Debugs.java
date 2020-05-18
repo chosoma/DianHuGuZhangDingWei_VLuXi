@@ -1,14 +1,12 @@
 package com.thingtek.view.shell.debugs;
 
-import com.thingtek.view.shell.BasePanel;
+import com.thingtek.view.shell.base.BasePanel;
 
 import javax.swing.*;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
@@ -102,21 +100,20 @@ public class Debugs extends BasePanel {
         return this;
     }
 
-    public synchronized String rec(byte[] data, int len, Date time, String msg) {
+    public synchronized void rec(byte[] data, int len, Date time, String msg) {
         String rece = timeFormat.format(time) + " " + msg
-                + " →→收 : " + getBufHexStr(data, 0, len) + lineFeed;
+                + " →→收 : " + getBufHexStr(data, len) + lineFeed;
         if (isShow) {
             jta.append(rece);
             if (jta.getLineCount() > 1000) {
                 subString();
             }
         }
-        return rece;
     }
 
-    public synchronized String send(byte[] data, int len, String dtu) {
+    public synchronized void send(byte[] data, int len, String dtu) {
         String send = timeFormat.format(Calendar.getInstance().getTime()) + " " + dtu
-                + " 发→→ : " + getBufHexStr(data, 0, len) + lineFeed;
+                + " 发→→ : " + getBufHexStr(data, len) + lineFeed;
         if (isShow) {
             jta.append(send);
 //            jta.append(String.valueOf(System.currentTimeMillis())+lineFeed);
@@ -124,7 +121,6 @@ public class Debugs extends BasePanel {
                 subString();
             }
         }
-        return send;
     }
 
     private synchronized void subString() {
@@ -181,12 +177,12 @@ public class Debugs extends BasePanel {
         }
     }
 
-    private String getBufHexStr(byte[] b, int off, int len) {
+    private String getBufHexStr(byte[] b, int len) {
         if (b == null) {
             return null;
         }
         final StringBuilder hex = new StringBuilder(2 * len);
-        for (int i = off; i < off + len; i++) {
+        for (int i = 0; i < len; i++) {
             String HEXES = "0123456789ABCDEF";
             hex.append(HEXES.charAt((b[i] & 0xF0) >> 4)).append(HEXES.charAt((b[i] & 0x0F))).append(" ");
         }

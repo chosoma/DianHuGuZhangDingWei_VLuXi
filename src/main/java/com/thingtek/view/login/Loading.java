@@ -2,11 +2,11 @@ package com.thingtek.view.login;
 
 
 import com.thingtek.view.component.factory.Factorys;
-import com.thingtek.view.shell.BasePanel;
+import com.thingtek.view.shell.base.BasePanel;
 import com.thingtek.view.shell.Shell;
 import com.thingtek.view.component.panel.ShadowPanel;
 import com.thingtek.view.logo.LogoInfo;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.base.BaseSystemPanel;
+import com.thingtek.view.shell.base.BaseSystemPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;

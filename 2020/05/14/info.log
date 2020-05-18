@@ -1,0 +1,2466 @@
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:17:22
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:17:22 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:22
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:22
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:17:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:17:24
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:21:27
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:21:27 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:27
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:21:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:21:29
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:23:32
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:23:32 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:23:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:23:34
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:25:09
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:25:09 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:25:09
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:25:11
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:33:15
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:33:15 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:33:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:33:17
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:45:05
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3e9b1010: startup date [Thu May 14 13:45:05 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:45:07
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 13:45:13
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 13:45:13 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 13:45:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 13:45:14
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 14:34:13
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 14:34:13 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:13
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:14
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 14:34:16
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 14:34:25
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 14:34:25 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 14:34:25
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 14:34:27
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 15:53:11
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 15:53:11 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:11
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:12
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:12
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 15:53:12
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 15:53:13
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 16:07:40
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 16:07:40 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:40
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:40
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:40
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:40
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:40
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 16:07:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 16:07:42
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 17:20:36
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 17:20:36 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:20:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 17:20:37
+  {dataSource-1} inited
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:25:06
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:26:36
+  java.net.SocketException: Connection reset
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 17:28:17
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 17:28:17 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:28:17
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 17:28:19
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 17:31:38
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 17:31:38 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:31:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 17:31:40
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 17:40:28
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 17:40:28 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 17:40:28
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 17:40:29
+  {dataSource-1} inited
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 17:56:51
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:24
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-51]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-69]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-61]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-59]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-71]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-57]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-63]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-65]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-73]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:53:30
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-82]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-84]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-86]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-88]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-90]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-92]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-94]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-96]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-98]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-100]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-102]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-104]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-106]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-108]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-110]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-112]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:58:21
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-138]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-140]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-116]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-142]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-126]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-118]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-124]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-128]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-132]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-134]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-130]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-114]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-122]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-120]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-136]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-144]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 18:59:52
+  java.net.SocketException: Connection reset
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:00:53
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:00:53 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:00:53
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:00:54
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:03:12
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:03:12 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:12
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:12
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:03:13
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:03:14
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:06:15
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:06:15 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:06:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:06:16
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:11:15
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:11:15 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:11:15
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:11:16
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:12:05
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:12:05 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:12:08
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:12:08 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:08
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:12:10
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:12:55
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:12:55 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:12:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:12:57
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:17:01
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:17:01 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:01
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:17:02
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:17:03
+  {dataSource-1} inited
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:24:40
+  java.net.SocketException: Connection reset
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:24:59
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:24:59 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:24:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:25:00
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:25:23
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:25:23 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:23
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:25:24
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:25:37
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:25:37 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:37
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:37
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:37
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:37
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:37
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:25:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:25:39
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:26:32
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:26:32 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:32
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:26:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:26:34
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:30:29
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:30:29 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:30:29
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:30:30
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:31:18
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:31:18 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:18
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:18
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:18
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:18
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:18
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:19
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:19
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:19
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:19
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:31:20
+  {dataSource-1} inited
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:32
+  java.lang.NullPointerException
+[GS]ERROR[Thread-42]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:39
+  java.lang.NullPointerException
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:40
+  java.lang.NullPointerException
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:41
+  java.lang.NullPointerException
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:41
+  java.lang.NullPointerException
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:31:44
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:31:51
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:31:51 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:31:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:31:53
+  {dataSource-1} inited
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:32:04
+  java.lang.NullPointerException
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:32:06
+  java.lang.NullPointerException
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:32:06
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:32:33
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:32:33 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:32:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:32:35
+  {dataSource-1} inited
+[GS]ERROR[Thread-42]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:32:45
+  java.lang.NullPointerException
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:33:09
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:33:38
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:33:38 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:38
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:38
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:33:39
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:33:40
+  {dataSource-1} inited
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:33:50
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:35:52
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:35:52 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:35:52
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:35:54
+  {dataSource-1} inited
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:36:05
+  java.lang.NullPointerException
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:36:08
+  java.lang.NullPointerException
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:36:08
+  java.lang.NullPointerException
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:36:15
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:37:26
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:37:26 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:37:26
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:37:27
+  {dataSource-1} inited
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:37:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:37:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:37:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:37:48
+  java.lang.NullPointerException
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:37:49
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:38:41
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:38:41 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:38:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:38:42
+  {dataSource-1} inited
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:38:52
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:40:10
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:40:10 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:40:10
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:40:12
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:43:36
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:43:36 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:43:37
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:43:59
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:43:59 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:59
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:43:59
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:44:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:44:01
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:46:00
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:46:00 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:46:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:46:02
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:47:32
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:47:32 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:32
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:33
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:47:34
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:47:36
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:47:36 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:47:36
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:47:38
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:50:19
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:50:19 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:50:20
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:50:21
+  {dataSource-1} inited
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Connection reset
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 19:51:44
+  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:51:49
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:51:49 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:49
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:49
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:51:50
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:51:51
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:53:05
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:53:05 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:53:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:53:06
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 19:54:04
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 19:54:04 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:04
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:04
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 19:54:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 19:54:06
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:03:54
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:03:54 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:54
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:03:55
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:03:56
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:05:04
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:05:04 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:04
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:05:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:05:06
+  {dataSource-1} inited
+[GS]ERROR[Thread-98]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:09
+  java.lang.NullPointerException
+[GS]ERROR[Thread-99]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:11
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:11:32
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:11:32 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:11:32
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:11:33
+  {dataSource-1} inited
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:44
+  java.lang.NullPointerException
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:50
+  java.lang.NullPointerException
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:51
+  java.lang.NullPointerException
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:11:55
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:12:59
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:12:59 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:12:59
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:13:00
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:13:01
+  {dataSource-1} inited
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:10
+  java.lang.NullPointerException
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:10
+  java.lang.NullPointerException
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:17
+  java.lang.NullPointerException
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:19
+  java.lang.NullPointerException
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:20
+  java.lang.NullPointerException
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:20
+  java.lang.NullPointerException
+[GS]ERROR[Thread-51]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:21
+  java.lang.NullPointerException
+[GS]ERROR[Thread-52]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:22
+  java.lang.NullPointerException
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:22
+  java.lang.NullPointerException
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:22
+  java.lang.NullPointerException
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:23
+  java.lang.NullPointerException
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:23
+  java.lang.NullPointerException
+[GS]ERROR[Thread-57]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:24
+  java.lang.NullPointerException
+[GS]ERROR[Thread-58]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:24
+  java.lang.NullPointerException
+[GS]ERROR[Thread-59]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:25
+  java.lang.NullPointerException
+[GS]ERROR[Thread-60]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:25
+  java.lang.NullPointerException
+[GS]ERROR[Thread-61]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:25
+  java.lang.NullPointerException
+[GS]ERROR[Thread-62]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:26
+  java.lang.NullPointerException
+[GS]ERROR[Thread-63]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:26
+  java.lang.NullPointerException
+[GS]ERROR[Thread-64]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:27
+  java.lang.NullPointerException
+[GS]ERROR[Thread-65]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:28
+  java.lang.NullPointerException
+[GS]ERROR[Thread-66]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:28
+  java.lang.NullPointerException
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:29
+  java.lang.NullPointerException
+[GS]ERROR[Thread-68]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:29
+  java.lang.NullPointerException
+[GS]ERROR[Thread-69]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:29
+  java.lang.NullPointerException
+[GS]ERROR[Thread-70]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:30
+  java.lang.NullPointerException
+[GS]ERROR[Thread-71]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:30
+  java.lang.NullPointerException
+[GS]ERROR[Thread-72]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:31
+  java.lang.NullPointerException
+[GS]ERROR[Thread-73]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:31
+  java.lang.NullPointerException
+[GS]ERROR[Thread-74]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:32
+  java.lang.NullPointerException
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:33
+  java.lang.NullPointerException
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:33
+  java.lang.NullPointerException
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:33
+  java.lang.NullPointerException
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:33
+  java.lang.NullPointerException
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:35
+  java.lang.NullPointerException
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:35
+  java.lang.NullPointerException
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:35
+  java.lang.NullPointerException
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:35
+  java.lang.NullPointerException
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:37
+  java.lang.NullPointerException
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:38
+  java.lang.NullPointerException
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:40
+  java.lang.NullPointerException
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:40
+  java.lang.NullPointerException
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:40
+  java.lang.NullPointerException
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:41
+  java.lang.NullPointerException
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:41
+  java.lang.NullPointerException
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:41
+  java.lang.NullPointerException
+[GS]ERROR[Thread-81]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:42
+  java.lang.NullPointerException
+[GS]ERROR[Thread-82]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:42
+  java.lang.NullPointerException
+[GS]ERROR[Thread-83]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:42
+  java.lang.NullPointerException
+[GS]ERROR[Thread-84]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:43
+  java.lang.NullPointerException
+[GS]ERROR[Thread-85]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:43
+  java.lang.NullPointerException
+[GS]ERROR[Thread-86]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:44
+  java.lang.NullPointerException
+[GS]ERROR[Thread-87]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:44
+  java.lang.NullPointerException
+[GS]ERROR[Thread-88]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:45
+  java.lang.NullPointerException
+[GS]ERROR[Thread-89]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:45
+  java.lang.NullPointerException
+[GS]ERROR[Thread-90]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:45
+  java.lang.NullPointerException
+[GS]ERROR[Thread-91]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:46
+  java.lang.NullPointerException
+[GS]ERROR[Thread-92]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:46
+  java.lang.NullPointerException
+[GS]ERROR[Thread-93]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:46
+  java.lang.NullPointerException
+[GS]ERROR[Thread-94]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:47
+  java.lang.NullPointerException
+[GS]ERROR[Thread-95]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:48
+  java.lang.NullPointerException
+[GS]ERROR[Thread-96]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:48
+  java.lang.NullPointerException
+[GS]ERROR[Thread-97]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:13:49
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:14:05
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:14:05 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:05
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:05
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:06
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:06
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:06
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:06
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:14:06
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:14:07
+  {dataSource-1} inited
+[GS]ERROR[Thread-52]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:14:17
+  java.lang.NullPointerException
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:14:21
+  java.lang.NullPointerException
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:14:23
+  java.lang.NullPointerException
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:15:15
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:15:51
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:15:51 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:15:51
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:15:53
+  {dataSource-1} inited
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:18:47
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:18:47 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:18:47
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:18:48
+  {dataSource-1} inited
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:19:35
+  java.lang.NullPointerException
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:19:36
+  java.lang.NullPointerException
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:19:38
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:19:54
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:19:54 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:19:54
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:19:55
+  {dataSource-1} inited
+[GS]ERROR[Thread-130]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:02
+  java.lang.NullPointerException
+[GS]ERROR[Thread-131]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:03
+  java.lang.NullPointerException
+[GS]ERROR[Thread-158]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:24
+  java.lang.NullPointerException
+[GS]ERROR[Thread-160]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:25
+  java.lang.NullPointerException
+[GS]ERROR[Thread-161]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:26
+  java.lang.NullPointerException
+[GS]ERROR[Thread-162]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:21:48
+  java.lang.NullPointerException
+[GS]ERROR[Thread-163]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:23:08
+  java.lang.NullPointerException
+[GS]ERROR[Thread-165]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:23:30
+  java.lang.NullPointerException
+[GS]ERROR[Thread-301]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:24:43
+  java.lang.NullPointerException
+[GS]ERROR[Thread-306]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:24:50
+  java.lang.NullPointerException
+[GS]ERROR[Thread-308]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:24:52
+  java.lang.NullPointerException
+[GS]ERROR[Thread-309]com.thingtek.beanServiceDao.base.BaseService.log(9)|
+  2020-05-14 20:24:56
+  java.lang.NullPointerException
+[GS]INFO[main]org.springframework.context.support.AbstractApplicationContext.prepareRefresh(583)|
+  2020-05-14 20:25:41
+  Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6996db8: startup date [Thu May 14 20:25:41 CST 2020]; root of context hierarchy
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from class path resource [appcontext/applicationContext.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\spring-mybatis\spring-mybatis.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\AgreementConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\BorderFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\ColorFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\FontFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\IconFactory.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\SystemConfig.xml]
+[GS]INFO[main]org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(317)|
+  2020-05-14 20:25:41
+  Loading XML bean definitions from file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\config\TableConfig.xml]
+[GS]INFO[main]com.alibaba.druid.pool.DruidDataSource.init(947)|
+  2020-05-14 20:25:42
+  {dataSource-1} inited

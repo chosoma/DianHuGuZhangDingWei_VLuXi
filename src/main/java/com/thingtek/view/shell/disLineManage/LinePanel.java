@@ -37,6 +37,7 @@ public class LinePanel extends BaseGhaph {
         valueAxis.setNumberFormatOverride(numberFormat);
         valueAxis.setAutoRangeIncludesZero(true);
         valueAxis.setAutoRange(true);//设置曲线平滑
+        valueAxis.setAutoRangeIncludesZero(false);//Y轴自动调整 默认true
         xyPlot.setRangeAxis(valueAxis);
         StandardXYItemRenderer renderer = new StandardXYItemRenderer();
         xyPlot.setRenderer(renderer);
@@ -55,6 +56,9 @@ public class LinePanel extends BaseGhaph {
     public void addDatas(DisDataBean... chartDatas) {
         clear();
         for (DisDataBean chartData : chartDatas) {
+            if (chartData == null) {
+                continue;
+            }
             try {
                 LXUnitBean unit = chartData.getUnit();
                 int[] dataline = chartData.getData();

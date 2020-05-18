@@ -16,7 +16,7 @@ public class LXUnitBean {
     private Integer fz;
     private Integer fdbs;
     private String ip;
-    private int port;
+    private Integer port;
     private double x;
     private double y;
     private Integer pipe_page;
@@ -32,21 +32,21 @@ public class LXUnitBean {
         if (pipe != null) {
             setPipe_id(pipe.getPipe_id());
         }
-        place_name = String.valueOf(table.getValueAt(row,3));
+        place_name = String.valueOf(table.getValueAt(row, 3));
     }
 
     public void resolveAdminTable(JTable table, int row) {
         String strfz = String.valueOf(table.getValueAt(row, 1));
-        fz = strfz.equals("") ? null : Integer.parseInt(strfz);
+        fz = strfz.equals("null") || strfz.equals("") ? 2500 : Integer.parseInt(strfz);
         String strfdbs = String.valueOf(table.getValueAt(row, 2));
-        fdbs = strfdbs.equals("") ? null : Integer.parseInt(strfdbs);
+        fdbs = strfdbs.equals("null") || strfdbs.equals("") ? 20 : Integer.parseInt(strfdbs);
         ip = (String) table.getValueAt(row, 3);
         String stport = String.valueOf(table.getValueAt(row, 4));
-        port = stport.equals("") ? 8888 : Integer.parseInt(stport);
+        port = stport.equals("null") || stport.equals("") ? 1234 : Integer.parseInt(stport);
         String strplacevalue = String.valueOf(table.getValueAt(row, 5));
-        place_value = strplacevalue.equals("") ? null : Integer.parseInt(strplacevalue);
+        place_value = strplacevalue.equals("null") || strplacevalue.equals("") ? 1 : Integer.parseInt(strplacevalue);
         String strpoint = String.valueOf(table.getValueAt(row, 6));
-        point = strpoint.equals("") ? null : Integer.parseInt(strpoint);
+        point = strpoint.equals("null") || strpoint.equals("") ? 1 : Integer.parseInt(strpoint);
     }
 
     public Vector<Object> getLXTableCol() {

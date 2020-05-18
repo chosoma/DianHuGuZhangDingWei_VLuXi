@@ -1,0 +1,650 @@
+[GS]ERROR[Thread-38]com.alibaba.druid.pool.DruidPooledStatement.errorCheck(357)|  CommunicationsException, druid version 1.1.12, jdbcUrl : jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, testWhileIdle true, idle millis 264899, minIdle 50, poolingCount 99, timeBetweenEvictionRunsMillis 60000, lastValidIdleMillis 264899, driver com.mysql.jdbc.Driver, exceptionSorter com.alibaba.druid.pool.vendor.MySqlExceptionSorter  2020-05-15 08:55:57
+[GS]ERROR[Thread-38]com.alibaba.druid.pool.DruidDataSource.handleFatalError(1626)|  discard connection  2020-05-15 08:55:57
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 58 milliseconds ago.  The last packet sent successfully to the server was 36 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3422)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3322)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3762)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2435)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2582)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2535)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1911)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1203)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:620)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:62)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	at com.sun.proxy.$Proxy10.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:198)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy11.findDatas(Unknown Source)
+	at com.thingtek.beanServiceDao.data.service.DisDataService.getDataInfo(DisDataService.java:32)
+	at com.thingtek.view.shell.disLineManage.DisPanel.lambda$refreashData$11(DisPanel.java:339)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:100)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:143)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:173)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2911)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3332)
+	... 37 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:05
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:09
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:14
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:18
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:23
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:27
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:32
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Druid-ConnectionPool-Create-568221876]com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(2507)|  create connection SQLException, url: jdbc:mysql://localhost:3306/dhgzdw?characterEncoding=utf8, errorCode 0, state 08S01  2020-05-15 08:56:36
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1038)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:338)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2237)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2270)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2069)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:389)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1572)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1636)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2505)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:213)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:297)
+	... 19 more
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.springframework.dao.RecoverableDataAccessException: 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 58 milliseconds ago.  The last packet sent successfully to the server was 36 milliseconds ago.
+### The error may exist in file [D:\workspace\DianHuGuZhangDingWei_20200424\target\classes\mappers\DisDataMapper.xml]
+### The error may involve com.thingtek.beanServiceDao.data.dao.DisDataDao.findDatas-Inline
+### The error occurred while setting parameters
+### SQL: SELECT         DFOO.UNIT_NUM         ,DFOO.DATASTRING         ,DFOO.XHQD         ,DFOO.GATEWAYFRONTSJ         ,DFOO.SERVERSJ         ,DFOO.GATEWAYFRONTINDEX         ,DFOO.SERVERINDEX         ,DFOO.MININDEX         ,DFOO.INSERTTIME         FROM         UNIT_DIS UNIT         LEFT JOIN         unit_data_6 DFOO         ON DFOO.UNIT_NUM = UNIT.UNIT_NUM                        WHERE DFOO.INSERTTIME BETWEEN ? AND ?                    order by inserttime desc         limit ?,?
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 58 milliseconds ago.  The last packet sent successfully to the server was 36 milliseconds ago.
+; SQL []; Communications link failure
+
+The last packet successfully received from the server was 58 milliseconds ago.  The last packet sent successfully to the server was 36 milliseconds ago.; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 58 milliseconds ago.  The last packet sent successfully to the server was 36 milliseconds ago.  2020-05-15 08:56:39
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'place_value' in 'class com.thingtek.beanServiceDao.warn.entity.WarnBean'  2020-05-15 09:40:25
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.util.ConcurrentModificationException  2020-05-15 11:24:53
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'place_value' in 'class com.thingtek.beanServiceDao.warn.entity.WarnBean'  2020-05-15 11:26:05
+[GS]ERROR[Thread-1]com.thingtek.beanServiceDao.base.BaseService.log(9)|  org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'place_value' in 'class com.thingtek.beanServiceDao.warn.entity.WarnBean'  2020-05-15 11:27:58
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-114]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-111]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 11:59:21
+[GS]ERROR[Thread-108]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-255]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-252]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-249]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-177]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-180]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-189]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-192]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-201]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-204]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-213]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-216]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-225]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-228]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-237]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-171]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-240]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-174]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-186]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-183]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-198]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-195]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-207]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-210]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-219]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-222]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:21
+[GS]ERROR[Thread-231]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-234]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-117]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-120]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-129]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-132]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-141]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-144]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-153]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-156]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-165]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-168]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-135]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-123]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-126]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-138]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-147]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-150]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-159]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-162]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-246]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 11:59:22
+[GS]ERROR[Thread-38]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:18:59
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:09
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:10
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:10
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:10
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:10
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-14]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-20]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-32]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-26]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:11
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:19:12
+[GS]ERROR[Thread-86]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-92]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-128]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-98]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-122]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-116]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-107]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-104]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-110]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-125]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-89]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-119]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-95]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-101]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 13:24:32
+[GS]ERROR[Thread-113]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 13:24:32
+[GS]ERROR[Thread-131]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-137]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-140]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-143]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-149]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-134]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-152]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-170]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-167]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-164]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-173]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-176]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-161]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-158]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-155]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:00:53
+[GS]ERROR[Thread-354]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-348]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-360]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-333]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-339]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-375]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-342]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-345]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-351]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-366]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-372]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-357]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-336]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-384]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-378]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:39
+[GS]ERROR[Thread-363]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:03:40
+[GS]ERROR[Thread-393]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-396]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-417]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-390]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-387]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-381]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-414]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-420]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-405]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-369]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-402]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-411]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-408]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-423]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-399]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:09:55
+[GS]ERROR[Thread-426]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-462]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-432]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-435]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-468]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-465]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-441]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-450]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-456]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-444]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-429]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-438]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-447]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-459]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-453]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 14:15:03
+[GS]ERROR[Thread-483]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-486]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-492]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-501]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-510]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-513]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-495]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-489]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-498]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-477]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-471]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-480]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-474]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-507]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-504]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 14:24:43
+[GS]ERROR[Thread-568]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-15 15:23:24
+[GS]ERROR[Thread-532]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-571]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-535]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-544]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-550]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-541]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-529]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-538]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-526]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-559]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-556]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-553]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-562]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-547]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-565]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:29:09
+[GS]ERROR[Thread-592]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-589]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-595]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-598]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-586]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-616]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-613]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-607]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-580]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-610]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-574]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-583]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-601]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-577]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31
+[GS]ERROR[Thread-604]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Invalid argument: recv failed  2020-05-15 15:38:31

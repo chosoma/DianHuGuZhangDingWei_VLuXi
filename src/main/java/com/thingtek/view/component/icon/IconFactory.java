@@ -96,14 +96,7 @@ public class IconFactory {
         return ShowDebug;
     }
 
-    public static Image sound_16, sound_muted_16, showDebug_16, showDebug_muted_16, msg_16, msg_muted_16,
-            temp, temp_28,
-            vari, vari_28,
-            SF6, SF6_28,
-            ladder, ladder_28,
-            unknown,
-            warn, warn_28,
-            hitchwarn, hitcherror;
+    public static Image sound_16, sound_muted_16, showDebug_16, showDebug_muted_16, warn, warn_28;
 
     static {
         try {
@@ -111,29 +104,8 @@ public class IconFactory {
             sound_muted_16 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/sound_muted_16.png"));
             showDebug_16 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/showDebug_16.png"));
             showDebug_muted_16 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/showDebug_muted_16.png"));
-            msg_16 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/msg_16.png"));
-            msg_muted_16 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/msg_muted_16.png"));
-            ladder = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/ladder.png"));
-            ladder_28 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/ladder_28.png"));
             warn = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/warn.png"));
             warn_28 = ImageIO.read(IconFactory.class.getClassLoader().getResource("icons/warn_28.png"));
-            /*
-            sound_16 = ImageIO.read(MyIconFactory.class.getResource("sound_16.png"));
-            sound_muted_16 = ImageIO.read(MyIconFactory.class.getResource("sound_muted_16.png"));
-            showDebug_16 = ImageIO.read(MyIconFactory.class.getResource("showDebug_16.png"));
-            showDebug_muted_16 = ImageIO.read(MyIconFactory.class.getResource("showDebug_muted_16.png"));
-            msg_16 = ImageIO.read(MyIconFactory.class.getResource("msg_16.png"));
-            msg_muted_16 = ImageIO.read(MyIconFactory.class.getResource("msg_muted_16.png"));
-            temp = ImageIO.read(MyIconFactory.class.getResource("temp.png"));
-            temp_28 = ImageIO.read(MyIconFactory.class.getResource("temp_28.png"));
-            vari = ImageIO.read(MyIconFactory.class.getResource("vari.png"));
-            vari_28 = ImageIO.read(MyIconFactory.class.getResource("vari_28.png"));
-            SF6 = ImageIO.read(MyIconFactory.class.getResource("sf6.png"));
-            SF6_28 = ImageIO.read(MyIconFactory.class.getResource("sf6_28.png"));
-            ladder = ImageIO.read(MyIconFactory.class.getResource("ladder.png"));
-            unknown = ImageIO.read(MyIconFactory.class.getResource("unknown.png"));
-            warn = ImageIO.read(MyIconFactory.class.getResource("warn.png"));
-            */
 
         } catch (IOException e) {
             e.printStackTrace();

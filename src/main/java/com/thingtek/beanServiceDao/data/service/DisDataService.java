@@ -20,21 +20,10 @@ public class DisDataService extends BaseService {
     @Resource
     private LXUnitService unitService;
 
-    private Map<LXUnitBean, List<DisDataBean>> databuffer = new Hashtable<>();
-
-    public int count(DataSearchPara para) {
-        int count = 0;
-        try {
-            long start = System.currentTimeMillis();
-            count = dao.count(para);
-            System.out.println("count时间:" + count + ":" + (System.currentTimeMillis() - start) + "ms");
-        } catch (Exception e) {
-            log(e);
-        }
-        return count;
-    }
+    private Map<Short, List<DisDataBean>> findbuffer = new Hashtable<>();
 
     public List<DisDataBean> getDataInfo(DataSearchPara para) {
+        findbuffer.clear();
         List<DisDataBean> baseDataBeanList = new ArrayList<>();
         try {
             List<LXUnitBean> units = unitService.getAll();
@@ -45,7 +34,7 @@ public class DisDataService extends BaseService {
                     one.setUnit(unitService.getUnitByNumber(one.getUnit_num()));
                 }
                 baseDataBeanList.addAll(bufferlist);
-                databuffer.put(unit, bufferlist);
+                findbuffer.put(unit.getUnit_num(), bufferlist);
             }
         } catch (Exception e) {
             log(e);
@@ -54,10 +43,10 @@ public class DisDataService extends BaseService {
     }
 
     public DisDataBean getData(DisDataBean datapara) {
-        DisDataBean datareturn = new DisDataBean();
+        DisDataBean datareturn = null;
         try {
             LXUnitBean unit = unitService.getUnitByNumber(datapara.getUnit_num());
-            for (DisDataBean dataBean : databuffer.get(unit)) {
+            for (DisDataBean dataBean : findbuffer.get(unit.getUnit_num())) {
                 if (dataBean.getInserttime().getTime() == datapara.getInserttime().getTime()) {
                     datareturn = dataBean;
                     break;
@@ -66,7 +55,6 @@ public class DisDataService extends BaseService {
         } catch (Exception e) {
             log(e);
         }
-//        checkdata(datareturn.getData());
         return datareturn;
     }
 
@@ -81,19 +69,28 @@ public class DisDataService extends BaseService {
         }
     }
 
-    public boolean saveDatas(DisDataBean... datas) {
-        List<Boolean> flags = new ArrayList<>();
+    public void saveDatas(DisDataBean... datas) {
         for (DisDataBean data : datas) {
             try {
                 data.setUnit(unitService.getUnitByNumber(data.getUnit_num()));
-                flags.add(dao.saveDatas(data));
+                dao.saveDatas(data);
             } catch (Exception e) {
                 log(e);
-                flags.add(false);
             }
         }
-        return !flags.contains(false);
     }
+
+    public void saveNoWaningData(DisDataBean... datas){
+        for (DisDataBean data : datas) {
+            try {
+                data.setUnit(unitService.getUnitByNumber(data.getUnit_num()));
+                dao.saveNoWarningDatas(data);
+            } catch (Exception e) {
+                log(e);
+            }
+        }
+    }
+
 
 /*
     private int checkdata(int[] ints) {

@@ -66,11 +66,11 @@ public class LXUnitService extends BaseService {
         return vector;
     }
 
-    public List<LXUnitBean> getUnitsByPipe(PipeBean pipeBean) {
+    public List<LXUnitBean> getUnitsByPipe(Integer pipe_id) {
         cache();
         List<LXUnitBean> units = new ArrayList<>();
         for (LXUnitBean unit : this.units) {
-            if (pipeBean.getPipe_id() == unit.getPipe_id()) {
+            if (pipe_id == unit.getPipe_id()) {
                 units.add(unit);
             }
         }
@@ -126,9 +126,9 @@ public class LXUnitService extends BaseService {
     }
 
 
-    public LXUnitBean getNearestUnit(PipeBean pipeBean, double weizhi) {
+    public LXUnitBean getNearestUnit(Integer pipe_id, double weizhi) {
         cache();
-        List<LXUnitBean> units = getUnitsByPipe(pipeBean);
+        List<LXUnitBean> units = getUnitsByPipe(pipe_id);
         Iterator<LXUnitBean> iterator = units.iterator();
         LXUnitBean unit = iterator.next();
 
@@ -150,21 +150,40 @@ public class LXUnitService extends BaseService {
     }
 
     public LXUnitBean getToUnit(LXUnitBean unitBean, double weizhi) {
-        List<LXUnitBean> units = getUnitsByPipe(unitBean.getPipe());
-        Iterator<LXUnitBean> iterator = units.iterator();
+        List<LXUnitBean> units = getUnitsByPipe(unitBean.getPipe_id());
         int point = unitBean.getPoint();
-        if (weizhi > unitBean.getPlace_value()) {
-            point++;
-        } else {
-            point--;
-        }
-        while (iterator.hasNext()) {
-            LXUnitBean next = iterator.next();
-            if (next.getPoint() == point) {
-                return next;
+        boolean flag;
+        flag = weizhi > unitBean.getPlace_value();
+//        System.out.println(point + ",1:" + weizhi + ",2:" + unitBean.getPlace_value());
+        List<LXUnitBean> maopao = new ArrayList<>();
+        for (LXUnitBean unit : units) {
+            if (flag) {
+                if (unit.getPoint() > point) {
+                    maopao.add(unit);
+                }
+            } else {
+                if (unit.getPoint() < point) {
+                    maopao.add(unit);
+                }
             }
         }
-        return null;
+        if (maopao.size() == 0) {
+            return null;
+        }
+        LXUnitBean to = maopao.get(0);
+        for (int i = 1; i < maopao.size(); i++) {
+            if (flag) {
+                if (maopao.get(i).getPoint() < to.getPoint()) {
+                    to = maopao.get(i);
+                }
+            } else {
+                if (maopao.get(i).getPoint() > to.getPoint()) {
+                    to = maopao.get(i);
+                }
+            }
+        }
+//        System.out.println("max:" + to.getUnit_num());
+        return to;
     }
 
     /*public boolean deleteUnitByNum(byte unit_num) {

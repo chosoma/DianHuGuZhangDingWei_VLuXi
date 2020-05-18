@@ -1,0 +1,229 @@
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:25:06
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:26:36
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 17:56:51
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:24
+[GS]ERROR[Thread-51]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-69]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-61]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-59]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-71]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-57]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-63]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-65]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-73]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:53:30
+[GS]ERROR[Thread-82]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-84]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-86]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 18:58:21
+[GS]ERROR[Thread-88]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 18:58:21
+[GS]ERROR[Thread-90]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-92]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-94]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-96]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-98]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-100]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-102]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-104]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-106]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-108]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-110]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-112]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:58:21
+[GS]ERROR[Thread-138]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-140]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-116]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-142]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-126]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-118]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-124]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-128]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-132]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-134]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-130]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-114]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-122]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-120]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-136]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-144]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 18:59:52
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:24:40
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:24:40
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:32
+[GS]ERROR[Thread-42]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:39
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:40
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:41
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:41
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:31:44
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:32:04
+[GS]ERROR[Thread-44]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:32:06
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:32:06
+[GS]ERROR[Thread-42]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:32:45
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:33:09
+[GS]ERROR[Thread-43]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:33:50
+[GS]ERROR[Thread-45]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:36:05
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:36:08
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:36:08
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:36:15
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:37:37
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:37:38
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:37:38
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:37:48
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:37:49
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 19:38:52
+[GS]ERROR[Thread-9]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-11]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-13]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-17]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-35]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-33]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-21]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:51:44
+[GS]ERROR[Thread-39]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:51:44
+[GS]ERROR[Thread-19]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-31]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-23]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:51:44
+[GS]ERROR[Thread-37]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:51:44
+[GS]ERROR[Thread-25]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-15]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Connection reset  2020-05-14 19:51:44
+[GS]ERROR[Thread-29]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed  2020-05-14 19:51:44
+[GS]ERROR[Thread-98]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:09
+[GS]ERROR[Thread-99]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:11
+[GS]ERROR[Thread-41]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:44
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:50
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:51
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:11:55
+[GS]ERROR[Thread-27]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:10
+[GS]ERROR[Thread-46]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:10
+[GS]ERROR[Thread-47]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:17
+[GS]ERROR[Thread-48]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:19
+[GS]ERROR[Thread-49]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:20
+[GS]ERROR[Thread-50]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:20
+[GS]ERROR[Thread-51]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:21
+[GS]ERROR[Thread-52]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:22
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:22
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:22
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:23
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:23
+[GS]ERROR[Thread-57]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:24
+[GS]ERROR[Thread-58]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:24
+[GS]ERROR[Thread-59]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:25
+[GS]ERROR[Thread-60]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:25
+[GS]ERROR[Thread-61]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:25
+[GS]ERROR[Thread-62]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:26
+[GS]ERROR[Thread-63]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:26
+[GS]ERROR[Thread-64]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:27
+[GS]ERROR[Thread-65]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:28
+[GS]ERROR[Thread-66]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:28
+[GS]ERROR[Thread-67]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:29
+[GS]ERROR[Thread-68]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:29
+[GS]ERROR[Thread-69]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:29
+[GS]ERROR[Thread-70]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:30
+[GS]ERROR[Thread-71]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:30
+[GS]ERROR[Thread-72]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:31
+[GS]ERROR[Thread-73]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:31
+[GS]ERROR[Thread-74]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:32
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:33
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:33
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:33
+[GS]ERROR[Thread-75]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:33
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:35
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:35
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:35
+[GS]ERROR[Thread-76]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:35
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:37
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:37
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:37
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:37
+[GS]ERROR[Thread-77]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:37
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:38
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:38
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:38
+[GS]ERROR[Thread-78]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:38
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:40
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:40
+[GS]ERROR[Thread-79]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:40
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:41
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:41
+[GS]ERROR[Thread-80]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:41
+[GS]ERROR[Thread-81]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:42
+[GS]ERROR[Thread-82]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:42
+[GS]ERROR[Thread-83]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:42
+[GS]ERROR[Thread-84]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:43
+[GS]ERROR[Thread-85]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:43
+[GS]ERROR[Thread-86]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:44
+[GS]ERROR[Thread-87]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:44
+[GS]ERROR[Thread-88]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:45
+[GS]ERROR[Thread-89]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:45
+[GS]ERROR[Thread-90]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:45
+[GS]ERROR[Thread-91]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:46
+[GS]ERROR[Thread-92]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:46
+[GS]ERROR[Thread-93]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:46
+[GS]ERROR[Thread-94]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:47
+[GS]ERROR[Thread-95]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:48
+[GS]ERROR[Thread-96]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:48
+[GS]ERROR[Thread-97]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:13:49
+[GS]ERROR[Thread-52]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:14:17
+[GS]ERROR[Thread-53]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:14:21
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:14:23
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:15:15
+[GS]ERROR[Thread-54]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:19:35
+[GS]ERROR[Thread-55]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:19:36
+[GS]ERROR[Thread-56]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:19:38
+[GS]ERROR[Thread-130]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:02
+[GS]ERROR[Thread-131]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:03
+[GS]ERROR[Thread-158]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:24
+[GS]ERROR[Thread-160]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:25
+[GS]ERROR[Thread-161]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:26
+[GS]ERROR[Thread-162]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:21:48
+[GS]ERROR[Thread-163]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:23:08
+[GS]ERROR[Thread-165]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:23:30
+[GS]ERROR[Thread-301]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:24:43
+[GS]ERROR[Thread-306]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:24:50
+[GS]ERROR[Thread-308]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:24:52
+[GS]ERROR[Thread-309]com.thingtek.beanServiceDao.base.BaseService.log(9)|  java.lang.NullPointerException  2020-05-14 20:24:56

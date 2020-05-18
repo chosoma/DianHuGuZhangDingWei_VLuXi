@@ -8,8 +8,8 @@ import com.thingtek.socket.agreement.SocketAgreement;
 import com.thingtek.socket.entity.G2SUploadData;
 import com.thingtek.socket.entity.UnUnitNum;
 import com.thingtek.view.shell.debugs.Debugs;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitAdminSetPanel;
-import com.thingtek.view.shell.systemSetup.systemSetupComptents.LXUnitSetPanel;
+import com.thingtek.view.shell.systemSetup.LXUnitAdminSetPanel;
+import com.thingtek.view.shell.systemSetup.LXUnitSetPanel;
 
 import java.io.*;
 import java.net.Socket;
@@ -31,16 +31,21 @@ public class CollectSocket extends BaseService implements Runnable {
     private Debugs debugShow;
     private LXUnitService unitService;
     private LXUnitSetPanel unitSetPanel;
+    private LXUnitAdminSetPanel unitSetAdminPanel;
+
+    void setUnitSetAdminPanel(LXUnitAdminSetPanel unitSetAdminPanel) {
+        this.unitSetAdminPanel = unitSetAdminPanel;
+    }
 
     public Socket getSocket() {
         return socket;
     }
 
-    public void setAgreement(SocketAgreement agreement) {
+    void setAgreement(SocketAgreement agreement) {
         this.agreement = agreement;
     }
 
-    public void setUnitSetPanel(LXUnitSetPanel unitSetPanel) {
+    void setUnitSetPanel(LXUnitSetPanel unitSetPanel) {
         this.unitSetPanel = unitSetPanel;
     }
 
@@ -48,14 +53,14 @@ public class CollectSocket extends BaseService implements Runnable {
         this.unitService = unitService;
     }
 
-    public void setDebugShow(Debugs debugShow) {
+    void setDebugShow(Debugs debugShow) {
         this.debugShow = debugShow;
     }
 
     private DataBuffer dataFactory;// 数据工厂
     private CollectServer server;
 
-    public void setServer(CollectServer server) {
+    void setServer(CollectServer server) {
         this.server = server;
         server.addSocket(this);
     }
@@ -67,30 +72,26 @@ public class CollectSocket extends BaseService implements Runnable {
         port = socket.getPort();
     }
 
-    boolean readflag = false;
-//    long  count = 0;
 
     @Override
     public void run() {
         String offlineMSG = "";
         try {
             offlineMSG = "连接成功:";
-            debugShow.showMsg(offlineMSG + ip + ":" + port);
-
+            if (debugShow.isShow()) {
+                debugShow.showMsg(offlineMSG + ip + ":" + port);
+            }
             in = socket.getInputStream();
             out = socket.getOutputStream();
 
             unit = unitService.getUnitByIp(socket.getInetAddress().getHostAddress());
-            if (unit != null) {
-                unit.setConnect(true);
-            }
             byte[] b = new byte[1024 * 1024];
             int num;
             while ((num = in.read(b)) != -1) {
-//                System.out.println(count+=num);
                 Date time = Calendar.getInstance().getTime();
-                debugShow.rec(b, num, time, " " + socket.getPort());
-
+                if (debugShow.isShow()) {
+                    debugShow.rec(b, num, time, " " + socket.getPort());
+                }
                 byte[] bytes = new byte[num];
                 System.arraycopy(b, 0, bytes, 0, num);
                 //如果没有缓存 缓存等于当前接收
@@ -135,7 +136,9 @@ public class CollectSocket extends BaseService implements Runnable {
             }
             server.removeSocket(this);
             dataFactory.close();
-            debugShow.showMsg(offlineMSG + ip + ":" + port);
+            if (debugShow.isShow()) {
+                debugShow.showMsg(offlineMSG + ip + ":" + port);
+            }
         }
     }
 
@@ -147,11 +150,8 @@ public class CollectSocket extends BaseService implements Runnable {
     }
 
     private void resolveCache() {
-//        System.out.println("cache0：" + readcaches[0] + ",0x7e:" + 0x7e);
         int startoff = agreement.getstartoff(readcaches);
         int endoff = agreement.getendoff(readcaches);
-//        System.out.println("startoff:" + startoff);
-//        System.out.println("endoff:" + endoff);
         byte[] bytes;
         if (endoff == -1 || startoff == -1) {
             return;
@@ -165,11 +165,7 @@ public class CollectSocket extends BaseService implements Runnable {
             readcaches = other;
         } else {
             // 第一个头在第一个尾后
-//            System.out.println("第一个头在第一个尾后");
-//            System.out.println(startoff);
-//            System.out.println(endoff);
             if (readcaches.length - startoff == 0) {
-//                System.out.println("缓存数据清空");
                 readcaches = null;
                 return;
             }
@@ -205,7 +201,7 @@ public class CollectSocket extends BaseService implements Runnable {
             }
         }
         unit = unitService.getUnitByNumber(unitnum);
-        unit.setConnect(true);
+        reconnect();
         byte[] result = g2s.getResult();
         if (result != null && g2s.isCansend()) {
             try {
@@ -225,17 +221,25 @@ public class CollectSocket extends BaseService implements Runnable {
         }
     }
 
-    public boolean isConnected() {
-        return socket.isConnected();
+    private Timer timer;
+
+    private void reconnect() {
+        unit.setConnect(true);
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                unit.setConnect(false);
+            }
+        }, 120000);
     }
 
-    // 是否关闭
-    public boolean isClosed() {
-        return socket.isClosed();
-    }
-
-    public boolean isUseful() {
-        return !socket.isClosed() && socket.isConnected();
+    boolean isNoUseful() {
+        return socket.isClosed() && !socket.isConnected();
     }
 
     // 发送指令
@@ -247,7 +251,9 @@ public class CollectSocket extends BaseService implements Runnable {
             msg = Encryption(msg);
             out.write(msg);
             out.flush();
-            debugShow.send(msg, msg.length, "");
+            if (debugShow.isShow()) {
+                debugShow.send(msg, msg.length, "");
+            }
         } catch (IOException e) {
             try {
                 this.close();
@@ -258,11 +264,11 @@ public class CollectSocket extends BaseService implements Runnable {
         }
     }
 
-    public String getIp() {
+    String getIp() {
         return ip;
     }
 
-    public int getPort() {
+    int getPort() {
         return port;
     }
 
