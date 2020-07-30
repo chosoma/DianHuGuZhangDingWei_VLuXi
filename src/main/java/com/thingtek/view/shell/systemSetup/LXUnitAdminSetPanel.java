@@ -467,7 +467,7 @@ public class LXUnitAdminSetPanel extends BaseSystemPanel {
     private TCR tcr;
 
     private void initializeTable() {
-        tcr.initializeTable(table);
+        tcr.initializeTable(table,tableModel);
     }
 
     private void refreshVisible() {

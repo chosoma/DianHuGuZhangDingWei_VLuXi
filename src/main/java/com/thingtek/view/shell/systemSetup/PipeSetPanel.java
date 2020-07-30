@@ -4,8 +4,8 @@ import com.thingtek.beanServiceDao.pipe.entity.PipeBean;
 import com.thingtek.view.component.button.EditButton;
 import com.thingtek.view.component.tablecellrander.TCR;
 import com.thingtek.view.component.tablemodel.PipeTableModel;
-import com.thingtek.view.shell.base.DataPanel;
 import com.thingtek.view.shell.base.BaseSystemPanel;
+import com.thingtek.view.shell.dataCollect.LXDataCollectPanel;
 
 import javax.annotation.Resource;
 import javax.swing.*;
@@ -18,6 +18,8 @@ public class PipeSetPanel extends BaseSystemPanel {
 
     @Resource
     private PipeTableModel tablemodel;
+    @Resource
+    private LXDataCollectPanel lxDataCollectPanel;
 
     //测点表
     private JTable table;
@@ -133,6 +135,7 @@ public class PipeSetPanel extends BaseSystemPanel {
             vectors.add(pipe.getDataTotalCol());
         }
         tablemodel.addDatas(vectors);
+        lxDataCollectPanel.refreshPoint();
     }
 
     private void stopEditing() {

@@ -24,6 +24,7 @@ public class LXUnitBean {
     private Integer place_value;
     private Integer point;//点位
     private boolean connect;
+    private short addr;
 
 
     public void resolveLXTable(JTable table, int row) {
@@ -69,6 +70,9 @@ public class LXUnitBean {
         vector.add(place_value);
         vector.add(point);
         vector.add(connect);
+        vector.add(pipe.getPipe_name());
+        vector.add(pipe_page);
+        vector.add(place_name);
         return vector;
     }
 

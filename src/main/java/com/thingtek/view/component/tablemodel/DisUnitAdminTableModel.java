@@ -18,6 +18,14 @@ public class DisUnitAdminTableModel extends BaseTableModel {
                 Integer.class,
                 Integer.class,
                 JTextField.class,
+                String.class,
+                String.class,
+                String.class,
+        };
+        columnWidthes = new int[]{
+                30, 30, 30, 145,
+                30, 80, 30, 30,
+                30, 30, 30
         };
     }
 
@@ -33,6 +41,9 @@ public class DisUnitAdminTableModel extends BaseTableModel {
         column.add("安装位置(米)");
         column.add("点位");
         column.add("在线状态");
+        column.add("所属管体");
+        column.add("所属段");
+        column.add("位置名");
         this.setDataVector(row, column);
     }
 

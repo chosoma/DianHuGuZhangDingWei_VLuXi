@@ -72,6 +72,9 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
     }
 
     private java.util.List<LXPipePageCollectPanel> panelList;
+    private String[] duan = new String[]{
+            " ", "E", "C", "B", "A", "Y"
+    };
 
     public void refreshPoint() {
         jTabbedPane.removeAll();
@@ -82,10 +85,10 @@ public class LXDataCollectPanel extends BasePanel implements DataPanel {
         java.util.List<PipeBean> pipes = pipeService.findAll();
         for (PipeBean pipe : pipes) {
             for (int i = 1; i <= pipe.getPipe_page(); i++) {
-                String name = pipe.getPipe_name() + "管_" + i + "段";
+                String name = pipe.getPipe_name() + "管_" + duan[i < duan.length ? i : 0] + "区";
                 LXPipePageCollectPanel clt = new LXPipePageCollectPanel();
                 panelList.add(clt);
-                Image image = factorys.getIconFactory().getImage(pipe.getPipe_id() + "" + i);
+                Image image = factorys.getIconFactory().getImage(duan[i]);
                 clt.setImage(image);
                 clt.setAdmin(logoInfo.isAdmin());
                 clt.setName(name);

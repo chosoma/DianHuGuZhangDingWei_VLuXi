@@ -68,8 +68,10 @@ public class DisDataBean implements Comparable<DisDataBean> {
     public Vector<Object> getDataTotalCol() {
         Vector<Object> vector = new Vector<>();
         vector.add(unit_num);
+        vector.add(unit.getPlace_name());
+//        vector.add(gatewayfrontsj);
         vector.add(unit.getPipe().getPipe_name());
-        vector.add(unit.getPipe_page());
+//        vector.add(unit.getPipe_page());
         vector.add(inserttime);
         return vector;
     }

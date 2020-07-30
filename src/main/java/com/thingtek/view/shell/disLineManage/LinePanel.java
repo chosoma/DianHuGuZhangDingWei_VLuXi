@@ -37,7 +37,8 @@ public class LinePanel extends BaseGhaph {
         valueAxis.setNumberFormatOverride(numberFormat);
         valueAxis.setAutoRangeIncludesZero(true);
         valueAxis.setAutoRange(true);//设置曲线平滑
-        valueAxis.setAutoRangeIncludesZero(false);//Y轴自动调整 默认true
+        valueAxis.setRangeAboutValue(2048, 4096);
+//        valueAxis.setAutoRangeIncludesZero(false);//Y轴自动调整 默认true
         xyPlot.setRangeAxis(valueAxis);
         StandardXYItemRenderer renderer = new StandardXYItemRenderer();
         xyPlot.setRenderer(renderer);
@@ -53,6 +54,10 @@ public class LinePanel extends BaseGhaph {
         System.gc();
     }
 
+    private String[] duan = new String[]{
+            " ", "E", "C", "B", "A", "Y"
+    };
+
     public void addDatas(DisDataBean... chartDatas) {
         clear();
         for (DisDataBean chartData : chartDatas) {
@@ -65,7 +70,7 @@ public class LinePanel extends BaseGhaph {
                 XYSeries series = new XYSeries(
                         "编号:" + unit.getUnit_num() +
                                 ",管体:" + unit.getPipe().getPipe_name() +
-                                ",段:" + unit.getPipe_page() +
+                                "," + unit.getPlace_name() +
                                 ",时间:" + ymdhmsFormat.format(chartData.getInserttime()));
                 for (int j = 0; j < dataline.length; j++) {
                     series.add(j, dataline[j]);

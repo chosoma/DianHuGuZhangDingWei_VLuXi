@@ -82,7 +82,7 @@ public class LXPipePageCollectPanel extends BasePanel {
         buttonList.clear();
         ImageIcon icon = factorys.getIconFactory().getIcon("hitch");
         for (final LXUnitBean unit : units) {
-            final LXUnitIconLabel button = new LXUnitIconLabel(String.valueOf(unit.getUnit_num()), icon);
+            final LXUnitIconLabel button = new LXUnitIconLabel(unit.getPlace_name(), icon);
             button.setUnitBean(unit);
             buttonList.add(button);
             LXMouseMoveListenAdapter mmla = new LXMouseMoveListenAdapter(button, center);

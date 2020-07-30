@@ -42,6 +42,17 @@ public class LXUnitService extends BaseService {
         cache();
     }
 
+    public void createDataTable(LXUnitBean unitBean) {
+        String unit_data_name = "unit_data_" + unitBean.getUnit_num();
+        unitBean.setData_table_name(unit_data_name);
+        unitBean.setPlace_name(unitBean.getUnit_num() + "#");
+        try {
+            dao.createDataTable(unitBean);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     /*public List<LXUnitBean> getAll() {
         cache();
         return units;
@@ -75,6 +86,13 @@ public class LXUnitService extends BaseService {
             }
         }
         return units;
+    }
+
+    public boolean hasAddr(short addr) {
+        for (LXUnitBean unit : units) {
+            if (unit.getAddr() == addr) return true;
+        }
+        return false;
     }
 
     public LXUnitBean getUnitByNumber(short unit_num) {

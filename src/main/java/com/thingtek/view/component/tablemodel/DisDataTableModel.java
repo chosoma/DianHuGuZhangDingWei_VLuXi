@@ -12,11 +12,13 @@ public class DisDataTableModel extends BaseTableModel {
         typeArray = new Class[]{
                 Short.class,
                 String.class,
-                Integer.class,
+//                Integer.class,
+                Long.class,
+//                Integer.class,
                 Date.class
         };
         columnWidthes = new int[]{
-                70, 70, 45, 145
+                70, 70, 100,  145
         };
     }
 
@@ -24,9 +26,11 @@ public class DisDataTableModel extends BaseTableModel {
     protected void initDefault() {
         super.initDefault();
         Vector<String> column = new Vector<>();
-        column.add("单元编号");
+        column.add("设备编号");
+        column.add("柱号");
+//        column.add("时间节点");
         column.add("所属管体");
-        column.add("管体段");
+//        column.add("管体段");
         column.add("时间");
         this.setDataVector(row, column);
     }

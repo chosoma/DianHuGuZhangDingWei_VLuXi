@@ -8,6 +8,7 @@ import com.thingtek.beanServiceDao.unit.entity.LXUnitBean;
 import com.thingtek.beanServiceDao.unit.service.LXUnitService;
 import com.thingtek.beanServiceDao.warn.entity.WarnBean;
 import com.thingtek.beanServiceDao.warn.service.WarnService;
+import com.thingtek.socketank.AnkServer;
 import com.thingtek.view.shell.dataCollect.LXDataCollectPanel;
 
 import javax.annotation.Resource;
@@ -25,8 +26,32 @@ public class DataBuffer {
     private Thread dataThread;
 
     private Lock lock;
+
     private Condition con;
     private boolean dev;
+    private int count;
+    private boolean click;
+    private boolean up;
+
+    public boolean isUp() {
+        return up;
+    }
+
+    public void setUp(boolean up) {
+        this.up = up;
+    }
+
+    public boolean isClick() {
+        return click;
+    }
+
+    public void setClick(boolean click) {
+        this.click = click;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
 
     public void setDev(boolean dev) {
         this.dev = dev;
@@ -40,6 +65,8 @@ public class DataBuffer {
     private PipeService pipeService;
     @Resource
     private WarnService warnService;
+    @Resource
+    private AnkServer ankServer;
 
     private ConcurrentHashMap<Integer, CopyOnWriteArrayList<DisDataBean>> warnmap; //根据管体 检查警报
 
@@ -56,14 +83,6 @@ public class DataBuffer {
         con = lock.newCondition();
         warningCacheData = new ConcurrentHashMap<>();
         start();
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-//                System.out.println(warnmap.values().size());
-//                System.out.println(cacheData.values().size());
-//                System.out.println(warningCacheData.values().size());
-            }
-        }, 500, 5000);
     }
 
     /**
@@ -86,7 +105,7 @@ public class DataBuffer {
                             onebuf.remove(bigseq);
                         }
                     } else {//大包找到 小包未连续
-                        System.out.println("单元:" + unitnum + ",smallseq:" + smallseq + ",remove" + new Date(System.currentTimeMillis()));
+//                        System.out.println("单元:" + unitnum + ",smallseq:" + smallseq + ",remove" + new Date(System.currentTimeMillis()));
                         onebuf.remove(bigseq);
                         if (dataThread.getState() == Thread.State.WAITING) {
                             lock.lock();
@@ -171,18 +190,29 @@ public class DataBuffer {
                         }
                         RawData rawData = datas[datas.length - 1];
                         DisDataBean data = rawData.getData();
-                        data.setUnit(unitService.getUnitByNumber(data.getUnit_num()));
+                        LXUnitBean unit = unitService.getUnitByNumber(data.getUnit_num());
+                        data.setUnit(unit);
                         data.setDatastring(stringBuilder.toString());
                         int serverIndex = getServerIndex(data.getData());
                         data.setServerindex(serverIndex);
                         int minindex = data.getData().length - data.getGatewayfrontindex() - serverIndex;
                         data.setMinindex(minindex);
                         int gatewayfrontsj = data.getGatewayfrontsj();
-                        int serversj = gatewayfrontsj - minindex * 10;
+                        int serversj = gatewayfrontsj - serverIndex * 10;
+//                        int serversj = gatewayfrontsj - minindex * 10;
                         data.setServersj(serversj);
                         if (dev) {
-                            resolveWarning(data);
-                            dataService.saveDatas(data);
+//                            resolveWarning(data);
+                            if (check(data)) {
+                                dataService.saveDatas(data);
+                            }
+                            if (isUp()) {
+                                int min = check2(data);
+                                if (min < 0) {
+                                    min += 1501;
+                                }
+                                ankServer.setValue(unit.getAddr(), (short) (min / 1500 + 10));
+                            }
                         } else {
                             resolveData(data);
                         }
@@ -197,6 +227,91 @@ public class DataBuffer {
                 lock.unlock();
             }
         }
+    }
+
+    private boolean check(DisDataBean data) {
+        int[] datas = data.getData();
+        int count = 0;
+        for (int value : datas) {
+            if (value > 4000 || value < 100) {
+                count++;
+            }
+        }
+        return count > this.count;
+    }
+
+    private boolean check1(DisDataBean data) {
+        int[] datas = data.getData();
+        int first;
+        int firstend;
+        List<Boolean> flags = new ArrayList<>();
+        List<Integer> indexs = new ArrayList<>();
+        for (int i = 0; i < datas.length; i++) {
+            if (datas[i] > 3800) {
+                indexs.add(i);
+            }
+        }
+        if (indexs.size() > 2) {
+            Integer[] ints = indexs.toArray(new Integer[1]);
+            Arrays.sort(ints);
+            first = ints[0];
+            for (int i = 1; i < ints.length - 1; i++) {
+                if (ints[i] - ints[i - 1] <= 5000) {//未结束
+                    firstend = ints[i - 1];
+                    if (firstend - first > 20000) {
+                        flags.add(true);
+                    }
+                } else {
+                    first = ints[i];
+                }
+            }
+        } else return false;
+        return flags.contains(true);
+    }
+
+    private int check2(DisDataBean data) {
+        int[] datas = data.getData();
+        int first = -1;
+        int firstend = -1;
+        List<Integer> indexs = new ArrayList<>();
+        for (int i = 0; i < datas.length; i++) {
+            if (datas[i] > 3800) {
+                indexs.add(i);
+            }
+        }
+        boolean flag = false;
+        List<Integer> indexmin = new ArrayList<>();
+        if (indexs.size() > 2) {
+            Integer[] ints = indexs.toArray(new Integer[1]);
+            Arrays.sort(ints);
+            first = ints[0];
+            for (int i = 1; i < ints.length - 1; i++) {
+                if (ints[i] - ints[i - 1] <= 5000) {//未结束
+                    firstend = ints[i - 1];
+                    if (firstend - first > 20000) {
+                        flag = true;
+                        continue;
+                    }
+                } else {
+                    if (first >= 0 || firstend >= 0) {
+                        indexmin.add(firstend - first);
+                    }
+                    first = ints[i];
+                    firstend = ints[i];
+                }
+            }
+        }
+        if (flag) {
+            indexmin.add(firstend - first);
+        }
+        int MAX = -1;
+        for (Integer integer : indexmin) {
+            if (integer > MAX) {
+                MAX = integer;
+            }
+        }
+//        System.out.println(MAX);
+        return MAX;
     }
 
     private void resolveWarning(DisDataBean data) {
@@ -258,7 +373,6 @@ public class DataBuffer {
         }
     }
 
-
     private void resolveData(DisDataBean data) {
         LXUnitBean unit = unitService.getUnitByNumber(data.getUnit_num());
         Short unit_num = unit.getUnit_num();
@@ -311,13 +425,13 @@ public class DataBuffer {
                     for (DisDataBean dataBean : dataBeans) {
                         if (dataBean.getUnit_num().equals(data.getUnit_num()) && dataBean.getInserttime().getTime() == data.getInserttime().getTime()) {
                             dataBeans.remove(data);
-                            dataService.saveNoWaningData(data);
+//                            dataService.saveNoWaningData(data);
                             return;
                         }
                     }
                 }
             }
-        }, 10000);
+        }, 120000);
         resolvecachedata();//解析缓存
 //        removeAndSaveCache();
     }

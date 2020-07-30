@@ -20,6 +20,11 @@ public class PortConfig extends BaseService {
     private String mcip;
     private int mcport;
     private int port;
+    private int ankport;
+
+    public int getAnkport() {
+        return ankport;
+    }
 
     public String getMcip() {
         return mcip;
@@ -60,6 +65,8 @@ public class PortConfig extends BaseService {
                 Element root = document.getRootElement();
                 Element eleserverport = root.element("serverport");
                 port = Integer.parseInt(eleserverport.getText());
+                Element ankeleserverport = root.element("serverankport");
+                ankport = Integer.parseInt(ankeleserverport.getText());
                 Element elemcip = root.element("mcip");
                 mcip = elemcip.getText();
                 Element elemcport = root.element("mcport");
@@ -78,6 +85,8 @@ public class PortConfig extends BaseService {
     private void createConfigXML() {
         Document document = DocumentHelper.createDocument();
         Element root = document.addElement("property");
+        Element ankport = root.addElement("serverankport");
+        ankport.addText(String.valueOf(this.ankport));
         Element serverport = root.addElement("serverport");
         serverport.addText(String.valueOf(port));
         Element mcipelement = root.addElement("mcip");
@@ -129,6 +138,7 @@ public class PortConfig extends BaseService {
         port = 1024;
         mcip = "192.168.1.250";
         mcport = 8888;
+        ankport = 502;
     }
 
 

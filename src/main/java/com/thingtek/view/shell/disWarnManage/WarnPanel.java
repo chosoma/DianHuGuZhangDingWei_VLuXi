@@ -47,6 +47,7 @@ public class WarnPanel extends BasePanel implements DataPanel {
         search.addActionListener(e -> {
             getSearchPara();
             refreashData();
+
         });
         bottom.add(search);
 

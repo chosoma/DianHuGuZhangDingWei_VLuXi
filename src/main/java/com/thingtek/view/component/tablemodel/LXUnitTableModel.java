@@ -21,7 +21,7 @@ public class LXUnitTableModel extends BaseTableModel {
     protected void initDefault() {
         super.initDefault();
         Vector<String> column = new Vector<>();
-        column.add("单元编号");
+        column.add("设备编号");
         column.add("所属管体");
         column.add("所属段");
         column.add("位置名");

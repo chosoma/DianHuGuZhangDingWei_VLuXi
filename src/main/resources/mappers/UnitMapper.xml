@@ -18,6 +18,7 @@
         ,UNIT.PLACE_VALUE AS PLACE_VALUE
         ,UNIT.PLACE_NAME AS PLACE_NAME
         ,UNIT.POINT AS POINT
+        ,UNIT.ADDR AS ADDR
         FROM UNIT_DIS UNIT
         order by UNIT.UNIT_NUM asc
     </select>

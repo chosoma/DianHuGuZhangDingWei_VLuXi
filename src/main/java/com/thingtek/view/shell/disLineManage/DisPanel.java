@@ -18,6 +18,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.*;
 import java.util.List;
+import java.util.Timer;
 
 /**
  * 图标 时间选择 曲线框
@@ -92,7 +93,16 @@ public class DisPanel extends BasePanel implements DataPanel {
             showwait_left();
             getSearchPara();
             refreashData();
+//            dataService.delete();
         });
+        /*Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                search.doClick();
+            }
+        },20000,10000);
+*/
         leftbottom.add(search);
         delete = new JButton("删除");
         delete.addActionListener(e -> {
